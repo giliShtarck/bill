@@ -1,0 +1,23 @@
+<form [formGroup]="myForm">
+  <div class="example-container">
+    <mat-form-field appearance="fill">
+      <mat-label>הכנס מייל</mat-label>
+      <input matInput placeholder="pat@example.com" autocomplete="off" required type="email" formControlName="UserMail"
+        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+      <mat-error *ngIf="myForm.controls.UserMail.invalid">חובה להכניס מייל</mat-error>
+    </mat-form-field>
+  </div>
+  <div class="example-container">
+    <mat-form-field appearance="fill">
+      <mat-label>הכנס סיסמה</mat-label>
+      <input matInput [type]="hide ? 'password' : 'text'" required autocomplete="off" formControlName="Userpassword">
+      <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+        [attr.aria-pressed]="hide">
+        <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+      </button>
+      <mat-error *ngIf="myForm.controls.Userpassword.invalid">חובה להכניס סיסמה</mat-error>
+    </mat-form-field>
+  </div> 
+  <button mat-raised-button color="accent" class="example-button-row" (click)="SignIn()">התחבר</button>
+</form>
+<div><button (click)="OpenDialog()">שכחת סיסמא?</button></div>

@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BoardDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Advertisements">
+    <Key>
+      <PropertyRef Name="AdId" />
+    </Key>
+    <Property Name="AdId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AdCategory" Type="int" />
+    <Property Name="AdDateRequest" Type="date" />
+    <Property Name="AdDateBegin" Type="date" />
+    <Property Name="AdDateEnd" Type="date" />
+    <Property Name="AdHeight" Type="int" />
+    <Property Name="AdWidth" Type="int" />
+    <Property Name="AdUserId" Type="int" Nullable="false" />
+    <Property Name="AdFiles" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="AdViews" Type="int" />
+    <Property Name="AdStatus" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Billboard">
+    <Key>
+      <PropertyRef Name="BoardId" />
+    </Key>
+    <Property Name="BoardId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BoardStreet" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="BoardCity" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="PrecentPrice" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Category">
+    <Key>
+      <PropertyRef Name="CategoryId" />
+    </Key>
+    <Property Name="CategoryId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CategoryName" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'BoardDB.dbo.PanelAds' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="PanelAds">
+    <Key>
+      <PropertyRef Name="BoardId" />
+      <PropertyRef Name="AdId" />
+      <PropertyRef Name="PanelLineStart" />
+      <PropertyRef Name="PanelLineEnd" />
+      <PropertyRef Name="PanelColumnStart" />
+      <PropertyRef Name="PanelColumnEnd" />
+      <PropertyRef Name="PanelDate" />
+    </Key>
+    <Property Name="BoardId" Type="int" Nullable="false" />
+    <Property Name="AdId" Type="int" Nullable="false" />
+    <Property Name="PanelLineStart" Type="int" Nullable="false" />
+    <Property Name="PanelLineEnd" Type="int" Nullable="false" />
+    <Property Name="PanelColumnStart" Type="int" Nullable="false" />
+    <Property Name="PanelColumnEnd" Type="int" Nullable="false" />
+    <Property Name="PanelDate" Type="date" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Prices">
+    <Key>
+      <PropertyRef Name="PriceId" />
+    </Key>
+    <Property Name="PriceId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NumsUnit" Type="int" Nullable="false" />
+    <Property Name="PrecentDiscount" Type="float" Nullable="false" />
+    <Property Name="Price" Type="float" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="UserMail" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="Userphone" Type="char" MaxLength="10" Nullable="false" />
+    <Property Name="IsManager" Type="bit" Nullable="false" />
+    <Property Name="UserPassword" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__Advertise__AdCat__2F10007B">
+    <End Role="Category" Type="Self.Category" Multiplicity="0..1" />
+    <End Role="Advertisements" Type="Self.Advertisements" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Category">
+        <PropertyRef Name="CategoryId" />
+      </Principal>
+      <Dependent Role="Advertisements">
+        <PropertyRef Name="AdCategory" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Advertise__AdUse__2E1BDC42">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="Advertisements" Type="Self.Advertisements" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="Advertisements">
+        <PropertyRef Name="AdUserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PanelAds__AdId__31EC6D26">
+    <End Role="Advertisements" Type="Self.Advertisements" Multiplicity="1" />
+    <End Role="PanelAds" Type="Self.PanelAds" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Advertisements">
+        <PropertyRef Name="AdId" />
+      </Principal>
+      <Dependent Role="PanelAds">
+        <PropertyRef Name="AdId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PanelAds__BoardI__30F848ED">
+    <End Role="Billboard" Type="Self.Billboard" Multiplicity="1" />
+    <End Role="PanelAds" Type="Self.PanelAds" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Billboard">
+        <PropertyRef Name="BoardId" />
+      </Principal>
+      <Dependent Role="PanelAds">
+        <PropertyRef Name="BoardId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="BoardDBModelStoreContainer">
+    <EntitySet Name="Advertisements" EntityType="Self.Advertisements" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Billboard" EntityType="Self.Billboard" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Category" EntityType="Self.Category" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Prices" EntityType="Self.Prices" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PanelAds" EntityType="Self.PanelAds" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [PanelAds].[BoardId] AS [BoardId], 
+    [PanelAds].[AdId] AS [AdId], 
+    [PanelAds].[PanelLineStart] AS [PanelLineStart], 
+    [PanelAds].[PanelLineEnd] AS [PanelLineEnd], 
+    [PanelAds].[PanelColumnStart] AS [PanelColumnStart], 
+    [PanelAds].[PanelColumnEnd] AS [PanelColumnEnd], 
+    [PanelAds].[PanelDate] AS [PanelDate]
+    FROM [dbo].[PanelAds] AS [PanelAds]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK__Advertise__AdCat__2F10007B" Association="Self.FK__Advertise__AdCat__2F10007B">
+      <End Role="Category" EntitySet="Category" />
+      <End Role="Advertisements" EntitySet="Advertisements" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Advertise__AdUse__2E1BDC42" Association="Self.FK__Advertise__AdUse__2E1BDC42">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Advertisements" EntitySet="Advertisements" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PanelAds__AdId__31EC6D26" Association="Self.FK__PanelAds__AdId__31EC6D26">
+      <End Role="Advertisements" EntitySet="Advertisements" />
+      <End Role="PanelAds" EntitySet="PanelAds" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PanelAds__BoardI__30F848ED" Association="Self.FK__PanelAds__BoardI__30F848ED">
+      <End Role="Billboard" EntitySet="Billboard" />
+      <End Role="PanelAds" EntitySet="PanelAds" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

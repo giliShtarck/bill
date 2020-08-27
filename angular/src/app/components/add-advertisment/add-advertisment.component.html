@@ -1,0 +1,111 @@
+<form [formGroup]="myForm">
+  <!-- <div>
+    <mat-form-field>
+      <mat-label> בחר תאריך התחלה</mat-label>
+      <input matInput [matDatepicker]="picker" required >
+      <mat-datepicker-toggle matSuffix [for]="picker" ></mat-datepicker-toggle>
+      <mat-datepicker #picker fromControlName="AdDateBegin"></mat-datepicker>
+      <mat-error *ngIf="myForm.controls.AdDateBegin.invalid">חובה להכניס תאריך התחלה</mat-error>
+    </mat-form-field>
+  </div> -->
+  <!-- <div>
+    <mat-form-field>
+      <mat-label> בחר תאריך סיום</mat-label>
+      <input matInput [matDatepicker]="picker1" required fromControlName="AdDateEnd">
+      <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+      <mat-datepicker #picker1></mat-datepicker>
+      <mat-error *ngIf="myForm.controls.AdDateEnd.invalid">חובה להכניס תאריך סיום</mat-error>
+    </mat-form-field>
+  </div> -->
+  <div>
+    <mat-form-field appearance="fill">
+      <mat-label>הכנס אורך</mat-label>
+      <input matInput required placeholder="AdHeight" min="1" max="8" formControlName="AdHeight" type="number"
+        autocomplete="off">
+      <mat-error *ngIf="myForm.controls.AdHeight.invalid">חובה להכניס אורך</mat-error>
+    </mat-form-field>
+  </div>
+  <div>
+    <mat-form-field appearance="fill">
+      <mat-label>הכנס רוחב</mat-label>
+      <input matInput required placeholder="AdWidth" min="1" max="8" formControlName="AdWidth" type="number"
+        autocomplete="off">
+      <mat-error *ngIf="myForm.controls.AdHeight.invalid">חובה להכניס רוחב</mat-error>
+    </mat-form-field>
+  </div>
+  <div>
+    <mat-form-field>
+      <mat-label> בחר תאריך התחלה</mat-label>
+      <input matInput [matDatepicker]="picker" required  formControlName="AdDateBegin">
+      <mat-datepicker-toggle matSuffix [for]="picker" ></mat-datepicker-toggle>
+      <mat-datepicker #picker ></mat-datepicker>
+      <mat-error *ngIf="myForm.controls.AdDateBegin.invalid">חובה להכניס תאריך התחלה</mat-error>
+    </mat-form-field>
+  </div>
+  <div>
+    <mat-form-field>
+      <mat-label> בחר תאריך סיום</mat-label>
+      <input matInput [matDatepicker]="picker1" required  formControlName="AdDateEnd">
+      <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+      <mat-datepicker #picker1></mat-datepicker>
+      <mat-error *ngIf="myForm.controls.AdDateEnd.invalid">חובה להכניס תאריך סיום</mat-error>
+    </mat-form-field>
+  </div>
+  <mat-form-field >
+      <!-- <mat-label> בחר קטגוריה</mat-label> -->
+      <!-- <input matInput >  -->
+      <mat-select  name="subject" required   autocomplete="off" placeholder="בחר קטגוריה" formControlName="AdCategory">
+        <mat-option *ngFor="let option of Categorylist" [value]="option.CategoryId"  (click)="selectedCategory(option)">
+          {{option.CategoryName}}
+        </mat-option>
+      </mat-select>
+      <mat-error *ngIf="myForm.controls.AdCategory.invalid">חובה להכניס קטגוריה</mat-error>
+    </mat-form-field>
+    <div >
+      <app-cities (outputName)="ChangeCity($event)" ></app-cities>
+      <mat-form-field >
+          <mat-select name="subject" required autocomplete="off" placeholder="בחר רחוב" formControlName="AdAddress" >
+            <mat-option *ngFor="let option of streetarr" [value]="option" >
+              
+             {{option}}
+            </mat-option>
+          </mat-select>
+          <mat-error *ngIf="myForm.controls.AdAddress.invalid">חובה להכניס רחוב</mat-error>
+        </mat-form-field>
+    </div>
+
+    <div><button mat-raised-button color="accent" class="example-button-row" (click)="sendForm()" >שלח לבדיקה</button></div>
+  <!-- <div>
+    <mat-form-field appearance="fill">
+      <mat-label>הכנס שם</mat-label>
+      <input matInput required formControlName="AdUserName" (input)="inputValidator($event)" autocomplete="off">
+      <mat-error *ngIf="myForm.controls.AdUserName.invalid">חובה להכניס שם</mat-error>
+    </mat-form-field>
+  </div> -->
+  <!-- <mat-form-field class="example-full-width">
+    <input type="text" placeholder="בחר קטגוריה" aria-label="Number" matInput name="AdCategory"
+      formControlName="AdCategory" required [matAutocomplete]="auto">
+    <mat-autocomplete #auto="matAutocomplete">
+      <mat-option *ngFor="let option of Categorylist[0]" [value]="option.CategoryId">
+        {{option.CategoryName}}
+      </mat-option>
+    </mat-autocomplete>
+  </mat-form-field> -->
+  <!-- <div class="md-form">
+    <mdb-select-2 placeholder="Choose your option" label="Example label" formControlName="AdCategory"  >
+      <mdb-select-option *ngFor="let option of Categorylist" [value]="option">{{ option.CategoryName }}</mdb-select-option>
+    </mdb-select-2>
+  </div> -->
+  <!-- <div>
+    <div class="form-group">
+      <input type="file" class="form-control-file" id="exampleFormControlFile1"formControlName= "AdFiles" accept="image/*">
+    </div>
+  </div> -->
+</form>
+<!-- <label for="age"> ageCategory:</label> 
+<select>
+  <option *ngFor="let item of categorylist" [value]="item.id" [style.background-color]="item.color"
+      name="age"> {{item.name}}</option>
+ </select> -->
+ <!-- [(ngModel)]="dateb"
+[(ngModel)]="dateE"[(ngModel)]="file" [(ngModel)]="selectedCtegory" --> 

@@ -1,0 +1,5935 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Cities>
+	<record>
+		<City>אבו ג'ווייעד (שבט)</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>אבו גוש</City>
+		<Machoz>1</Machoz>
+	</record>
+	<record>
+		<City>אבו סנאן</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>אבו סריחאן (שבט)</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>אבו עבדון (שבט)</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>אבו עמאר (שבט)</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>אבו עמרה (שבט)</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>אבו קורינאת (יישוב)</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>אבו קורינאת (שבט)</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>אבו רובייעה (שבט)</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>אבו רוקייק (שבט)</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>אבו תלול</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>אבטין</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>אבטליון</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>אביאל</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>אביבים</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>אביגדור</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>אביחיל</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>אביטל</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>אביעזר</City>
+		<Machoz>1</Machoz>
+	</record>
+	<record>
+		<City>אבירים</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>אבן יהודה</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>אבן מנחם</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>אבן ספיר</City>
+		<Machoz>1</Machoz>
+	</record>
+	<record>
+		<City>אבן שמואל</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>אבני איתן</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>אבני חפץ</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>אבנת</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>אבשלום</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>אדורה</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>אדירים</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>אדמית</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>אדרת</City>
+		<Machoz>1</Machoz>
+	</record>
+	<record>
+		<City>אודים</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>אודם</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>אוהד</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>אום אל-פחם</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>אום אל-קוטוף</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>אום בטין</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>אומן</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>אומץ</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>אופקים</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>אור הגנוז</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>אור הנר</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>אור יהודה</City>
+		<Machoz>5</Machoz>
+	</record>
+	<record>
+		<City>אור עקיבא</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>אורה</City>
+		<Machoz>1</Machoz>
+	</record>
+	<record>
+		<City>אורון</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>אורות</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>אורטל</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>אורים</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>אורנים</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>אורנית</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>אושה</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>אזור</City>
+		<Machoz>5</Machoz>
+	</record>
+	<record>
+		<City>אזור אילון מ"א 4</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>אזור אילון מ"א 52</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>אזור אילון של"ש</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>אזור אשדוד מ"א 29</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>אזור אשדוד מ"א 33</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>אזור אשדוד של"ש</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>אזור אשקלון מ"א 36</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>אזור אשקלון מ"א 37</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>אזור באר שבע מ"א 41</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>אזור באר שבע מ"א 51</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>אזור באר שבע של"ש</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>אזור בשור מ"א 38</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>אזור בשור מ"א 39</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>אזור בשור מ"א 42</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>אזור גלילות מ"א 19</City>
+		<Machoz>5</Machoz>
+	</record>
+	<record>
+		<City>אזור גרר מ"א 39</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>אזור גרר מ"א 41</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>אזור גרר מ"א 42</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>אזור זכרון יעקב מ"א 15</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>אזור זכרון יעקב של"ש</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>אזור חדרה מ"א 14</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>אזור חדרה מ"א 15</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>אזור חדרה מ"א 45</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>אזור חדרה של"ש</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>אזור חולון של"ש</City>
+		<Machoz>5</Machoz>
+	</record>
+	<record>
+		<City>אזור חיפה מ"א 12</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>אזור חיפה של"ש</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>אזור חצור מ"א 1</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>אזור חצור מ"א 55</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>אזור חצור של"ש</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>אזור יחיעם מ"א 2</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>אזור יחיעם מ"א 4</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>אזור יחיעם מ"א 52</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>אזור יחיעם מ"א 56</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>אזור יחיעם של"ש</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>אזור ים המלח מ"א 51</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>אזור יקנעם מ"א 13</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>אזור יקנעם מ"א 9</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>אזור כינרות מ"א 3</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>אזור כנרות מ"א 1</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>אזור כנרות מ"א 6</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>אזור כנרות של"ש</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>אזור כרמיאל מ"א 2</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>אזור כרמיאל מ"א 56</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>אזור כרמיאל של"ש</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>אזור לכיש מ"א 34</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>אזור לכיש מ"א 35</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>אזור לכיש מ"א 41</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>אזור לכיש מ"א 50</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>אזור מודיעין מ"א 25</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>אזור מודיעין מ"א 30</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>אזור מודיעין של"ש</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>אזור מלאכי מ"א 33</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>אזור מלאכי מ"א 34</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>אזור מלאכי מ"א 35</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>אזור מלאכי מ"א 50</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>אזור נהרייה מ"א 4</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>אזור נהרייה של"ש</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>אזור עכו מ"א 4</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>אזור עכו מ"א 56</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>אזור עכו של"ש</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>אזור פתח תקווה מ"א 20</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>אזור פתח תקווה מ"א 25</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>אזור פתח תקווה של"ש</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>אזור ראשל"צ מ"א 27</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>אזור ראשל"צ של"ש</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>אזור רחובות מ"א 28</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>אזור רחובות מ"א 29</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>אזור רחובות מ"א 30</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>אזור רחובות מ"א 31</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>אזור רחובות מ"א 32</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>אזור רחובות של"ש</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>אזור רמלה מ"א 25</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>אזור רמלה מ"א 30</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>אזור רמלה מ"א 40</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>אזור רמלה של"ש</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>אזור רמת גן של"ש</City>
+		<Machoz>5</Machoz>
+	</record>
+	<record>
+		<City>אזור שפרעם מ"א 56</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>אזור שפרעם מ"א 9</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>אזור שפרעם של"ש</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>אזור תל אביב של"ש</City>
+		<Machoz>5</Machoz>
+	</record>
+	<record>
+		<City>אזור תעסוקה משגב(תרדיון)</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>אזור תעשיה אכסאל מ"א 9</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>אזור תעשייה אכזיב (מילואות)</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>אזור תעשייה נעמן (מילואות)</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>אחווה</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>אחוזם</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>אחוזת ברק</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>אחיהוד</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>אחיטוב</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>אחיסמך</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>אחיעזר</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>אטרש (שבט)</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>איבים</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>אייל</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>איילת השחר</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>אילון</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>אילון תבור*</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>אילות</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>אילנייה</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>אילת</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>אירוס</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>איתמר</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>איתן</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>איתנים</City>
+		<Machoz>1</Machoz>
+	</record>
+	<record>
+		<City>אכסאל</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>אל -עזי</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>אל -עריאן</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>אל -רום</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>אל סייד</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>אלומה</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>אלומות</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>אלון הגליל</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>אלון מורה</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>אלון שבות</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>אלוני אבא</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>אלוני הבשן</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>אלוני יצחק</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>אלונים</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>אלי-עד</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>אליאב</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>אליכין</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>אליפז</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>אליפלט</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>אליקים</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>אלישיב</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>אלישמע</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>אלמגור</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>אלמוג</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>אלעד</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>אלעזר</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>אלפי מנשה</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>אלקוש</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>אלקנה</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>אמונים</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>אמירים</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>אמנון</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>אמציה</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>אניעם</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>אסד (שבט)</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>אספר</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>אעבלין</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>אעצם (שבט)</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>אפיניש (שבט)</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>אפיק</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>אפיקים</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>אפק</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>אפרת</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>ארבל</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>ארגמן</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>ארז</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>אריאל</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>ארסוף</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>אשבול</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>אשבל</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>אשדוד</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>אשדות יעקב (איחוד)</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>אשדות יעקב (מאוחד)</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>אשחר</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>אשכולות</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>אשל הנשיא</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>אשלים</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>אשקלון</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>אשרת</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>אשתאול</City>
+		<Machoz>1</Machoz>
+	</record>
+	<record>
+		<City>באקה אל-גרביה</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>באר אורה</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>באר גנים</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>באר טוביה</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>באר יעקב</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>באר מילכה</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>באר שבע</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>בארות יצחק</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>בארותיים</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>בארי</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>בוסתן הגליל</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>בועיינה-נוג'ידאת</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>בוקעאתא</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>בורגתה</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>בחן</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>בטחה</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>בי"ס אזורי מקיף (אשר)</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>ביצרון</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>ביר אל-מכסור</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>ביר הדאג'</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>בירייה</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>בית אורן</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>בית אל</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>בית אלעזרי</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>בית אלפא</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>בית אריה-עופרים</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>בית ברל</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>בית ג'ן</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>בית גוברין</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>בית גמליאל</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>בית דגן</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>בית הגדי</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>בית הלוי</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>בית הלל</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>בית העמק</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>בית הערבה</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>בית השיטה</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>בית זיד</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>בית זית</City>
+		<Machoz>1</Machoz>
+	</record>
+	<record>
+		<City>בית זרע</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>בית חולים פוריה</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>בית חורון</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>בית חירות</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>בית חלקיה</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>בית חנן</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>בית חנניה</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>בית חשמונאי</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>בית יהושע</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>בית יוסף</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>בית ינאי</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>בית יצחק-שער חפר</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>בית לחם הגלילית</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>בית מאיר</City>
+		<Machoz>1</Machoz>
+	</record>
+	<record>
+		<City>בית נחמיה</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>בית ניר</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>בית נקופה</City>
+		<Machoz>1</Machoz>
+	</record>
+	<record>
+		<City>בית עובד</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>בית עוזיאל</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>בית עזרא</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>בית עריף</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>בית צבי</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>בית קמה</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>בית קשת</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>בית רבן</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>בית רימון</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>בית שאן</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>בית שמש</City>
+		<Machoz>1</Machoz>
+	</record>
+	<record>
+		<City>בית שערים</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>בית שקמה</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>ביתן אהרן</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>ביתר עילית</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>בלפוריה</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>בן זכאי</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>בן עמי</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>בן שמן (כפר נוער)</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>בן שמן (מושב)</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>בני ברק</City>
+		<Machoz>5</Machoz>
+	</record>
+	<record>
+		<City>בני דקלים</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>בני דרום</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>בני דרור</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>בני יהודה</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>בני נצרים</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>בני עטרות</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>בני עי"ש</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>בני ציון</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>בני ראם</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>בניה</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>בנימינה-גבעת עדה*</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>בסמ"ה</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>בסמת טבעון</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>בענה</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>בצרה</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>בצת</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>בקוע</City>
+		<Machoz>1</Machoz>
+	</record>
+	<record>
+		<City>בקעות</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>בקעת נטופה מ"א 56</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>בקעת תירען מ"א 3</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>בר-לב</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>בר גיורא</City>
+		<Machoz>1</Machoz>
+	</record>
+	<record>
+		<City>בר יוחאי</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>ברוכין</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>ברור חיל</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>ברוש</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>ברכה</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>ברכיה</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>ברעם</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>ברק</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>ברקאי</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>ברקן</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>ברקת</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>בת הדר</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>בת חן</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>בת חפר</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>בת ים</City>
+		<Machoz>5</Machoz>
+	</record>
+	<record>
+		<City>בת עין</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>בת שלמה</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>בתי זיקוק - קישון</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>ג'דיידה-מכר</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>ג'ולס</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>ג'לג'וליה</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>ג'נאביב (שבט)</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>ג'סר א-זרקא</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>ג'ש (גוש חלב)</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>ג'ת</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>גאולי תימן</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>גאולים</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>גאון הירדן מ"א 3</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>גאליה</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>גבולות</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>גבים</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>גבע</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>גבע בנימין</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>גבע כרמל</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>גבעולים</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>גבעון החדשה</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>גבעות בר</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>גבעת אבני</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>גבעת אלה</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>גבעת ברנר</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>גבעת השלושה</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>גבעת זאב</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>גבעת ח"ן</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>גבעת חביבה</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>גבעת חיים (איחוד)</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>גבעת חיים (מאוחד)</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>גבעת יואב</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>גבעת יערים</City>
+		<Machoz>1</Machoz>
+	</record>
+	<record>
+		<City>גבעת ישעיהו</City>
+		<Machoz>1</Machoz>
+	</record>
+	<record>
+		<City>גבעת כ"ח</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>גבעת ניל"י</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>גבעת עוז</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>גבעת שמואל</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>גבעת שמש</City>
+		<Machoz>1</Machoz>
+	</record>
+	<record>
+		<City>גבעת שפירא</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>גבעתי</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>גבעתיים</City>
+		<Machoz>5</Machoz>
+	</record>
+	<record>
+		<City>גברעם</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>גבת</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>גדות</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>גדיש</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>גדעונה</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>גדרה</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>גולן דרומי מ"א 71</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>גולן צפוני מ"א 71</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>גולן תיכון מ"א 71</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>גונן</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>גורן</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>גורנות הגליל</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>גזית</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>גזר</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>גיאה</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>גיבתון</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>גיזו</City>
+		<Machoz>1</Machoz>
+	</record>
+	<record>
+		<City>גילון</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>גילת</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>גינוסר</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>גיניגר</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>גינתון</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>גיתה</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>גיתית</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>גלאון</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>גלגל</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>גליל ים</City>
+		<Machoz>5</Machoz>
+	</record>
+	<record>
+		<City>גליל עליון מז מ"א 1</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>גליל עליון מז מ"א 2</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>גליל עליון מז מ"א 55</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>גליל עליון מז של"ש</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>גליל תחתון מז מ"א 2</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>גליל תחתון מז מ"א 3</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>גליל תחתון מז מ"א 6</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>גליל תחתון מז של"ש</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>גלעד (אבן יצחק)</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>גמ"ל מחוז דרום</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>גמזו</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>גן הדרום</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>גן השומרון</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>גן חיים</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>גן יאשיה</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>גן יבנה</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>גן נר</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>גן שורק</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>גן שלמה</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>גן שמואל</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>גנות</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>גנות הדר</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>גני הדר</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>גני טל</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>גני יוחנן</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>גני מודיעין</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>גני עם</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>גני תקווה</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>געש</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>געתון</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>גפן</City>
+		<Machoz>1</Machoz>
+	</record>
+	<record>
+		<City>גרופית</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>גשור</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>גשר</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>גשר הזיו</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>גת (קיבוץ)</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>גת רימון</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>דאלית אל-כרמל</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>דבורה</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>דבורייה</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>דבירה</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>דברת</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>דגניה א'</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>דגניה ב'</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>דוב"ב</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>דולב</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>דור</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>דורות</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>דחי</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>דייר אל-אסד</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>דייר חנא</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>דייר ראפאת</City>
+		<Machoz>1</Machoz>
+	</record>
+	<record>
+		<City>דימונה</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>דישון</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>דלייה</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>דלתון</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>דלתון</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>דמיידה</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>דן</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>דפנה</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>דקל</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>דרום השרון מ"א 18</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>דרום השרון מ"א 20</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>דרום השרון של"ש</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>דרום יהודה</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>דריג'את</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>האון</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>הבונים</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>הגושרים</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>הדר עם</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>הוד השרון</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>הודיות</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>הודייה</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>הוואשלה (שבט)</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>הוזייל (שבט)</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>הושעיה</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>הזורע</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>הזורעים</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>החותרים</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>היוגב</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>הילה</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>המעפיל</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>המרכז למחקר-נחל שורק</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>הסוללים</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>העוגן</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>הערבה מ"א 51</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>הערבה מ"א 53</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>הערבה מ"א 54</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>הר אדר</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>הר אלכסנדר מ"א 14</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>הר אלכסנדר מ"א 45</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>הר אלכסנדר של"ש</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>הר גילה</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>הר הנגב הדרומי מ"א 48</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>הר הנגב הדרומי מ"א 53</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>הר הנגב הדרומי מ"א 54</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>הר הנגב הצפוני מ"א 48</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>הר הנגב הצפוני מ"א 51</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>הר הנגב הצפוני מ"א 53</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>הר הנגב הצפוני מ"א 54</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>הר עמשא</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>הראל</City>
+		<Machoz>1</Machoz>
+	</record>
+	<record>
+		<City>הרדוף</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>הרי יהודה מ"א 26</City>
+		<Machoz>1</Machoz>
+	</record>
+	<record>
+		<City>הרי יהודה של"ש</City>
+		<Machoz>1</Machoz>
+	</record>
+	<record>
+		<City>הרי נצרת-תירען</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>הרי נצרת-תירען מ"א 9</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>הרצלייה</City>
+		<Machoz>5</Machoz>
+	</record>
+	<record>
+		<City>הררית</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>השומרון</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>ורד יריחו</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>ורדון</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>זבארגה (שבט)</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>זבדיאל</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>זוהר</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>זיקים</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>זיתן</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>זכרון יעקב</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>זכריה</City>
+		<Machoz>1</Machoz>
+	</record>
+	<record>
+		<City>זמר</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>זמרת</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>זנוח</City>
+		<Machoz>1</Machoz>
+	</record>
+	<record>
+		<City>זרועה</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>זרזיר</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>זרחיה</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>ח'ואלד</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>ח'ואלד (שבט)</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>חבצלת השרון</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>חבר</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>חגור</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>חגי</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>חגלה</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>חד-נס</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>חדיד</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>חדרה</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>חוג'ייראת (ד'הרה) (שבט)</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>חולדה</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>חולון</City>
+		<Machoz>5</Machoz>
+	</record>
+	<record>
+		<City>חולית</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>חולתה</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>חוסן</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>חוסנייה</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>חוף הכרמל מ"א 15</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>חופית</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>חוקוק</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>חורה</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>חורפיש</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>חורשים</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>חזון</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>חיבת ציון</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>חיננית</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>חיפה</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>חירות</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>חלוץ</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>חלץ</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>חמ"ד</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>חמאם</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>חמדיה</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>חמדת</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>חמרה</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>חניאל</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>חניתה</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>חנתון</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>חספין</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>חפץ חיים</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>חפצי-בה</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>חצב</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>חצבה</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>חצור-אשדוד</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>חצור הגלילית</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>חצרים</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>חרב לאת</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>חרוצים</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>חריש</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>חרמון מ"א 71</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>חרמש</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>חרשים</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>חשמונאים</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>טבריה</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>טובא-זנגרייה</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>טורעאן</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>טייבה</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>טייבה (בעמק)</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>טירה</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>טירת יהודה</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>טירת כרמל</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>טירת צבי</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>טל-אל</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>טל שחר</City>
+		<Machoz>1</Machoz>
+	</record>
+	<record>
+		<City>טללים</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>טלמון</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>טמרה</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>טמרה (יזרעאל)</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>טנא</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>טפחות</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>יאנוח-ג'ת</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>יבול</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>יבנאל</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>יבנה</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>יגור</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>יגל</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>יד בנימין</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>יד השמונה</City>
+		<Machoz>1</Machoz>
+	</record>
+	<record>
+		<City>יד חנה</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>יד מרדכי</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>יד נתן</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>יד רמב"ם</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>ידידה</City>
+		<Machoz>1</Machoz>
+	</record>
+	<record>
+		<City>יהוד</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>יהל</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>יובל</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>יובלים</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>יודפת</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>יונתן</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>יושיביה</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>יזרעאל</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>יחיעם</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>יטבתה</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>ייט"ב</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>יכיני</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>ים המלח - בתי מלון</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>ינוב</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>ינון</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>יסוד המעלה</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>יסודות</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>יסעור</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>יעד</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>יעל</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>יעף</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>יערה</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>יערות גבעת המורה מ"א 9</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>יפיע</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>יפית</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>יפעת</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>יפתח</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>יצהר</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>יציץ</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>יקום</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>יקיר</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>יקנעם (מושבה)</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>יקנעם עילית</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>יראון</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>ירדנה</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>ירוחם</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>ירושלים</City>
+		<Machoz>1</Machoz>
+	</record>
+	<record>
+		<City>ירחיב</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>ירכא</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>ירקונה</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>ישע</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>ישעי</City>
+		<Machoz>1</Machoz>
+	</record>
+	<record>
+		<City>ישרש</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>יתד</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>כאבול</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>כאוכב אבו אל-היג'א</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>כברי</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>כדורי</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>כדיתה</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>כוכב השחר</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>כוכב יאיר</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>כוכב יעקב</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>כוכב מיכאל</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>כורזים</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>כחל</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>כחלה</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>כיסופים</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>כישור</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>כליל</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>כלנית</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>כמאנה</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>כמהין</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>כמון</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>כנות</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>כנף</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>כנרת (מושבה)</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>כנרת (קבוצה)</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>כסיפה</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>כסלון</City>
+		<Machoz>1</Machoz>
+	</record>
+	<record>
+		<City>כסרא-סמיע</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>כעביה-טבאש-חג'אג'רה</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>כפר אביב</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>כפר אדומים</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>כפר אוריה</City>
+		<Machoz>1</Machoz>
+	</record>
+	<record>
+		<City>כפר אחים</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>כפר ביאליק</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>כפר ביל"ו</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>כפר בלום</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>כפר בן נון</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>כפר ברא</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>כפר ברוך</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>כפר גדעון</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>כפר גלים</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>כפר גליקסון</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>כפר גלעדי</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>כפר דניאל</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>כפר האורנים</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>כפר החורש</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>כפר המכבי</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>כפר הנגיד</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>כפר הנוער הדתי</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>כפר הנשיא</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>כפר הס</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>כפר הרא"ה</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>כפר הרי"ף</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>כפר ויתקין</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>כפר ורבורג</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>כפר ורדים</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>כפר זוהרים</City>
+		<Machoz>1</Machoz>
+	</record>
+	<record>
+		<City>כפר זיתים</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>כפר חב"ד</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>כפר חושן</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>כפר חיטים</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>כפר חיים</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>כפר חנניה</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>כפר חסידים א'</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>כפר חסידים ב'</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>כפר חרוב</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>כפר טרומן</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>כפר יאסיף</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>כפר ידידיה</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>כפר יהושע</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>כפר יונה</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>כפר יחזקאל</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>כפר יעבץ</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>כפר כמא</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>כפר כנא</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>כפר מונש</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>כפר מימון</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>כפר מל"ל</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>כפר מנדא</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>כפר מנחם</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>כפר מסריק</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>כפר מצר</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>כפר מרדכי</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>כפר נטר</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>כפר סאלד</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>כפר סבא</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>כפר סילבר</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>כפר סירקין</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>כפר עבודה</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>כפר עזה</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>כפר עציון</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>כפר פינס</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>כפר קאסם</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>כפר קיש</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>כפר קרע</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>כפר ראש הנקרה</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>כפר רוזנואלד (זרעית)</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>כפר רופין</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>כפר רות</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>כפר שמאי</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>כפר שמואל</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>כפר שמריהו</City>
+		<Machoz>5</Machoz>
+	</record>
+	<record>
+		<City>כפר תבור</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>כפר תפוח</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>כרכום</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>כרם בן זמרה</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>כרם בן שמן</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>כרם יבנה (ישיבה)</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>כרם מהר"ל</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>כרם שלום</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>כרמי יוסף</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>כרמי צור</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>כרמי קטיף</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>כרמיאל</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>כרמייה</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>כרמים</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>כרמל</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>לבון</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>לביא</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>לבנים</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>להב</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>להבות הבשן</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>להבות חביבה</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>להבים</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>לוד</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>לוזית</City>
+		<Machoz>1</Machoz>
+	</record>
+	<record>
+		<City>לוחמי הגיטאות</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>לוטם</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>לוטן</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>לימן</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>לכיש</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>לפיד</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>לפידות</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>לקיה</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>מאור</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>מאיר שפיה</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>מבוא ביתר</City>
+		<Machoz>1</Machoz>
+	</record>
+	<record>
+		<City>מבוא דותן</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>מבוא חורון</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>מבוא חמה</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>מבוא מודיעים</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>מבואות ים</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>מבואות יריחו</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>מבועים</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>מבטחים</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>מבקיעים</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>מבשרת ציון</City>
+		<Machoz>1</Machoz>
+	</record>
+	<record>
+		<City>מג'ד אל-כרום</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>מג'דל שמס</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>מגאר</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>מגדים</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>מגדל</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>מגדל העמק</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>מגדל עוז</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>מגדל תפן</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>מגדלים</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>מגידו</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>מגל</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>מגן</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>מגן שאול</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>מגשימים</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>מדרך עוז</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>מדרשת בן גוריון</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>מדרשת רופין</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>מודיעין-מכבים-רעות*</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>מודיעין עילית</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>מולדת</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>מוצא עילית</City>
+		<Machoz>1</Machoz>
+	</record>
+	<record>
+		<City>מוקייבלה</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>מורן</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>מורשת</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>מזור</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>מזכרת בתיה</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>מזרח השרון מ"א 16</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>מזרח השרון מ"א 18</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>מזרע</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>מזרעה</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>מחולה</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>מחנה הילה*</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>מחנה טלי*</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>מחנה יהודית*</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>מחנה יוכבד*</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>מחנה יפה*</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>מחנה יתיר</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>מחנה מרים*</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>מחנה תל נוף*</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>מחניים</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>מחסיה</City>
+		<Machoz>1</Machoz>
+	</record>
+	<record>
+		<City>מטולה</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>מטע</City>
+		<Machoz>1</Machoz>
+	</record>
+	<record>
+		<City>מי עמי</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>מיטב</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>מייסר</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>מיצר</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>מירב</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>מירון</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>מישר</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>מיתר</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>מכורה</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>מכחול</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>מכמורת</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>מכמנים</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>מלאה</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>מלילות</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>מלכייה</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>מלכישוע</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>מנוחה</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>מנוף</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>מנות</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>מנחמיה</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>מנרה</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>מנשית זבדה</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>מסד</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>מסדה</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>מסילות</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>מסילת ציון</City>
+		<Machoz>1</Machoz>
+	</record>
+	<record>
+		<City>מסלול</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>מסעדה</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>מסעודין אל-עזאזמה (שבט)</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>מעברות</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>מעגלים</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>מעגן</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>מעגן מיכאל</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>מעוז חיים</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>מעון</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>מעונה</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>מעיין ברוך</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>מעיין צבי</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>מעיליא</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>מעלה אדומים</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>מעלה אפרים</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>מעלה גלבוע</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>מעלה גמלא</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>מעלה החמישה</City>
+		<Machoz>1</Machoz>
+	</record>
+	<record>
+		<City>מעלה לבונה</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>מעלה מכמש</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>מעלה עירון</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>מעלה עמוס</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>מעלה שומרון</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>מעלות-תרשיחא</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>מענית</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>מערב השרון מ"א 16</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>מערב השרון מ"א 18</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>מערב השרון מ"א 19</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>מעש</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>מפלסים</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>מפעלי אבשלו"ם</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>מפעלי ברקן</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>מפעלי גליל עליון</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>מפעלי גרנות</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>מפעלי העמק (יזרעאל)</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>מפעלי חבל מודיעים</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>מפעלי חפר</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>מפעלי ים המלח(סדום)</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>מפעלי כנות</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>מפעלי מישור רותם</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>מפעלי מעון</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>מפעלי נחם הרטוב</City>
+		<Machoz>1</Machoz>
+	</record>
+	<record>
+		<City>מפעלי צומת מלאכי</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>מפעלי צין - ערבה</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>מפעלי צמח</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>מפעלי שאן</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>מצדות יהודה</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>מצובה</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>מצליח</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>מצפה</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>מצפה אבי"ב</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>מצפה אילן</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>מצפה יריחו</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>מצפה נטופה</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>מצפה רמון</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>מצפה שלם</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>מצר</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>מקווה ישראל</City>
+		<Machoz>5</Machoz>
+	</record>
+	<record>
+		<City>מרגליות</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>מרום גולן</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>מרחב עם</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>מרחביה (מושב)</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>מרחביה (קיבוץ)</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>מרכז אזורי כדורי</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>מרכז אזורי מרום הגליל</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>מרכז אזורי משגב</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>מרכז אזורי שוהם</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>מרכז כ"ח</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>מרכז מיר"ב*</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>מרכז שפירא</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>משאבי שדה</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>משגב דב</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>משגב עם</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>משהד</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>משואה</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>משואות יצחק</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>משכיות</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>משמר איילון</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>משמר דוד</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>משמר הירדן</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>משמר הנגב</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>משמר העמק</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>משמר השבעה</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>משמר השרון</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>משמרות</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>משמרת</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>משען</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>מתן</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>מתת</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>מתתיהו</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>נאות גולן</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>נאות הכיכר</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>נאות חובב</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>נאות מרדכי</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>נאות סמדר</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>נאעורה</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>נבטים</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>נגבה</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>נגוהות</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>נהורה</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>נהלל</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>נהרייה</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>נוב</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>נוגה</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>נווה</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>נווה אבות</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>נווה אור</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>נווה אטי"ב</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>נווה אילן</City>
+		<Machoz>1</Machoz>
+	</record>
+	<record>
+		<City>נווה אילן*</City>
+		<Machoz>1</Machoz>
+	</record>
+	<record>
+		<City>נווה איתן</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>נווה דניאל</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>נווה זוהר</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>נווה זיו</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>נווה חריף</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>נווה ים</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>נווה ימין</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>נווה ירק</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>נווה מבטח</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>נווה מיכאל</City>
+		<Machoz>1</Machoz>
+	</record>
+	<record>
+		<City>נווה צוף</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>נווה שלום</City>
+		<Machoz>1</Machoz>
+	</record>
+	<record>
+		<City>נועם</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>נוף איילון</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>נוף הגליל</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>נופים</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>נופית</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>נופך</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>נוקדים</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>נורדייה</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>נורית</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>נחושה</City>
+		<Machoz>1</Machoz>
+	</record>
+	<record>
+		<City>נחל יפתחאל מ"א 3</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>נחל עוז</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>נחל תבור מ"א 8</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>נחלה</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>נחליאל</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>נחלים</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>נחם</City>
+		<Machoz>1</Machoz>
+	</record>
+	<record>
+		<City>נחף</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>נחשולים</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>נחשון</City>
+		<Machoz>1</Machoz>
+	</record>
+	<record>
+		<City>נחשונים</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>נטועה</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>נטור</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>נטע</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>נטעים</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>נטף</City>
+		<Machoz>1</Machoz>
+	</record>
+	<record>
+		<City>ניין</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>ניל"י</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>ניצן</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>ניצן ב'</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>ניצנה (קהילת חינוך)</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>ניצני סיני</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>ניצני עוז</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>ניצנים</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>ניר אליהו</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>ניר בנים</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>ניר גלים</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>ניר דוד (תל עמל)</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>ניר ח"ן</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>ניר יפה</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>ניר יצחק</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>ניר ישראל</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>ניר משה</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>ניר עוז</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>ניר עם</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>ניר עציון</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>ניר עקיבא</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>ניר צבי</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>נירים</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>נירית</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>נמל תעופה בן-גוריון</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>נמרוד</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>נס הרים</City>
+		<Machoz>1</Machoz>
+	</record>
+	<record>
+		<City>נס עמים</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>נס ציונה</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>נעורים</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>נעלה</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>נעמ"ה</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>נען</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>נערן</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>נפת בית לחם</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>נפת בית לחם מ"א 76</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>נפת ג'נין  </City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>נפת ג'נין  מ"א 72</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>נפת חברון</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>נפת חברון מ"א 78</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>נפת טול כרם</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>נפת טול כרם  מ"א 72</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>נפת ירדן</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>נפת ירדן מ"א 74</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>נפת ירדן מ"א 75</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>נפת ראמאללה </City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>נפת ראמאללה מ"א  73</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>נפת שכם</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>נפת שכם מ"א 72</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>נצאצרה (שבט)</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>נצר חזני</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>נצר סרני</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>נצרת</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>נשר</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>נתיב הגדוד</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>נתיב הל"ה</City>
+		<Machoz>1</Machoz>
+	</record>
+	<record>
+		<City>נתיב העשרה</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>נתיב השיירה</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>נתיבות</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>נתניה</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>סאג'ור</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>סאסא</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>סביון*</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>סגולה</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>סואעד (חמרייה)*</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>סואעד (כמאנה) (שבט)</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>סולם</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>סוסיה</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>סופה</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>סח'נין</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>סייד (שבט)</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>סלמה</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>סלעית</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>סמר</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>סנסנה</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>סעד</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>סעוה</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>סער</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>ספיר</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>סתרייה</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>ע'ג'ר</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>עבדון</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>עברון</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>עגור</City>
+		<Machoz>1</Machoz>
+	</record>
+	<record>
+		<City>עד הלום</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>עדי</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>עדנים</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>עוזה</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>עוזייר</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>עולש</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>עומר</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>עופר</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>עוצם</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>עוקבי (בנו עוקבה) (שבט)</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>עזוז</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>עזר</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>עזריאל</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>עזריה</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>עזריקם</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>עטאוונה (שבט)</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>עטרת</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>עידן</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>עידן הנגב</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>עיילבון</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>עיינות</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>עילוט</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>עין איילה</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>עין אל-אסד</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>עין גב</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>עין גדי</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>עין דור</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>עין הבשור</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>עין הוד</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>עין החורש</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>עין המפרץ</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>עין הנצי"ב</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>עין העמק</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>עין השופט</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>עין השלושה</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>עין ורד</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>עין זיוון</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>עין חוד</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>עין חצבה</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>עין חרוד (איחוד)</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>עין חרוד (מאוחד)</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>עין יהב</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>עין יעקב</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>עין כרם-בי"ס חקלאי</City>
+		<Machoz>1</Machoz>
+	</record>
+	<record>
+		<City>עין כרמל</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>עין מאהל</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>עין נקובא</City>
+		<Machoz>1</Machoz>
+	</record>
+	<record>
+		<City>עין עירון</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>עין צורים</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>עין קנייא</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>עין ראפה</City>
+		<Machoz>1</Machoz>
+	</record>
+	<record>
+		<City>עין שמר</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>עין שריד</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>עין תמר</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>עינת</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>עיר אובות</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>עכו</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>עלומים</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>עלי</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>עלי זהב</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>עלמה</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>עלמון</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>עמוקה</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>עמיחי</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>עמינדב</City>
+		<Machoz>1</Machoz>
+	</record>
+	<record>
+		<City>עמיעד</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>עמיעוז</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>עמיקם</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>עמיר</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>עמנואל</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>עמק בית שאן מ"א 7</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>עמק בית שאן של"ש</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>עמק חולה מ"א 1</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>עמק חולה מ"א 55</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>עמק חולה של"ש</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>עמק חפר מזרח מ"א 16</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>עמק חרוד מ"א 8</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>עמק חרוד של"ש</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>עמק יזרעאל מ"א 13</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>עמק יזרעאל מ"א 8</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>עמק יזרעאל מ"א 9</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>עמקה</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>ענב</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>עספיא</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>עפולה</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>עפרה</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>עץ אפרים</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>עצמון שגב</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>עראבה</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>עראמשה*</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>ערב אל נעים</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>ערד</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>ערוגות</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>ערערה</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>ערערה-בנגב</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>עשרת</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>עתלית</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>עתניאל</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>פארן</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>פארק הירדן מ"א 6</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>פארק תעשיות ספירים</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>פדואל</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>פדויים</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>פדיה</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>פוריידיס</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>פורייה - כפר עבודה</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>פורייה - נווה עובד</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>פורייה עילית</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>פורת</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>פטיש</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>פלך</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>פלמחים</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>פני חבר</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>פסגות</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>פסוטה</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>פעמי תש"ז</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>פצאל</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>פקיעין (בוקייעה)</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>פקיעין חדשה</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>פרדס חנה-כרכור</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>פרדסייה</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>פרוד</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>פרזון</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>פרי גן</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>פתח תקווה</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>פתחיה</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>צאלים</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>צביה</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>צבעון</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>צובה</City>
+		<Machoz>1</Machoz>
+	</record>
+	<record>
+		<City>צוחר</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>צופייה</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>צופים</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>צופית</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>צופר</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>צוקי ים</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>צוקים</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>צור הדסה</City>
+		<Machoz>1</Machoz>
+	</record>
+	<record>
+		<City>צור יצחק</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>צור משה</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>צור נתן</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>צוריאל</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>צורית</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>ציפורי</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>צלפון</City>
+		<Machoz>1</Machoz>
+	</record>
+	<record>
+		<City>צנדלה</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>צפרייה</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>צפרירים</City>
+		<Machoz>1</Machoz>
+	</record>
+	<record>
+		<City>צפת</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>צרופה</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>צרעה</City>
+		<Machoz>1</Machoz>
+	</record>
+	<record>
+		<City>קבועה (שבט)</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>קבוצת יבנה</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>קדומים</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>קדימה-צורן</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>קדמה</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>קדמת צבי</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>קדר</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>קדרון</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>קדרים</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>קודייראת א-צאנע (שבט)</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>קוואעין (שבט)</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>קוממיות</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>קורנית</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>קטורה</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>קיסריה</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>קלחים</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>קליה</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>קלנסווה</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>קלע</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>קציר</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>קצר א-סר</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>קצרין</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>קריית אונו</City>
+		<Machoz>5</Machoz>
+	</record>
+	<record>
+		<City>קריית ארבע</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>קריית אתא</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>קריית ביאליק</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>קריית גת</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>קריית חינוך מרחבים*</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>קריית טבעון</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>קריית ים</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>קריית יערים</City>
+		<Machoz>1</Machoz>
+	</record>
+	<record>
+		<City>קריית יערים (מוסד)</City>
+		<Machoz>1</Machoz>
+	</record>
+	<record>
+		<City>קריית מוצקין</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>קריית מלאכי</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>קריית נטפים</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>קריית ענבים</City>
+		<Machoz>1</Machoz>
+	</record>
+	<record>
+		<City>קריית עקרון</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>קריית שלמה</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>קריית שמונה</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>קרית חינוך עזתה</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>קרית תעופה</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>קרני שומרון</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>קשת</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>ראמה</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>ראס אל-עין</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>ראס עלי</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>ראש העין</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>ראש פינה</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>ראש צורים</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>ראשון לציון</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>רבבה</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>רבדים</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>רביבים</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>רביד</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>רגבה</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>רגבים</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>רהט</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>רווחה</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>רוויה</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>רוח מדבר</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>רוחמה</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>רומאנה</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>רומת הייב</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>רועי</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>רותם</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>רחוב</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>רחובות</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>רחלים</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>ריחאנייה</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>ריחן</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>ריינה</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>רימונים</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>רינתיה</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>רכסים</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>רם-און</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>רמות</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>רמות השבים</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>רמות מאיר</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>רמות מנשה</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>רמות נפתלי</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>רמלה</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>רמת גן</City>
+		<Machoz>5</Machoz>
+	</record>
+	<record>
+		<City>רמת דוד</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>רמת הכובש</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>רמת השופט</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>רמת השרון</City>
+		<Machoz>5</Machoz>
+	</record>
+	<record>
+		<City>רמת יוחנן</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>רמת ישי</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>רמת כוכב מ"א 7</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>רמת כוכב מ"א 8</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>רמת כוכב מ"א 9</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>רמת כוכב של"ש</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>רמת מגשימים</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>רמת מנשה מ"א 13</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>רמת מנשה של"ש</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>רמת צבי</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>רמת רזיאל</City>
+		<Machoz>1</Machoz>
+	</record>
+	<record>
+		<City>רמת רחל</City>
+		<Machoz>1</Machoz>
+	</record>
+	<record>
+		<City>רנן</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>רעים</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>רעננה</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>רקפת</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>רשפון</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>רשפים</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>רתמים</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>שאר ישוב</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>שבי דרום</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>שבי ציון</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>שבי שומרון</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>שבלי - אום אל-גנם</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>שגב-שלום</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>שדה אילן</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>שדה אליהו</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>שדה אליעזר</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>שדה בוקר</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>שדה דוד</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>שדה ורבורג</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>שדה יואב</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>שדה יעקב</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>שדה יצחק</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>שדה משה</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>שדה נחום</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>שדה נחמיה</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>שדה ניצן</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>שדה עוזיהו</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>שדה צבי</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>שדות ים</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>שדות מיכה</City>
+		<Machoz>1</Machoz>
+	</record>
+	<record>
+		<City>שדי אברהם</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>שדי חמד</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>שדי תרומות</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>שדמה</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>שדמות דבורה</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>שדמות מחולה</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>שדרות</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>שואבה</City>
+		<Machoz>1</Machoz>
+	</record>
+	<record>
+		<City>שובה</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>שובל</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>שוהם</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>שומרה</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>שומרייה</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>שוקדה</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>שורש</City>
+		<Machoz>1</Machoz>
+	</record>
+	<record>
+		<City>שורשים</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>שושנת העמקים</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>שזור</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>שחר</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>שחרות</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>שיבולים</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>שיטים</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>שייח' דנון</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>שילה</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>שילת</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>שכניה</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>שלווה</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>שלווה במדבר</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>שלוחות</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>שלומי</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>שלומית</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>שלומציון</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>שמיר</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>שמעה</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>שמרת</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>שמשית</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>שני</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>שניר</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>שעב</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>שעל</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>שעלבים</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>שער אפרים</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>שער הגולן</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>שער העמקים</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>שער מנשה</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>שערי תקווה</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>שפיים</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>שפיר</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>שפלת יהודה מ"א 26</City>
+		<Machoz>1</Machoz>
+	</record>
+	<record>
+		<City>שפלת יהודה של"ש</City>
+		<Machoz>1</Machoz>
+	</record>
+	<record>
+		<City>שפר</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>שפרעם</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>שקד</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>שקף</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>שרונה</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>שריגים (לי-און)</City>
+		<Machoz>1</Machoz>
+	</record>
+	<record>
+		<City>שריד</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>שרשרת</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>שתולה</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>שתולים</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>תאשור</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>תדהר</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>תובל</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>תומר</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>תושייה</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>תימורים</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>תירוש</City>
+		<Machoz>1</Machoz>
+	</record>
+	<record>
+		<City>תל אביב -יפו</City>
+		<Machoz>5</Machoz>
+	</record>
+	<record>
+		<City>תל חי (מכללה)</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>תל יוסף</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>תל יצחק</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>תל מונד</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>תל עדשים</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>תל קציר</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>תל שבע</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>תל תאומים</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>תלם</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>תלמי אליהו</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>תלמי אלעזר</City>
+		<Machoz>3</Machoz>
+	</record>
+	<record>
+		<City>תלמי ביל"ו</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>תלמי יוסף</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>תלמי יחיאל</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>תלמי יפה</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>תלמים</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>תמרת</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>תנובות</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>תעוז</City>
+		<Machoz>1</Machoz>
+	</record>
+	<record>
+		<City>תעשיון בינימין*</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>תעשיון השרון</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>תעשיון חבל יבנה</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>תעשיון חצב*</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>תעשיון מבצע*</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>תעשיון מיתרים</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>תעשיון צריפין</City>
+		<Machoz>4</Machoz>
+	</record>
+	<record>
+		<City>תעשיון ראם*</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>תעשיון שח"ק</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>תעשיות גליל תחתון</City>
+		<Machoz>2</Machoz>
+	</record>
+	<record>
+		<City>תפרח</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>תקומה</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>תקוע</City>
+		<Machoz>7</Machoz>
+	</record>
+	<record>
+		<City>תראבין א-צאנע (שבט)</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>תרבין א-צאנע (יישוב)*</City>
+		<Machoz>6</Machoz>
+	</record>
+	<record>
+		<City>תרום</City>
+		<Machoz>1</Machoz>
+	</record>
+</Cities>

@@ -1,0 +1,7 @@
+<form [formGroup]="myForm">
+    <div class="form-group"><mat-icon>backup</mat-icon>
+    <input type="file" class="form-control-file" id="exampleFormControlFile1" accept="image/*"
+        formControlName="AdFiles" (change)="handleFileInput($event.target.files)">
+    </div>
+</form>
+<button (click)="AddImg()"></button>

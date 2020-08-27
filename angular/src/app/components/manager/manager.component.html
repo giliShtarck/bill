@@ -1,0 +1,18 @@
+<p>
+    <mat-toolbar color="primary">
+        <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+            <mat-icon>assignment_ind</mat-icon>
+        </button>
+        <span>Manager</span>
+        <span class="example-spacer"></span>
+       <a  routerLink="addBillboard" routerLinkActive="Activelink">הוספת לוח</a> <mat-icon id="board">grid_on</mat-icon>
+        <a routerLink="deleteBillBoard" routerLinkActive="Activelink">מחיקת לוח</a><mat-icon id="board">grid_off</mat-icon>
+        <a routerLink="DetailsOfadvertisment" routerLinkActive="Activelink"> פרטים על מודעות</a><mat-icon id="board">add_to_photos</mat-icon>
+       <a  routerLink="DetailsOfBills">פרטים על לוחות</a><mat-icon id="board">add_to_photos</mat-icon>
+      
+        <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+            
+        </button>
+    </mat-toolbar>
+</p>
+<router-outlet></router-outlet>

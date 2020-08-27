@@ -1,0 +1,142 @@
+G:\תכנות גילי\גילי\_____gili stark& dasi fraind\project\ServerProject\DTO\bin\Debug\DTO.dll
+G:\תכנות גילי\גילי\_____gili stark& dasi fraind\project\ServerProject\DTO\bin\Debug\DTO.pdb
+G:\תכנות גילי\גילי\_____gili stark& dasi fraind\project\ServerProject\DTO\bin\Debug\Dal.dll
+G:\תכנות גילי\גילי\_____gili stark& dasi fraind\project\ServerProject\DTO\bin\Debug\EntityFramework.dll
+G:\תכנות גילי\גילי\_____gili stark& dasi fraind\project\ServerProject\DTO\bin\Debug\Dal.pdb
+G:\תכנות גילי\גילי\_____gili stark& dasi fraind\project\ServerProject\DTO\bin\Debug\Dal.dll.config
+G:\תכנות גילי\גילי\_____gili stark& dasi fraind\project\ServerProject\DTO\bin\Debug\EntityFramework.xml
+G:\תכנות גילי\גילי\_____gili stark& dasi fraind\project\ServerProject\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+G:\תכנות גילי\גילי\_____gili stark& dasi fraind\project\ServerProject\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+G:\תכנות גילי\גילי\_____gili stark& dasi fraind\project\ServerProject\DTO\obj\Debug\DTO.csproj.CopyComplete
+G:\תכנות גילי\גילי\_____gili stark& dasi fraind\project\ServerProject\DTO\obj\Debug\DTO.dll
+G:\תכנות גילי\גילי\_____gili stark& dasi fraind\project\ServerProject\DTO\obj\Debug\DTO.pdb
+G:\תכנות גילי\גילי\_____gili stark& dasi fraind\project\ServerProject\DTO\bin\Debug\Newtonsoft.Json.dll
+G:\תכנות גילי\גילי\_____gili stark& dasi fraind\project\ServerProject\DTO\bin\Debug\System.Net.Http.Formatting.dll
+G:\תכנות גילי\גילי\_____gili stark& dasi fraind\project\ServerProject\DTO\bin\Debug\System.Web.Cors.dll
+G:\תכנות גילי\גילי\_____gili stark& dasi fraind\project\ServerProject\DTO\bin\Debug\System.Web.Http.Cors.dll
+G:\תכנות גילי\גילי\_____gili stark& dasi fraind\project\ServerProject\DTO\bin\Debug\System.Web.Http.dll
+G:\תכנות גילי\גילי\_____gili stark& dasi fraind\project\ServerProject\DTO\bin\Debug\Newtonsoft.Json.xml
+G:\תכנות גילי\גילי\_____gili stark& dasi fraind\project\ServerProject\DTO\bin\Debug\System.Net.Http.Formatting.xml
+G:\תכנות גילי\גילי\_____gili stark& dasi fraind\project\ServerProject\DTO\bin\Debug\System.Web.Http.xml
+G:\תכנות גילי\גילי\_____gili stark& dasi fraind\project\ServerProject\DTO\bin\Debug\System.Web.Http.Cors.xml
+G:\תכנות גילי\שנה ב\finall project\_____gili stark& dasi fraind\project\ServerProject\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+G:\תכנות גילי\שנה ב\finall project\_____gili stark& dasi fraind\project\ServerProject\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+G:\תכנות גילי\שנה ב\finall project\_____gili stark& dasi fraind\project\ServerProject\DTO\obj\Debug\DTO.dll
+G:\תכנות גילי\שנה ב\finall project\_____gili stark& dasi fraind\project\ServerProject\DTO\obj\Debug\DTO.pdb
+D:\Users\User\Desktop\Softwares\Dasi studies\Second Year Semester a\finall project\ex\ServerProject\DTO\bin\Debug\DTO.dll
+D:\Users\User\Desktop\Softwares\Dasi studies\Second Year Semester a\finall project\ex\ServerProject\DTO\bin\Debug\DTO.pdb
+D:\Users\User\Desktop\Softwares\Dasi studies\Second Year Semester a\finall project\ex\ServerProject\DTO\bin\Debug\Dal.dll
+D:\Users\User\Desktop\Softwares\Dasi studies\Second Year Semester a\finall project\ex\ServerProject\DTO\bin\Debug\Newtonsoft.Json.dll
+D:\Users\User\Desktop\Softwares\Dasi studies\Second Year Semester a\finall project\ex\ServerProject\DTO\bin\Debug\System.Net.Http.Formatting.dll
+D:\Users\User\Desktop\Softwares\Dasi studies\Second Year Semester a\finall project\ex\ServerProject\DTO\bin\Debug\System.Web.Cors.dll
+D:\Users\User\Desktop\Softwares\Dasi studies\Second Year Semester a\finall project\ex\ServerProject\DTO\bin\Debug\System.Web.Http.Cors.dll
+D:\Users\User\Desktop\Softwares\Dasi studies\Second Year Semester a\finall project\ex\ServerProject\DTO\bin\Debug\System.Web.Http.dll
+D:\Users\User\Desktop\Softwares\Dasi studies\Second Year Semester a\finall project\ex\ServerProject\DTO\bin\Debug\EntityFramework.dll
+D:\Users\User\Desktop\Softwares\Dasi studies\Second Year Semester a\finall project\ex\ServerProject\DTO\bin\Debug\Dal.pdb
+D:\Users\User\Desktop\Softwares\Dasi studies\Second Year Semester a\finall project\ex\ServerProject\DTO\bin\Debug\Dal.dll.config
+D:\Users\User\Desktop\Softwares\Dasi studies\Second Year Semester a\finall project\ex\ServerProject\DTO\bin\Debug\Newtonsoft.Json.xml
+D:\Users\User\Desktop\Softwares\Dasi studies\Second Year Semester a\finall project\ex\ServerProject\DTO\bin\Debug\System.Net.Http.Formatting.xml
+D:\Users\User\Desktop\Softwares\Dasi studies\Second Year Semester a\finall project\ex\ServerProject\DTO\bin\Debug\System.Web.Http.xml
+D:\Users\User\Desktop\Softwares\Dasi studies\Second Year Semester a\finall project\ex\ServerProject\DTO\bin\Debug\System.Web.Http.Cors.xml
+D:\Users\User\Desktop\Softwares\Dasi studies\Second Year Semester a\finall project\ex\ServerProject\DTO\bin\Debug\EntityFramework.xml
+D:\Users\User\Desktop\Softwares\Dasi studies\Second Year Semester a\finall project\ex\ServerProject\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache
+D:\Users\User\Desktop\Softwares\Dasi studies\Second Year Semester a\finall project\ex\ServerProject\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+D:\Users\User\Desktop\Softwares\Dasi studies\Second Year Semester a\finall project\ex\ServerProject\DTO\obj\Debug\DTO.dll
+D:\Users\User\Desktop\Softwares\Dasi studies\Second Year Semester a\finall project\ex\ServerProject\DTO\obj\Debug\DTO.pdb
+D:\Users\User\Desktop\Softwares\Dasi studies\Second Year Semester a\finall project\BillBoard\DTO\bin\Debug\DTO.dll
+D:\Users\User\Desktop\Softwares\Dasi studies\Second Year Semester a\finall project\BillBoard\DTO\bin\Debug\DTO.pdb
+D:\Users\User\Desktop\Softwares\Dasi studies\Second Year Semester a\finall project\BillBoard\DTO\bin\Debug\Dal.dll
+D:\Users\User\Desktop\Softwares\Dasi studies\Second Year Semester a\finall project\BillBoard\DTO\bin\Debug\Newtonsoft.Json.dll
+D:\Users\User\Desktop\Softwares\Dasi studies\Second Year Semester a\finall project\BillBoard\DTO\bin\Debug\System.Net.Http.Formatting.dll
+D:\Users\User\Desktop\Softwares\Dasi studies\Second Year Semester a\finall project\BillBoard\DTO\bin\Debug\System.Web.Cors.dll
+D:\Users\User\Desktop\Softwares\Dasi studies\Second Year Semester a\finall project\BillBoard\DTO\bin\Debug\System.Web.Http.Cors.dll
+D:\Users\User\Desktop\Softwares\Dasi studies\Second Year Semester a\finall project\BillBoard\DTO\bin\Debug\System.Web.Http.dll
+D:\Users\User\Desktop\Softwares\Dasi studies\Second Year Semester a\finall project\BillBoard\DTO\bin\Debug\EntityFramework.dll
+D:\Users\User\Desktop\Softwares\Dasi studies\Second Year Semester a\finall project\BillBoard\DTO\bin\Debug\Dal.pdb
+D:\Users\User\Desktop\Softwares\Dasi studies\Second Year Semester a\finall project\BillBoard\DTO\bin\Debug\Dal.dll.config
+D:\Users\User\Desktop\Softwares\Dasi studies\Second Year Semester a\finall project\BillBoard\DTO\bin\Debug\Newtonsoft.Json.xml
+D:\Users\User\Desktop\Softwares\Dasi studies\Second Year Semester a\finall project\BillBoard\DTO\bin\Debug\System.Net.Http.Formatting.xml
+D:\Users\User\Desktop\Softwares\Dasi studies\Second Year Semester a\finall project\BillBoard\DTO\bin\Debug\System.Web.Http.xml
+D:\Users\User\Desktop\Softwares\Dasi studies\Second Year Semester a\finall project\BillBoard\DTO\bin\Debug\System.Web.Http.Cors.xml
+D:\Users\User\Desktop\Softwares\Dasi studies\Second Year Semester a\finall project\BillBoard\DTO\bin\Debug\EntityFramework.xml
+D:\Users\User\Desktop\Softwares\Dasi studies\Second Year Semester a\finall project\BillBoard\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache
+D:\Users\User\Desktop\Softwares\Dasi studies\Second Year Semester a\finall project\BillBoard\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+D:\Users\User\Desktop\Softwares\Dasi studies\Second Year Semester a\finall project\BillBoard\DTO\obj\Debug\DTO.dll
+D:\Users\User\Desktop\Softwares\Dasi studies\Second Year Semester a\finall project\BillBoard\DTO\obj\Debug\DTO.pdb
+D:\Users\user\Desktop\Softwares\Dasi studies\Second Year Semester a\BillBoard\BillBoard\DTO\bin\Debug\DTO.dll
+D:\Users\user\Desktop\Softwares\Dasi studies\Second Year Semester a\BillBoard\BillBoard\DTO\bin\Debug\DTO.pdb
+D:\Users\user\Desktop\Softwares\Dasi studies\Second Year Semester a\BillBoard\BillBoard\DTO\bin\Debug\Dal.dll
+D:\Users\user\Desktop\Softwares\Dasi studies\Second Year Semester a\BillBoard\BillBoard\DTO\bin\Debug\Newtonsoft.Json.dll
+D:\Users\user\Desktop\Softwares\Dasi studies\Second Year Semester a\BillBoard\BillBoard\DTO\bin\Debug\System.Net.Http.Formatting.dll
+D:\Users\user\Desktop\Softwares\Dasi studies\Second Year Semester a\BillBoard\BillBoard\DTO\bin\Debug\System.Web.Cors.dll
+D:\Users\user\Desktop\Softwares\Dasi studies\Second Year Semester a\BillBoard\BillBoard\DTO\bin\Debug\System.Web.Http.Cors.dll
+D:\Users\user\Desktop\Softwares\Dasi studies\Second Year Semester a\BillBoard\BillBoard\DTO\bin\Debug\System.Web.Http.dll
+D:\Users\user\Desktop\Softwares\Dasi studies\Second Year Semester a\BillBoard\BillBoard\DTO\bin\Debug\EntityFramework.dll
+D:\Users\user\Desktop\Softwares\Dasi studies\Second Year Semester a\BillBoard\BillBoard\DTO\bin\Debug\Dal.pdb
+D:\Users\user\Desktop\Softwares\Dasi studies\Second Year Semester a\BillBoard\BillBoard\DTO\bin\Debug\Dal.dll.config
+D:\Users\user\Desktop\Softwares\Dasi studies\Second Year Semester a\BillBoard\BillBoard\DTO\bin\Debug\System.Net.Http.Formatting.xml
+D:\Users\user\Desktop\Softwares\Dasi studies\Second Year Semester a\BillBoard\BillBoard\DTO\bin\Debug\System.Web.Http.xml
+D:\Users\user\Desktop\Softwares\Dasi studies\Second Year Semester a\BillBoard\BillBoard\DTO\bin\Debug\System.Web.Http.Cors.xml
+D:\Users\user\Desktop\Softwares\Dasi studies\Second Year Semester a\BillBoard\BillBoard\DTO\bin\Debug\EntityFramework.xml
+D:\Users\user\Desktop\Softwares\Dasi studies\Second Year Semester a\BillBoard\BillBoard\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache
+D:\Users\user\Desktop\Softwares\Dasi studies\Second Year Semester a\BillBoard\BillBoard\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+D:\Users\user\Desktop\Softwares\Dasi studies\Second Year Semester a\BillBoard\BillBoard\DTO\obj\Debug\DTO.dll
+D:\Users\user\Desktop\Softwares\Dasi studies\Second Year Semester a\BillBoard\BillBoard\DTO\obj\Debug\DTO.pdb
+D:\Users\user\Desktop\Softwares\Dasi studies\Second Year Semester a\31.05.2020\BillBoard\BillBoard\DTO\bin\Debug\DTO.dll
+D:\Users\user\Desktop\Softwares\Dasi studies\Second Year Semester a\31.05.2020\BillBoard\BillBoard\DTO\bin\Debug\DTO.pdb
+D:\Users\user\Desktop\Softwares\Dasi studies\Second Year Semester a\31.05.2020\BillBoard\BillBoard\DTO\bin\Debug\Dal.dll
+D:\Users\user\Desktop\Softwares\Dasi studies\Second Year Semester a\31.05.2020\BillBoard\BillBoard\DTO\bin\Debug\Newtonsoft.Json.dll
+D:\Users\user\Desktop\Softwares\Dasi studies\Second Year Semester a\31.05.2020\BillBoard\BillBoard\DTO\bin\Debug\System.Net.Http.Formatting.dll
+D:\Users\user\Desktop\Softwares\Dasi studies\Second Year Semester a\31.05.2020\BillBoard\BillBoard\DTO\bin\Debug\System.Web.Cors.dll
+D:\Users\user\Desktop\Softwares\Dasi studies\Second Year Semester a\31.05.2020\BillBoard\BillBoard\DTO\bin\Debug\System.Web.Http.Cors.dll
+D:\Users\user\Desktop\Softwares\Dasi studies\Second Year Semester a\31.05.2020\BillBoard\BillBoard\DTO\bin\Debug\System.Web.Http.dll
+D:\Users\user\Desktop\Softwares\Dasi studies\Second Year Semester a\31.05.2020\BillBoard\BillBoard\DTO\bin\Debug\EntityFramework.dll
+D:\Users\user\Desktop\Softwares\Dasi studies\Second Year Semester a\31.05.2020\BillBoard\BillBoard\DTO\bin\Debug\Dal.pdb
+D:\Users\user\Desktop\Softwares\Dasi studies\Second Year Semester a\31.05.2020\BillBoard\BillBoard\DTO\bin\Debug\Dal.dll.config
+D:\Users\user\Desktop\Softwares\Dasi studies\Second Year Semester a\31.05.2020\BillBoard\BillBoard\DTO\bin\Debug\Newtonsoft.Json.xml
+D:\Users\user\Desktop\Softwares\Dasi studies\Second Year Semester a\31.05.2020\BillBoard\BillBoard\DTO\bin\Debug\System.Net.Http.Formatting.xml
+D:\Users\user\Desktop\Softwares\Dasi studies\Second Year Semester a\31.05.2020\BillBoard\BillBoard\DTO\bin\Debug\System.Web.Http.xml
+D:\Users\user\Desktop\Softwares\Dasi studies\Second Year Semester a\31.05.2020\BillBoard\BillBoard\DTO\bin\Debug\System.Web.Http.Cors.xml
+D:\Users\user\Desktop\Softwares\Dasi studies\Second Year Semester a\31.05.2020\BillBoard\BillBoard\DTO\bin\Debug\EntityFramework.xml
+D:\Users\user\Desktop\Softwares\Dasi studies\Second Year Semester a\31.05.2020\BillBoard\BillBoard\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache
+D:\Users\user\Desktop\Softwares\Dasi studies\Second Year Semester a\31.05.2020\BillBoard\BillBoard\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+D:\Users\user\Desktop\Softwares\Dasi studies\Second Year Semester a\31.05.2020\BillBoard\BillBoard\DTO\obj\Debug\DTO.dll
+D:\Users\user\Desktop\Softwares\Dasi studies\Second Year Semester a\31.05.2020\BillBoard\BillBoard\DTO\obj\Debug\DTO.pdb
+C:\Users\Public\גילי תכנות\FinallProject\BillBoard\BillBoard\DTO\bin\Debug\DTO.dll
+C:\Users\Public\גילי תכנות\FinallProject\BillBoard\BillBoard\DTO\bin\Debug\DTO.pdb
+C:\Users\Public\גילי תכנות\FinallProject\BillBoard\BillBoard\DTO\bin\Debug\Dal.dll
+C:\Users\Public\גילי תכנות\FinallProject\BillBoard\BillBoard\DTO\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Public\גילי תכנות\FinallProject\BillBoard\BillBoard\DTO\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\Public\גילי תכנות\FinallProject\BillBoard\BillBoard\DTO\bin\Debug\System.Web.Cors.dll
+C:\Users\Public\גילי תכנות\FinallProject\BillBoard\BillBoard\DTO\bin\Debug\System.Web.Http.Cors.dll
+C:\Users\Public\גילי תכנות\FinallProject\BillBoard\BillBoard\DTO\bin\Debug\System.Web.Http.dll
+C:\Users\Public\גילי תכנות\FinallProject\BillBoard\BillBoard\DTO\bin\Debug\EntityFramework.dll
+C:\Users\Public\גילי תכנות\FinallProject\BillBoard\BillBoard\DTO\bin\Debug\Dal.pdb
+C:\Users\Public\גילי תכנות\FinallProject\BillBoard\BillBoard\DTO\bin\Debug\Dal.dll.config
+C:\Users\Public\גילי תכנות\FinallProject\BillBoard\BillBoard\DTO\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\Public\גילי תכנות\FinallProject\BillBoard\BillBoard\DTO\bin\Debug\System.Web.Http.xml
+C:\Users\Public\גילי תכנות\FinallProject\BillBoard\BillBoard\DTO\bin\Debug\System.Web.Http.Cors.xml
+C:\Users\Public\גילי תכנות\FinallProject\BillBoard\BillBoard\DTO\bin\Debug\EntityFramework.xml
+C:\Users\Public\גילי תכנות\FinallProject\BillBoard\BillBoard\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+C:\Users\Public\גילי תכנות\FinallProject\BillBoard\BillBoard\DTO\obj\Debug\DTO.csproj.CopyComplete
+C:\Users\Public\גילי תכנות\FinallProject\BillBoard\BillBoard\DTO\obj\Debug\DTO.dll
+C:\Users\Public\גילי תכנות\FinallProject\BillBoard\BillBoard\DTO\obj\Debug\DTO.pdb
+C:\Users\Public\גילי תכנות\10.08.20\BillBoard\BillBoard\DTO\bin\Debug\DTO.dll
+C:\Users\Public\גילי תכנות\10.08.20\BillBoard\BillBoard\DTO\bin\Debug\DTO.pdb
+C:\Users\Public\גילי תכנות\10.08.20\BillBoard\BillBoard\DTO\bin\Debug\Dal.dll
+C:\Users\Public\גילי תכנות\10.08.20\BillBoard\BillBoard\DTO\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Public\גילי תכנות\10.08.20\BillBoard\BillBoard\DTO\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\Public\גילי תכנות\10.08.20\BillBoard\BillBoard\DTO\bin\Debug\System.Web.Cors.dll
+C:\Users\Public\גילי תכנות\10.08.20\BillBoard\BillBoard\DTO\bin\Debug\System.Web.Http.Cors.dll
+C:\Users\Public\גילי תכנות\10.08.20\BillBoard\BillBoard\DTO\bin\Debug\System.Web.Http.dll
+C:\Users\Public\גילי תכנות\10.08.20\BillBoard\BillBoard\DTO\bin\Debug\EntityFramework.dll
+C:\Users\Public\גילי תכנות\10.08.20\BillBoard\BillBoard\DTO\bin\Debug\Dal.pdb
+C:\Users\Public\גילי תכנות\10.08.20\BillBoard\BillBoard\DTO\bin\Debug\Dal.dll.config
+C:\Users\Public\גילי תכנות\10.08.20\BillBoard\BillBoard\DTO\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\Public\גילי תכנות\10.08.20\BillBoard\BillBoard\DTO\bin\Debug\System.Web.Http.xml
+C:\Users\Public\גילי תכנות\10.08.20\BillBoard\BillBoard\DTO\bin\Debug\System.Web.Http.Cors.xml
+C:\Users\Public\גילי תכנות\10.08.20\BillBoard\BillBoard\DTO\bin\Debug\EntityFramework.xml
+C:\Users\Public\גילי תכנות\10.08.20\BillBoard\BillBoard\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+C:\Users\Public\גילי תכנות\10.08.20\BillBoard\BillBoard\DTO\obj\Debug\DTO.csproj.CopyComplete
+C:\Users\Public\גילי תכנות\10.08.20\BillBoard\BillBoard\DTO\obj\Debug\DTO.dll
+C:\Users\Public\גילי תכנות\10.08.20\BillBoard\BillBoard\DTO\obj\Debug\DTO.pdb

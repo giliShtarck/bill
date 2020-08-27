@@ -1,0 +1,34 @@
+<form class="example-form" [formGroup]="myForm">
+    <!-- <mat-form-field class="example-full-width">
+        <input type="text" name="street" placeholder="בחר רחוב" aria-label="Number" matInput formControlName=""
+            [matAutocomplete]="auto" required>
+        <mat-autocomplete #auto="matAutocomplete">
+        </mat-autocomplete>
+        <mat-error *ngIf="myForm.controls.street.invalid">חובה להכניס רחוב</mat-error>
+     </mat-form-field> -->
+     <div >
+        <app-cities (outputName)="ChangeCity($event)" ></app-cities>
+        <mat-form-field >
+            <mat-select name="subject" required autocomplete="off" placeholder="בחר רחוב" formControlName="street" >
+              <mat-option *ngFor="let option of streetarr" [value]="option" >
+                  <input type="checkbox" (change)="onChange($event.target.checked, option)">
+               {{option}}
+              </mat-option>
+            </mat-select>
+            <mat-error *ngIf="myForm.controls.street.invalid">חובה להכניס רחוב</mat-error>
+          </mat-form-field>
+      </div>
+    
+    <mat-form-field>
+        <mat-label>בחר תאריך</mat-label>
+        <input matInput [matDatepicker]="picker" required formControlName="date">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+        <mat-error *ngIf="myForm.controls.date.invalid">חובה להכניס תאריך</mat-error>
+    </mat-form-field>
+    <div class="example-button-container">
+        <button mat-fab color="accent" [disabled]="myForm.invalid" (click)="search()">
+            <mat-icon>search</mat-icon>
+        </button>
+    </div>
+</form>

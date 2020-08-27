@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BoardDBModelStoreContainer" CdmEntityContainer="BoardDB3Entities">
+    <EntitySetMapping Name="Advertisements">
+      <EntityTypeMapping TypeName="BoardDBModel.Advertisement">
+        <MappingFragment StoreEntitySet="Advertisements">
+          <ScalarProperty Name="AdStatus" ColumnName="AdStatus" />
+          <ScalarProperty Name="AdViews" ColumnName="AdViews" />
+          <ScalarProperty Name="AdFiles" ColumnName="AdFiles" />
+          <ScalarProperty Name="AdUserId" ColumnName="AdUserId" />
+          <ScalarProperty Name="AdWidth" ColumnName="AdWidth" />
+          <ScalarProperty Name="AdHeight" ColumnName="AdHeight" />
+          <ScalarProperty Name="AdDateEnd" ColumnName="AdDateEnd" />
+          <ScalarProperty Name="AdDateBegin" ColumnName="AdDateBegin" />
+          <ScalarProperty Name="AdDateRequest" ColumnName="AdDateRequest" />
+          <ScalarProperty Name="AdCategory" ColumnName="AdCategory" />
+          <ScalarProperty Name="AdId" ColumnName="AdId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Billboards">
+      <EntityTypeMapping TypeName="BoardDBModel.Billboard">
+        <MappingFragment StoreEntitySet="Billboard">
+          <ScalarProperty Name="PrecentPrice" ColumnName="PrecentPrice" />
+          <ScalarProperty Name="BoardCity" ColumnName="BoardCity" />
+          <ScalarProperty Name="BoardStreet" ColumnName="BoardStreet" />
+          <ScalarProperty Name="BoardId" ColumnName="BoardId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Categories">
+      <EntityTypeMapping TypeName="BoardDBModel.Category">
+        <MappingFragment StoreEntitySet="Category">
+          <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+          <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Prices">
+      <EntityTypeMapping TypeName="BoardDBModel.Price">
+        <MappingFragment StoreEntitySet="Prices">
+          <ScalarProperty Name="Price1" ColumnName="Price" />
+          <ScalarProperty Name="PrecentDiscount" ColumnName="PrecentDiscount" />
+          <ScalarProperty Name="NumsUnit" ColumnName="NumsUnit" />
+          <ScalarProperty Name="PriceId" ColumnName="PriceId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="BoardDBModel.User">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="UserPassword" ColumnName="UserPassword" />
+          <ScalarProperty Name="IsManager" ColumnName="IsManager" />
+          <ScalarProperty Name="Userphone" ColumnName="Userphone" />
+          <ScalarProperty Name="UserMail" ColumnName="UserMail" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PanelAds">
+      <EntityTypeMapping TypeName="BoardDBModel.PanelAd">
+        <MappingFragment StoreEntitySet="PanelAds">
+          <ScalarProperty Name="PanelDate" ColumnName="PanelDate" />
+          <ScalarProperty Name="PanelColumnEnd" ColumnName="PanelColumnEnd" />
+          <ScalarProperty Name="PanelColumnStart" ColumnName="PanelColumnStart" />
+          <ScalarProperty Name="PanelLineEnd" ColumnName="PanelLineEnd" />
+          <ScalarProperty Name="PanelLineStart" ColumnName="PanelLineStart" />
+          <ScalarProperty Name="AdId" ColumnName="AdId" />
+          <ScalarProperty Name="BoardId" ColumnName="BoardId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
