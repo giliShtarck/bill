@@ -21,32 +21,46 @@ namespace Bll
         //כל המודעות לפי קוד משתמש
         public static List<AdvertisementsDTO> GetAllAdvertisementsForUser(int userid)
         {
-            return AdvertisementsDTO.ListToDTO(db.Advertisements.Where(a => a.AdUserId == userid&&a.AdStatus==true).ToList());
+            return AdvertisementsDTO.ListToDTO(db.Advertisements.Where(a => a.AdUserId == userid && a.AdStatus == true).ToList());
 
         }
         //כל המודעות
         public static List<AdvertisementsDTO> GetAllAdvertisements()
         {
-            return AdvertisementsDTO.ListToDTO(db.Advertisements.Where(a => a.AdStatus == true).ToList());
+            return AdvertisementsDTO.ListToDTO(db.Advertisements.Where(a => a.AdStatus == true && a.AdDateBegin!=null&&a.AdDateBegin<=DateTime.Today).ToList());
+            
 
         }
         //חיפוש מודעה לפי קטגוריה 
         public static List<AdvertisementsDTO> GetAdvertismentByCategory(string category)
         {
-            return AdvertisementsDTO.ListToDTO(db.Advertisements.Where(x => x.Category.CategoryName == category && x.AdStatus == true).ToList());
+            return AdvertisementsDTO.ListToDTO(db.Advertisements.Where(x => x.Category.CategoryName == category && x.AdStatus == true
+            && x.AdDateBegin != null && x.AdDateBegin <= DateTime.Today).ToList());
 
         }
-        //עדכון מודעה
-        //החזרת מודעה לפי קטגוריה מסוימת
-
-
-
+        //עדכון מספר צפיות למודעה
+        public static void UpdateAdViews(int AdId)
+        {
+            db.Advertisements.FirstOrDefault(x => x.AdId == AdId).AdViews += 1 ;
+            db.SaveChanges();
+        }
+        //עידכון מודעה 
+        public static void UpdateAd(AdvertisementsDTO a)
+        {
+         Advertisement ad=db.Advertisements.FirstOrDefault(x => x.AdId == a.AdId);
+            ad.AdHeight = a.AdHeight;
+            ad.AdWidth = a.AdWidth;
+            ad.AdDateBegin = a.AdDateBegin;
+            ad.AdDateEnd = a.AdDateEnd;
+            ad.AdCategory = a.AdCategory;
+            db.SaveChanges();
+        }
         //כל המודעות לפי חודשים
         //public static List<AdvertisementsDTO> GetAdvertisementsByDate(DateTime date)
         //{
         //    return AdvertisementsDTO.ListToDTO(db.Advertisements.Where(a => a.AdDateBegin.Month >= date.Month && a.AdDateEnd.Month <= date.Month &&
         //     a.AdDateBegin.y >= date.Year && a.AdDateEnd.Year <= date.Year && a.AdStatus == true).ToList());
-        
+
         //הוספת מודעה
         public static AdvertisementsDTO AddAdvertisement(AdvertisementsDTO ad)
         {
@@ -105,7 +119,6 @@ namespace Bll
             {
                 return false;
             }
-
         }
         //שליפת מודעות לפי קטגוריה ועיר
         public static List<AdvertisementsDTO> GetAdvertismentByCategoryAndCity(string city, string category)

@@ -56,4 +56,7 @@ export class AdvertismentService {
   updateadviews(AdId: number) {
     return this.http.put(environment.url + this.basicURL + "/updateadviews", AdId);
   }
+  updatead(a: Advertisements): Observable<Advertisements> {
+    return this.http.put<Advertisements>(environment.url + this.basicURL + "/updatead", a);
+  }
 }

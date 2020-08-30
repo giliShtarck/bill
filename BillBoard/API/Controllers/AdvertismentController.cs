@@ -76,6 +76,33 @@ namespace API.Controllers
         {
             return Bll.AdvertismentsBLL.GetAdvertismentByCategoryAndCity(city, category);
         }
-
+        [HttpPut]
+        [Route("updateadviews")]
+        public IHttpActionResult UpdateAdViews([FromUri]int AdId)
+        {
+            try
+            {
+                Bll.AdvertismentsBLL.UpdateAdViews(AdId);
+                return Ok();
+            }
+            catch (Exception)
+            {
+                return BadRequest();
+            }          
+        }
+        [HttpPut]
+        [Route("updatead")]
+        public IHttpActionResult UpdateAd([FromBody]AdvertisementsDTO a)
+        {
+            try
+            {
+                Bll.AdvertismentsBLL.UpdateAd(a);
+                return Ok(a);
+            }
+            catch (Exception)
+            {
+                return BadRequest();
+            }
+        }
     }
 }
