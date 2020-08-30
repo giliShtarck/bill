@@ -1,41 +1,15 @@
 <form [formGroup]="myForm">
     <div>
-        <mat-form-field appearance="fill">
-            <mat-label>הכנס רחוב לוח</mat-label>
-            <input matInput required formControlName="Boardstreet"  autocomplete="off" (input)="inputValidator($event)" >
-            <mat-error *ngIf="myForm.controls.Boardstreet.invalid">חובה להכניס רחוב לוח</mat-error>
-        </mat-form-field>
-    </div>
-    <!-- <div>
+        
+        <app-cities (outputName)="ChangeCity($event)" ></app-cities>
         <mat-form-field >
-         <mat-label> בחר קטגוריה</mat-label> 
-             <input matInput required autocomplete="off" placeholder="בחר עיר" value="Boardcity" formControlName="Boardcity">  
-            <mat-select  name="subject" formControlName="Boardcity" required autocomplete="off" placeholder="בחר עיר">
-              <mat-option *ngFor="let option of Categorylist" [value]="option.value">
-                {{option.viewValue}}
-            </mat-option>
-            </mat-select>
-            <mat-error *ngIf="myForm.controls.Boardcity.invalid">חובה להכניס עיר</mat-error>
-          </mat-form-field>
-    </div>  -->
-
-
-
-
-
-
-    <div>
-      <mat-form-field class="example-full-width">
-          <input type="text" name="BoardCity" placeholder="בחר עיר" aria-label="Number" matInput
-              formControlName="Boardcity" required [matAutocomplete]="auto">
-          <mat-autocomplete #auto="matAutocomplete">
-              <!-- להכניס רשימת ערים -->
-              <mat-option *ngFor="let option of Categorylist" [value]="option.value">
-                  {{option.viewValue}}
+            <mat-select name="subject" required autocomplete="off" placeholder="בחר רחוב" formControlName="Boardstreet" >
+              <mat-option *ngFor="let option of streetarr" [value]="option" >
+                {{option}}
               </mat-option>
-          </mat-autocomplete>
-      </mat-form-field>
-  </div>
-
+            </mat-select>
+            <mat-error *ngIf="myForm.controls.Boardstreet.invalid">חובה להכניס רחוב</mat-error>
+          </mat-form-field>
+      </div>
     <button mat-raised-button color="accent" class="example-button-row" (click)=" Delete()" >מחק לוח</button>
 </form>

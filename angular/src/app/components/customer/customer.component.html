@@ -1,11 +1,15 @@
 <p>
     <mat-toolbar color="primary">
+      <button mat-icon-button class="example-icon" (click)="backtohome()" aria-label="Example icon-button with menu icon">
+        <mat-icon>home</mat-icon>
+      </button>
       <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
         <mat-icon>assignment_ind</mat-icon>
       </button>
       <span>Customer</span>
       <span class="example-spacer"></span>
       <a  routerLink="loadimg">הוספת מודעה</a><mat-icon id="board">add</mat-icon>
+      <a  routerLink="userad">צפיה במודעות </a><mat-icon id="board">add</mat-icon>
     </mat-toolbar>
   </p>
 

@@ -2,11 +2,12 @@
 
   <p>
     <mat-toolbar color="primary">
-      <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <button mat-icon-button class="example-icon" (click)="backtohome()" aria-label="Example icon-button with menu icon">
         <mat-icon>home</mat-icon>
       </button>
       <span>Moda-On-Line</span>
       <span class="example-spacer"></span>
+      <!-- <a routerLink="search">חיפוש</a><mat-icon id="board">search</mat-icon> -->
       <a routerLink="login">התחברות</a><mat-icon id="board">group_add</mat-icon>
       <a routerLink="sign-up">כניסה</a><mat-icon id="board">transit_enterexit</mat-icon>
     </mat-toolbar>

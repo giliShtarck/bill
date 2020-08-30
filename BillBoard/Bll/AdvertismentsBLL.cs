@@ -21,7 +21,7 @@ namespace Bll
         //כל המודעות לפי קוד משתמש
         public static List<AdvertisementsDTO> GetAllAdvertisementsForUser(int userid)
         {
-            return AdvertisementsDTO.ListToDTO(db.Advertisements.Where(a => a.AdUserId == userid).ToList());
+            return AdvertisementsDTO.ListToDTO(db.Advertisements.Where(a => a.AdUserId == userid&&a.AdStatus==true).ToList());
 
         }
         //כל המודעות
@@ -48,10 +48,12 @@ namespace Bll
         //     a.AdDateBegin.y >= date.Year && a.AdDateEnd.Year <= date.Year && a.AdStatus == true).ToList());
         
         //הוספת מודעה
-        public static void AddAdvertisement(AdvertisementsDTO ad)
+        public static AdvertisementsDTO AddAdvertisement(AdvertisementsDTO ad)
         {
-            db.Advertisements.Add(AdvertisementsDTO.ToDAL(ad));
+            Advertisement a = AdvertisementsDTO.ToDAL(ad);
+            db.Advertisements.Add(a);
             db.SaveChanges();
+            return AdvertisementsDTO.convertDalToDTO(a);
         }
         // מחזיר את  רשימת המודעות הממתינות לאישור
         public static List<AdvertisementsDTO> GetAllFalseAdvertisments()

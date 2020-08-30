@@ -19,8 +19,8 @@ namespace API.Controllers
         {
             try
             {
-                Bll.AdvertismentsBLL.AddAdvertisement(a);         // להוסיף תאריך וקוד לוח
-                return Ok();
+             AdvertisementsDTO ad= Bll.AdvertismentsBLL.AddAdvertisement(a);
+                return Ok(ad);  // להוסיף תאריך וקוד לוח
             }
             catch (Exception e)
             {

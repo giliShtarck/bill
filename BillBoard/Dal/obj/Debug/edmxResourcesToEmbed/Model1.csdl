@@ -36,7 +36,7 @@
     <Property Name="AdHeight" Type="Int32" />
     <Property Name="AdWidth" Type="Int32" />
     <Property Name="AdUserId" Type="Int32" Nullable="false" />
-    <Property Name="AdFiles" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="AdFiles" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
     <Property Name="AdViews" Type="Int32" />
     <Property Name="AdStatus" Type="Boolean" Nullable="false" />
     <NavigationProperty Name="Category" Relationship="BoardDBModel.FK__Advertise__AdCat__2F10007B" FromRole="Advertisement" ToRole="Category" />

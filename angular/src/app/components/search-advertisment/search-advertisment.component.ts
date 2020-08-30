@@ -51,4 +51,7 @@ export class SearchAdvertismentComponent implements OnInit {
       return false;
     return true;
   }
+  // updateviews(){
+  //   this.advertismentService.updateadviews();
+  // }
 }

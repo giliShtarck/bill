@@ -1,0 +1,21 @@
+<table class="table-fill">
+    <thead>
+        <tr>
+            <th class="text-left">קוד מודעה</th>
+            <th class="text-left">קטגוריה</th>
+            <th class="text-left">תמונת המודעה</th>
+            <th class="text-left">מס' צפיות למודעה</th>
+        </tr>
+    </thead>
+    <tbody class="table-hover" *ngFor="let item of userAdArr">
+        <tr>
+            <td class="text-left">
+            </td>
+            <td class="text-left">{{item.AdId}}</td>
+             <!-- <td class="text-left">{{GetNameCategoty(item.AdCategory)}}</td>  -->
+            <td class="text-left"><img src= item.AdFiles ></td>
+            <p>{{item.AdFiles}}</p>
+            <td class="text-left" >{{item.AdViews}}</td>
+        </tr>
+    </tbody>
+</table>

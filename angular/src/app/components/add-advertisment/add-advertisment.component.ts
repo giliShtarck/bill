@@ -26,7 +26,6 @@ streetarr: string[] = []
       event.target.value = event.target.value.replace(/[^a-zA-Zא-ת]/g, "");
     }
   }
-
   constructor(private categoryService: CategoryService, private advertismentservice: AdvertismentService,private billboardService :BillBoardService) {
   }
   ngOnInit(): void {
@@ -35,15 +34,14 @@ streetarr: string[] = []
       AdDateEnd: new FormControl('', [Validators.required]),
       AdHeight: new FormControl('', [Validators.required, Validators.pattern(new RegExp("[1-8]"))]),
       AdWidth: new FormControl('', [Validators.required, Validators.pattern(new RegExp("[1-8]"))]),
-
       AdCategory: new FormControl('', Validators.required),
       AdAddress:new FormControl('', Validators.required)
-
     });
     this.categoryService.GetAllCategories().subscribe(res => {
       res.forEach(element => {
         this.Categorylist.push({ CategoryId: element.CategoryId, CategoryName: element.CategoryName });
       });
+      console.log(this.Categorylist)
     },
       (error) => { alert("error") }
     );

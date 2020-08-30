@@ -8,11 +8,11 @@ import { Router } from '@angular/router';
   styleUrls: ['./homepage.component.scss']
 })
 export class HomepageComponent implements OnInit {
-// 
   constructor(private router: Router) { }
-
   ngOnInit(): void {
-     this.router.navigate(["homepage/search"]);
-
+     this.backtohome();
+  }
+  backtohome():void{
+    this.router.navigate(["homepage/search"])
   }
 }

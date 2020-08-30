@@ -17,7 +17,7 @@
           <Property Name="AdHeight" Type="int" />
           <Property Name="AdWidth" Type="int" />
           <Property Name="AdUserId" Type="int" Nullable="false" />
-          <Property Name="AdFiles" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="AdFiles" Type="nvarchar(max)" Nullable="false" />
           <Property Name="AdViews" Type="int" />
           <Property Name="AdStatus" Type="bit" Nullable="false" />
         </EntityType>
@@ -199,7 +199,7 @@ warning 6002: The table/view 'BoardDB.dbo.PanelAds' does not have a primary key 
           <Property Name="AdHeight" Type="Int32" />
           <Property Name="AdWidth" Type="Int32" />
           <Property Name="AdUserId" Type="Int32" Nullable="false" />
-          <Property Name="AdFiles" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="AdFiles" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
           <Property Name="AdViews" Type="Int32" />
           <Property Name="AdStatus" Type="Boolean" Nullable="false" />
           <NavigationProperty Name="Category" Relationship="BoardDBModel.FK__Advertise__AdCat__2F10007B" FromRole="Advertisement" ToRole="Category" />

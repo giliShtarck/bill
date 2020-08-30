@@ -9,11 +9,13 @@ import { Category } from 'src/app/models/category/category';
 })
 export class AdvertismentService {
   Approval(c: Advertisements) {
-  return  this.http.put(environment.url+this.basicURL+"/Approval",c);
+    return this.http.put(environment.url + this.basicURL + "/Approval", c);
   }
   basicURL = "advertisment"
-  arrAdvertisments: Advertisements[] = [{AdId:111,AdCategory:1,AdDateBegin:new Date(),AdDateEnd:new Date(),
-    AdDateRequest:new Date(),AdHeight:2,AdUserId:3,AdWidth:3,AdViews:0,AdFiles:"",AdStatus:false}];
+  arrAdvertisments: Advertisements[] = [{
+    AdId: 111, AdCategory: 1, AdDateBegin: new Date(), AdDateEnd: new Date(),
+    AdDateRequest: new Date(), AdHeight: 2, AdUserId: 3, AdWidth: 3, AdViews: 0, AdFiles: "", AdStatus: false
+  }];
   constructor(private http: HttpClient) { }
   // AddAdvertismentToArr(ad: Advertisements): void {
   //   this.arrAdvertisments.push(ad);
@@ -26,8 +28,8 @@ export class AdvertismentService {
     console.log(a)
     return this.http.post(environment.url + "advertisment/addadvertisment", a);
   }
-  deleteadvertisment(a:Advertisements){
-    return this.http.delete(environment.url+"deleteadvertisment/"+a);
+  deleteadvertisment(a: Advertisements) {
+    return this.http.delete(environment.url + "deleteadvertisment/" + a);
   }
   getadvertisementsbydate(date: Date): Observable<Advertisements[]> {
     return this.http.get<Advertisements[]>(environment.url + this.basicURL + "/getadvertisementsbydate/" + date);
@@ -41,14 +43,17 @@ export class AdvertismentService {
   getalladvertismentsforuser(userid: number): Observable<Advertisements[]> {
     return this.http.get<Advertisements[]>(environment.url + this.basicURL + "/getalladvertismentsforuser/" + userid);
   }
-  getlastadvertismentsbyuser(userid: number): Observable<Advertisements> {
-    return this.http.get<Advertisements>(environment.url + this.basicURL + "/getlastadvertismentsbyuser/" + userid);
+  getlastadvertismentsbyuser(userid: number): Observable<Advertisements[]> {
+    return this.http.get<Advertisements[]>(environment.url + this.basicURL + "/getlastadvertismentsbyuser/" + userid);
   }
-  getallfalseadvertisments():Observable<Advertisements[]>{
-    return this.http.get<Advertisements[]>(environment.url+this.basicURL+"/getallfalseadvertisments");
+  getallfalseadvertisments(): Observable<Advertisements[]> {
+    return this.http.get<Advertisements[]>(environment.url + this.basicURL + "/getallfalseadvertisments");
   }
-  getadvertismentbycategoryandcity(city:string,category:string):Observable<Advertisements[]>{
-    console.log(city,category);
-    return this.http.get<Advertisements[]>(environment.url+this.basicURL+"/getadvertismentbycategoryandcity/"+city+"/"+category);
+  getadvertismentbycategoryandcity(city: string, category: string): Observable<Advertisements[]> {
+    console.log(city, category);
+    return this.http.get<Advertisements[]>(environment.url + this.basicURL + "/getadvertismentbycategoryandcity/" + city + "/" + category);
+  }
+  updateadviews(AdId: number) {
+    return this.http.put(environment.url + this.basicURL + "/updateadviews", AdId);
   }
 }

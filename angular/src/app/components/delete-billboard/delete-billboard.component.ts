@@ -11,23 +11,15 @@ import { CategoryService } from 'src/app/services/category/category.service';
   styleUrls: ['./delete-billboard.component.scss']
 })
 export class DeleteBillboardComponent implements OnInit {
-  // Categorylist: Category[] = [];
-  Categorylist: object[]= [
-    {value: 1, viewValue: 1},
-    {value: 2, viewValue: 2},
-    {value: 3, viewValue: 3}
-  ];
+  streetarr: string[] = []
   myForm: FormGroup;
-  constructor(private billBoardService: BillBoardService, private categoryService: CategoryService) { }
+  constructor(private billBoardService: BillBoardService, private categoryService: CategoryService,private billboardService:BillBoardService) { }
   boardS;
   boardC;
   public inputValidator(event: any) {
-
     const pattern = /^[א-ת" "0-9]*$/;
-
     if (!pattern.test(event.target.value)) {
       event.target.value = event.target.value.replace(/[^א-ת" "0-9]/g, "");
-
     }
   }
   ngOnInit(): void {
@@ -41,6 +33,18 @@ export class DeleteBillboardComponent implements OnInit {
     // },
     //   (error) => { alert("error") }
     // );
+  }
+  ChangeCity(city): void {
+    console.log(city)
+    this.myForm.controls.Boardcity.setValue(city);
+    this.streetarr = [];
+    this.billboardService.getallstreets(this.myForm.controls.Boardcity.value).subscribe(res => {
+      console.log(res);
+      res.forEach(element => {
+        this.streetarr.push(element)
+      }),
+        (error) => { console.log("error") }
+    });
   }
   // selectedCategory(category: Category) {
   //  //this.myForm.controls.Boardcity.valid=Validators.requiredTrue()

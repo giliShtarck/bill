@@ -178,3 +178,28 @@ C:\Users\Public\גילי תכנות\10.08.20\BillBoard\BillBoard\Bll\obj\Debug\B
 C:\Users\Public\גילי תכנות\10.08.20\BillBoard\BillBoard\Bll\obj\Debug\Bll.csproj.CopyComplete
 C:\Users\Public\גילי תכנות\10.08.20\BillBoard\BillBoard\Bll\obj\Debug\Bll.dll
 C:\Users\Public\גילי תכנות\10.08.20\BillBoard\BillBoard\Bll\obj\Debug\Bll.pdb
+C:\Users\Public\גילי תכנות\‏‏תיקיה חדשה (2)\bill\BillBoard\Bll\bin\Debug\Bll.dll.config
+C:\Users\Public\גילי תכנות\‏‏תיקיה חדשה (2)\bill\BillBoard\Bll\bin\Debug\Bll.dll
+C:\Users\Public\גילי תכנות\‏‏תיקיה חדשה (2)\bill\BillBoard\Bll\bin\Debug\Bll.pdb
+C:\Users\Public\גילי תכנות\‏‏תיקיה חדשה (2)\bill\BillBoard\Bll\bin\Debug\Dal.dll
+C:\Users\Public\גילי תכנות\‏‏תיקיה חדשה (2)\bill\BillBoard\Bll\bin\Debug\DTO.dll
+C:\Users\Public\גילי תכנות\‏‏תיקיה חדשה (2)\bill\BillBoard\Bll\bin\Debug\EntityFramework.dll
+C:\Users\Public\גילי תכנות\‏‏תיקיה חדשה (2)\bill\BillBoard\Bll\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Public\גילי תכנות\‏‏תיקיה חדשה (2)\bill\BillBoard\Bll\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Public\גילי תכנות\‏‏תיקיה חדשה (2)\bill\BillBoard\Bll\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\Public\גילי תכנות\‏‏תיקיה חדשה (2)\bill\BillBoard\Bll\bin\Debug\System.Web.Cors.dll
+C:\Users\Public\גילי תכנות\‏‏תיקיה חדשה (2)\bill\BillBoard\Bll\bin\Debug\System.Web.Http.Cors.dll
+C:\Users\Public\גילי תכנות\‏‏תיקיה חדשה (2)\bill\BillBoard\Bll\bin\Debug\System.Web.Http.dll
+C:\Users\Public\גילי תכנות\‏‏תיקיה חדשה (2)\bill\BillBoard\Bll\bin\Debug\Dal.pdb
+C:\Users\Public\גילי תכנות\‏‏תיקיה חדשה (2)\bill\BillBoard\Bll\bin\Debug\Dal.dll.config
+C:\Users\Public\גילי תכנות\‏‏תיקיה חדשה (2)\bill\BillBoard\Bll\bin\Debug\DTO.pdb
+C:\Users\Public\גילי תכנות\‏‏תיקיה חדשה (2)\bill\BillBoard\Bll\bin\Debug\EntityFramework.xml
+C:\Users\Public\גילי תכנות\‏‏תיקיה חדשה (2)\bill\BillBoard\Bll\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Public\גילי תכנות\‏‏תיקיה חדשה (2)\bill\BillBoard\Bll\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Public\גילי תכנות\‏‏תיקיה חדשה (2)\bill\BillBoard\Bll\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\Public\גילי תכנות\‏‏תיקיה חדשה (2)\bill\BillBoard\Bll\bin\Debug\System.Web.Http.xml
+C:\Users\Public\גילי תכנות\‏‏תיקיה חדשה (2)\bill\BillBoard\Bll\bin\Debug\System.Web.Http.Cors.xml
+C:\Users\Public\גילי תכנות\‏‏תיקיה חדשה (2)\bill\BillBoard\Bll\obj\Debug\Bll.csprojAssemblyReference.cache
+C:\Users\Public\גילי תכנות\‏‏תיקיה חדשה (2)\bill\BillBoard\Bll\obj\Debug\Bll.csproj.CopyComplete
+C:\Users\Public\גילי תכנות\‏‏תיקיה חדשה (2)\bill\BillBoard\Bll\obj\Debug\Bll.dll
+C:\Users\Public\גילי תכנות\‏‏תיקיה חדשה (2)\bill\BillBoard\Bll\obj\Debug\Bll.pdb

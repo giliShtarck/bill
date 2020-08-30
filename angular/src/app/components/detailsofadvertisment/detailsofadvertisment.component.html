@@ -4,12 +4,12 @@
             <th><mat-icon>flaky</mat-icon></th>
             <th class="text-left">קוד מודעה</th>
             <th class="text-left">תאריך בקשה</th>
-            <th class="text-left">תאריך התחלה</th>
+            <!-- <th class="text-left">תאריך התחלה</th>
             <th class="text-left">תאריך סיום</th>
             <th class="text-left">אורך המודעה</th>
-            <th class="text-left">רוחב המודעה</th>
+            <th class="text-left">רוחב המודעה</th> -->
             <th class="text-left">קוד לקוח</th>
-            <th class="text-left">קטגוריה</th>
+            <!-- <th class="text-left">קטגוריה</th> -->
             <th class="text-left">תמונת המודעה</th>
         </tr>
     </thead>
@@ -21,12 +21,12 @@
             </td>
             <td class="text-left">{{item.AdId}}</td>
             <td class="text-left">{{item.AdDateRequest|date:'shortDate'}}</td>
-            <td class="text-left">{{item.AdDateBegin|date:'shortDate'}}</td>
+            <!-- <td class="text-left">{{item.AdDateBegin|date:'shortDate'}}</td>
             <td class="text-left">{{item.AdDateEnd|date:'shortDate'}}</td>
             <td class="text-left">{{item.AdHeight}}</td>
-            <td class="text-left">{{item.AdWidth}}</td>
+            <td class="text-left">{{item.AdWidth}}</td> -->
             <td class="text-left"> {{item.AdUserId}}</td>
-             <td class="text-left">{{GetNameCategoty(item.AdCategory)}}</td>  
+             <!-- <td class="text-left">{{GetNameCategoty(item.AdCategory)}}</td>   -->
               <!-- תמונות וגם שם קטגוריה -->
             <td class="text-left"><img src= item.AdFiles ></td>
             <p>{{item.AdFiles}}</p>
