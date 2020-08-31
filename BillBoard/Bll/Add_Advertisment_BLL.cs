@@ -17,6 +17,7 @@ namespace Bll
         public DateTime date;
         private int boardId;
         int[,] mat = new int[x, y];
+        //בונה שמאתחלת את המטריצה באפסים
         public Add_Advertisment_BLL()
         {
             for (int i = 0; i < x; i++)
@@ -100,18 +101,7 @@ namespace Bll
 
             }
             PanelToDal(ad.AdId, begin,(int) ad.AdHeight,(int) ad.AdWidth);
-        }
-        //    public int BoardId { get; set; }
-        //public int AdId { get; set; }
-        //public int PanelLineStart { get; set; }
-        //public int PanelLineEnd { get; set; }
-        //public int PanelColumnStart { get; set; }
-        //public int PanelColumnEnd { get; set; }
-        //public System.DateTime PanelDate { get; set; }
-
-
-        //PanelAd p =new PanelAd() { AdId=ad.AdId,BoardId=}
-
+        }      
         //פונקציה שממירה את המטריצה לסוג של הדל
         //add the new panel to sql
         public void PanelToDal(int AdId, int begin, int AdHeight, int AdWidth)
@@ -127,19 +117,14 @@ namespace Bll
                     PanelLineEnd = begin / 10 + AdHeight,
                     PanelLineStart = begin / 10
                 };
-
                 db.PanelAds.Add(p);
-                db.SaveChanges();
-            
-
+                db.SaveChanges();            
             //for (int i = 0; i < x; i++)
             //{
             //    for (int j = 0; j < y; j++)
             //    {
-
             //    }
             //}
-
         }
         //בודק על כל מקום במטריצה אם יכול להיות שם את המודעה
         public bool CountPlace(int width, int height, int i, int j)
@@ -181,9 +166,6 @@ namespace Bll
         //בודק האם יש מקום למודעה בתאריכים הרצויים
         public List<DateTime> Approval(AdvertisementsDTO a, int boardid)
         {
-            //////////אולי כדאי לתת למתשמש לבחור טווח תאריכים ןמספר שבועות שרוצה 
-            ///לפרם ואנחנו נחזיר לו את התאריכים הפנויים הקימים בטווח 
-            ///איך מסדרים תאריכים שיהיו מתואמים עם הלוח שנה פה ובאנגולר
             List<DateTime> listDates = new List<DateTime>();
             bool begin = false;
             DateTime date =(DateTime) a.AdDateBegin;
@@ -198,7 +180,6 @@ namespace Bll
             }
             return listDates;
         }
-
     }
 
 }

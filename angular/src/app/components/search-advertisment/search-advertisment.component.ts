@@ -20,6 +20,7 @@ export class SearchAdvertismentComponent implements OnInit {
       category: new FormControl('', Validators.required),
        city: new FormControl('',Validators.required),
     });
+    //קבלת כל הקטגוריות
     this.categoryService.GetAllCategories().subscribe(res => {
       res.forEach(element => {
         this.Categorylist.push({ CategoryId: element.CategoryId, CategoryName: element.CategoryName });
@@ -28,12 +29,14 @@ export class SearchAdvertismentComponent implements OnInit {
       (error) => { alert("error") }
     );
   }
+  //החלפת שם הקטגוריה במס' הקטגוריה
   selectedCategory(c: Category) {
     this.myForm.value.category = c.CategoryId;
   }
   ChangeCity(city): void {
   this.myForm.controls.city.setValue(city);
   }
+  //חיפוש
   search(): void {
     console.log(this.myForm.controls.city.value, this.myForm.controls.category.value)
     this.advertismentService.getadvertismentbycategoryandcity(this.myForm.controls.city.value, this.myForm.controls.category.value).subscribe(res => {
@@ -46,6 +49,7 @@ export class SearchAdvertismentComponent implements OnInit {
     }, (error) => { console.log("error") }
     );
   }
+  //לאפשר את כפתור החיפוש עם בחרו את כל הנתונים
   checkValid(): boolean {
     if (this.myForm.controls.city.value != '' && this.myForm.valid)
       return false;

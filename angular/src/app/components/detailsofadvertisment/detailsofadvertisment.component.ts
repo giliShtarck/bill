@@ -27,6 +27,7 @@ export class DetailsofadvertismentComponent implements OnInit {
     },
       (error) => { alert("error") }
     );
+    //קבלת כל הקטגוריות
     this.categoryService.GetAllCategories().subscribe(res => {
       res.forEach(element => {
         this.Categorylist.push({ CategoryId: element.CategoryId, CategoryName: element.CategoryName });
@@ -36,6 +37,7 @@ export class DetailsofadvertismentComponent implements OnInit {
 
     );
   }
+  //קבלת שם הקטגוריה לפי מס' הקטגוריה
   GetNameCategoty(ca: number): string {
     this.c = ( this.Categorylist as Category[]).find(x => x.CategoryId == ca) ;
     console.log(this.c);
@@ -51,6 +53,7 @@ export class DetailsofadvertismentComponent implements OnInit {
 
     // this.advertismentService.Approval(c).subscribe(res => { console.log("sucses!") }, err => { console.log("err :(") });
   }
+  //ביטול המודעה -אינה מאושרת
   Cancel(c: Advertisements): void {
     // console.log(c);
 

@@ -12,6 +12,7 @@ export class UseradComponent implements OnInit {
   constructor(private advertismentService: AdvertismentService) { }
 
   ngOnInit(): void {
+    //קבלת כל מודעות הלקוח שהתפרסמו
     this.advertismentService.getalladvertismentsforuser(Number(localStorage.getItem("currentUserId"))).subscribe(res => {
       res.forEach(element => {
         this.userAdArr.push(element);

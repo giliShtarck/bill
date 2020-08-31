@@ -11,7 +11,7 @@ namespace Bll
     public static class UsersBLL
     {
         static BoardDB3Entities db = new BoardDB3Entities();
-
+        //הוספת לקוח למאגר
         public static bool Register(UserDTO user)
         {
             try
@@ -71,6 +71,7 @@ namespace Bll
                 return false;
             }
         }
+        //התחברות למערכת החל מהפעם השניה
         public static UserDTO SignIn(string mail, string password)
         {
             try

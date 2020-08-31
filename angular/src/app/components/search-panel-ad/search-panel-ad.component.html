@@ -1,3 +1,4 @@
+
 <form class="example-form" [formGroup]="myForm">
     <!-- <mat-form-field class="example-full-width">
         <input type="text" name="street" placeholder="בחר רחוב" aria-label="Number" matInput formControlName=""
@@ -6,18 +7,19 @@
         </mat-autocomplete>
         <mat-error *ngIf="myForm.controls.street.invalid">חובה להכניס רחוב</mat-error>
      </mat-form-field> -->
-     <div >
-        <app-cities (outputName)="ChangeCity($event)" ></app-cities>
-        <mat-form-field >
-            <mat-select name="subject" required autocomplete="off" placeholder="בחר רחוב" formControlName="street" >
-              <mat-option *ngFor="let option of streetarr" [value]="option" >
-                  <input type="checkbox" (change)="onChange($event.target.checked, option)">
-               {{option}}
-              </mat-option>
+    <div>
+
+        <app-cities (outputName)="ChangeCity($event)"></app-cities>
+        <mat-form-field>
+            <mat-select name="subject" required autocomplete="off" placeholder="בחר רחוב" formControlName="street">
+                <mat-option *ngFor="let option of streetarr" [value]="option">
+                    <input type="checkbox" (change)="onChange($event.target.checked, option)">
+                    {{option}}
+                </mat-option>
             </mat-select>
             <mat-error *ngIf="myForm.controls.street.invalid">חובה להכניס רחוב</mat-error>
-          </mat-form-field>
-      </div>
+        </mat-form-field>
+    </div>
     <mat-form-field>
         <mat-label>בחר תאריך</mat-label>
         <input matInput [matDatepicker]="picker" required formControlName="date">

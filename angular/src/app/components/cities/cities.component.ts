@@ -20,6 +20,7 @@ export class CitiesComponent {
     });
 
   }
+  // טעינת קובץ הקסמל
   loadXML() {
     this._http.get('/assets/schema.xml',
       {
@@ -38,6 +39,7 @@ export class CitiesComponent {
       });
 
   }
+  //המרת הקובץ 
   parseXML(data) {
     return new Promise(resolve => {
       var k: string | number,
@@ -62,6 +64,7 @@ export class CitiesComponent {
       });
     });
   }
+  //
   changeCity() {
     console.log(this.myForm.controls.city.value)
     this.outputName.emit(this.myForm.controls.city.value);

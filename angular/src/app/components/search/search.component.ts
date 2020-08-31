@@ -12,6 +12,7 @@ import { PaneladService } from 'src/app/services/panelad/panelad.service';
 export class SearchComponent implements OnInit {
   name: string = "חיפוש לוח";
   checked: boolean = false;
+  //בחירת אפשרות של חיפוש לוח או חיפוש מודעה
   changeslidetoggle(): void {
     if (this.checked == false) {
       this.name = "חיפוש מודעה";

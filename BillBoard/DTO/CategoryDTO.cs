@@ -31,6 +31,7 @@ namespace DTO
                 CategoryName = c.CategoryName,
             };
         }
+        //convert list from dal to dto
         public static List<CategoryDTO> ListToDTO(List<Category> lp)
         {
             List<CategoryDTO> l = new List<CategoryDTO>();

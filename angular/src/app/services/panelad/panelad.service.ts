@@ -11,6 +11,7 @@ export class PaneladService {
   basicURL = "panelad"
 
   constructor(private http: HttpClient) { }
+  //קבלת לוחות המודעות ע"פ כתובות ועיר
   getpaneladbyaddressanddate(street: string[], city: string, date: Date): Observable<PanelAds[]> {
     console.log(city,date);
     street.forEach(element => {

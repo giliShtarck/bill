@@ -12,7 +12,7 @@ import { Advertisements } from 'src/app/models/advertisment/advertisements';
 export class LoadImgComponent implements OnInit {
   myForm: FormGroup;
   fileToUpload: File = null;
-  addpic: Advertisements=new Advertisements();
+  addpic: Advertisements = new Advertisements();
   constructor(private advertismentService: AdvertismentService) { }
   // handleFileInput(files: FileList) {
   //   this.fileToUpload = files.item(0);
@@ -23,13 +23,15 @@ export class LoadImgComponent implements OnInit {
       Base64Pic: new FormControl('', [Validators.required]),
     })
   }
+  //הטענת תמונה מהמחשב
   AddImg(): void {
     this.addpic.AdUserId = Number(localStorage.getItem("currentUserId"));
     this.addpic.AdStatus = false;
     this.addpic.AdDateRequest = new Date();
-    this.addpic.AdViews=0;
+    this.addpic.AdViews = 0;
     this.advertismentService.addadvertisment(this.addpic).subscribe(res => {
-      console.log("success "+res)
+      console.log("success ")
+      console.log(res);
     },
       (error) => { console.log("error") }
     );
@@ -49,9 +51,8 @@ export class LoadImgComponent implements OnInit {
     reader.readAsDataURL(file);
     reader.onload = () => {
       //this.myForm.controls.Base64Pic.setValue(reader.result);
-      this.addpic.AdFiles =String(reader.result);
+      this.addpic.AdFiles = String(reader.result);
       console.log(this.addpic.AdFiles);
-      console.log("vghvhj")
     };
   }
   _handleReaderLoaded(readerEvt) {
@@ -60,4 +61,13 @@ export class LoadImgComponent implements OnInit {
   }
   // this.ad.AdFiles=this.myForm.controls.AdFiles.value;
   // console.log( this.ad.AdFiles)
+
+
+
+
+
+
+
+
+
 }

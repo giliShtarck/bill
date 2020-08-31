@@ -57,6 +57,7 @@ namespace DTO
 
             };
         }
+        //ממיר מערך מדל לדטו
         public static List<AdvertisementsDTO> ListToDTO(List<Dal.Advertisement> lp)
         {
             List<AdvertisementsDTO> l = new List<AdvertisementsDTO>();

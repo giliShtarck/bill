@@ -45,6 +45,7 @@ namespace DTO
                 PanelColumnEnd = p.PanelColumnEnd
             };
         }
+        //convert list from dal to dto
         public static List<PanelDTO> ListToDTO(List<PanelAd> lp)
         {
             List<PanelDTO> l = new List<PanelDTO>();

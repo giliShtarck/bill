@@ -44,6 +44,7 @@ export class LoginComponent implements OnInit {
       Userpassword: new FormControl('', [Validators.required, Validators.minLength(8)])
     });
   }
+  //התחברות
   Register() {
     this.user.IsManager = false;
     this.user=this.myForm.value;

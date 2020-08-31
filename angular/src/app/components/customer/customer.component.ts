@@ -13,6 +13,7 @@ export class CustomerComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  //חזרה לדף הבית
   backtohome(): void {
     this.router.navigate(["homepage"])
   }

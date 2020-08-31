@@ -43,6 +43,7 @@ namespace DTO
                 IsManager = u.IsManager
             };
         }
+        //convert list from dal to dto
         public static List<UserDTO> ListToDTO(List<Dal.User> lp)
         {
             List<UserDTO> l = new List<UserDTO>();

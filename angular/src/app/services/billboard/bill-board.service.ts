@@ -15,18 +15,22 @@ export class BillBoardService {
   GetBillBoard(city: string, street: string): Observable<Billboard> {
     return this.http.get<Billboard>(environment.url + this.basicURL + "/getbillboardbycityandstreet/" + city + "/" + street);
   }
+  //הוספת לוח
   AddBillBoard(b: Billboard) {
     console.log(typeof b);
     return this.http.post(environment.url + "billboard/addbillboard", b);  
   }
+  //מחיקת לוח ע"פ כתובת
   Delete(boardc,boards)
   {
     console.log(boardc,boards)
     return this.http.delete(environment.url  + "billboard/deletebillboard/"+boardc+"/"+boards);
   }
+  // שליפת הלוחות
   getbillboards():Observable<Billboard[]>{
     return this.http.get<Billboard[]>(environment.url+"billboard/getallbillboards");
   }
+  //קבלת כל הרחובות
   getallstreets(city:string):Observable<string[]>{
     return this.http.get<string[]>(environment.url+"billboard/getallstreets/"+city);
 

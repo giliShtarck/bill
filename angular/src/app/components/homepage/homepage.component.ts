@@ -12,6 +12,7 @@ export class HomepageComponent implements OnInit {
   ngOnInit(): void {
      this.backtohome();
   }
+  //חזרה לדף הבית
   backtohome():void{
     this.router.navigate(["homepage/search"])
   }

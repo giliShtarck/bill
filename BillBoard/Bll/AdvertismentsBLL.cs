@@ -11,7 +11,6 @@ namespace Bll
 {
     public static class AdvertismentsBLL
     {
-
         public static BoardDB3Entities db = new BoardDB3Entities();
         //מודעה אחרונה לפי קוד משתמש
         public static AdvertisementsDTO GetLastAdvertisementByUser(int userid)
@@ -22,32 +21,28 @@ namespace Bll
         public static List<AdvertisementsDTO> GetAllAdvertisementsForUser(int userid)
         {
             return AdvertisementsDTO.ListToDTO(db.Advertisements.Where(a => a.AdUserId == userid && a.AdStatus == true).ToList());
-
         }
         //כל המודעות
         public static List<AdvertisementsDTO> GetAllAdvertisements()
         {
-            return AdvertisementsDTO.ListToDTO(db.Advertisements.Where(a => a.AdStatus == true && a.AdDateBegin!=null&&a.AdDateBegin<=DateTime.Today).ToList());
-            
-
+            return AdvertisementsDTO.ListToDTO(db.Advertisements.Where(a => a.AdStatus == true && a.AdDateBegin != null && a.AdDateBegin <= DateTime.Today).ToList());
         }
         //חיפוש מודעה לפי קטגוריה 
         public static List<AdvertisementsDTO> GetAdvertismentByCategory(string category)
         {
             return AdvertisementsDTO.ListToDTO(db.Advertisements.Where(x => x.Category.CategoryName == category && x.AdStatus == true
             && x.AdDateBegin != null && x.AdDateBegin <= DateTime.Today).ToList());
-
         }
         //עדכון מספר צפיות למודעה
         public static void UpdateAdViews(int AdId)
         {
-            db.Advertisements.FirstOrDefault(x => x.AdId == AdId).AdViews += 1 ;
+            db.Advertisements.FirstOrDefault(x => x.AdId == AdId).AdViews += 1;
             db.SaveChanges();
         }
         //עידכון מודעה 
         public static void UpdateAd(AdvertisementsDTO a)
         {
-         Advertisement ad=db.Advertisements.FirstOrDefault(x => x.AdId == a.AdId);
+            Advertisement ad = db.Advertisements.FirstOrDefault(x => x.AdId == a.AdId);
             ad.AdHeight = a.AdHeight;
             ad.AdWidth = a.AdWidth;
             ad.AdDateBegin = a.AdDateBegin;
@@ -64,10 +59,15 @@ namespace Bll
         //הוספת מודעה
         public static AdvertisementsDTO AddAdvertisement(AdvertisementsDTO ad)
         {
-            Advertisement a = AdvertisementsDTO.ToDAL(ad);
-            db.Advertisements.Add(a);
-            db.SaveChanges();
-            return AdvertisementsDTO.convertDalToDTO(a);
+            Advertisement advertisement = db.Advertisements.FirstOrDefault(x => x.AdFiles == ad.AdFiles);
+            if (advertisement == null)
+            {
+                Advertisement a = AdvertisementsDTO.ToDAL(ad);
+                db.Advertisements.Add(a);
+                db.SaveChanges();
+                return AdvertisementsDTO.convertDalToDTO(a);
+            }
+            return AdvertisementsDTO.convertDalToDTO(advertisement);
         }
         // מחזיר את  רשימת המודעות הממתינות לאישור
         public static List<AdvertisementsDTO> GetAllFalseAdvertisments()

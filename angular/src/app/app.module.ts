@@ -25,6 +25,7 @@ import { SearchPanelAdComponent } from './components/search-panel-ad/search-pane
 
  import { CitiesComponent } from './components/cities/cities.component';
 import { UseradComponent } from './components/userad/userad.component';
+import { MasonryComponent } from './components/masonry/masonry.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -46,6 +47,7 @@ import { UseradComponent } from './components/userad/userad.component';
     SearchPanelAdComponent,
     CitiesComponent,
     UseradComponent,
+    MasonryComponent,
   ],
   imports: [
     FormsModule,

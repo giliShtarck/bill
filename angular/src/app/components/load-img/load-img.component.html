@@ -1,7 +1,8 @@
 <form [formGroup]="myForm">
-    <div class="form-group"><mat-icon>backup</mat-icon>
-    <input type="file" class="form-control-file" id="exampleFormControlFile1" accept="image/*"
-        formControlName="Base64Pic" (change)="getFiles($event)">
+    <div class="form-group">
+        <mat-icon>backup</mat-icon>
+        <input type="file" class="form-control-file" id="exampleFormControlFile1" accept="image/*"
+            formControlName="Base64Pic" (change)="getFiles($event)">
     </div>
 </form>
 <button (click)="AddImg()" [disabled]="myForm.invalid">הוספת תמונה</button>

@@ -4,7 +4,6 @@ import { PaneladService } from 'src/app/services/panelad/panelad.service';
 import { BillBoardService } from 'src/app/services/billboard/bill-board.service';
 import { element, EventEmitter } from 'protractor';
 import { PanelAds } from 'src/app/models/panelad/panel-ads';
-import { invalid } from '@angular/compiler/src/render3/view/util';
 
 @Component({
   selector: 'app-search-panel-ad',
@@ -12,18 +11,20 @@ import { invalid } from '@angular/compiler/src/render3/view/util';
   styleUrls: ['./search-panel-ad.component.scss']
 })
 export class SearchPanelAdComponent implements OnInit {
+
   myForm: FormGroup;
   checkedStreets: string[] = [];
   streetarr: string[] = []
   panelad: PanelAds[] = [];
-  constructor(private paneadservice: PaneladService, private billboardService: BillBoardService) { }
-
+  constructor(private paneadservice: PaneladService, private billboardService: BillBoardService) {
+  }
   ngOnInit(): void {
     this.myForm = new FormGroup({
-       city: new FormControl('', Validators.required),
+      city: new FormControl('', Validators.required),
       date: new FormControl('', Validators.required),
       street: new FormControl('', Validators.required)
     });
+  
   }
   //חיפוש לוחות
   search(): void {
@@ -34,7 +35,7 @@ export class SearchPanelAdComponent implements OnInit {
         });
       })
   }
-//העברת מידע מקופופונטה ערים (בן) לאב 
+  //העברת מידע מקופופונטה ערים (בן) לאב 
   ChangeCity(city): void {
     console.log(city)
     this.myForm.controls.city.setValue(city);
@@ -56,10 +57,10 @@ export class SearchPanelAdComponent implements OnInit {
     }
     else {
       this.checkedStreets = this.checkedStreets.filter(x => x != option);
-      if (this.checkedStreets.length==0) {
+      if (this.checkedStreets.length == 0) {
         this.myForm.controls.street.setValue('');
       }
-      else{
+      else {
         this.myForm.controls.street.setValue(this.checkedStreets[0]);
       }
     }

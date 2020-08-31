@@ -18,6 +18,7 @@ import { SearchAdvertismentComponent } from './components/search-advertisment/se
 import { SearchPanelAdComponent } from './components/search-panel-ad/search-panel-ad.component';
  import { CitiesComponent } from './components/cities/cities.component';
 import { UseradComponent } from './components/userad/userad.component';
+import { MasonryComponent } from './components/masonry/masonry.component';
 
 const routes: Routes = [
   {
@@ -50,7 +51,7 @@ const routes: Routes = [
           ]
       }
     ] },
-  { path: "", component: HomepageComponent },
+  { path: "", component: MasonryComponent },
 ];
 
 @NgModule({

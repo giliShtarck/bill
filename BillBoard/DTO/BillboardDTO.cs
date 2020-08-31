@@ -43,6 +43,7 @@ namespace DTO
                 PrecentPrice = b.PrecentPrice,
             };
         }
+        //convert list from dal to dto
         public static List<BillboardDTO> ListToDTO(List<Dal.Billboard> lp)
         {
             List<BillboardDTO> l = new List<BillboardDTO>();

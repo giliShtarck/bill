@@ -37,6 +37,7 @@ streetarr: string[] = []
       AdCategory: new FormControl('', Validators.required),
       AdAddress:new FormControl('', Validators.required)
     });
+  //הכנסת נתוני הקטגוריות 
     this.categoryService.GetAllCategories().subscribe(res => {
       res.forEach(element => {
         this.Categorylist.push({ CategoryId: element.CategoryId, CategoryName: element.CategoryName });
@@ -45,6 +46,7 @@ streetarr: string[] = []
     },
       (error) => { alert("error") }
     );
+    //שליפת הלוחות
     this.billboardService.getbillboards().subscribe(res => {
       res.forEach(element => {
         this.ArrBillboard.push(element);
@@ -53,6 +55,7 @@ streetarr: string[] = []
       (error) => { alert("error") }
     );
   }
+  //שליפת הרחובות לעיר בעת שינוי - בחירת עיר 
   ChangeCity(city): void {
     console.log(city)
     this.streetarr = [];
@@ -64,11 +67,13 @@ streetarr: string[] = []
         (error) => { console.log("error") }
     });
   }
+  //המרת שם הקטגוריה  למס' הקטגוריה
   selectedCategory(category: Category) {
     this.myForm.value.AdCategory = category.CategoryId;
     this.ad.AdCategory = this.myForm.value.AdCategory;
     // console.log(`category ${category} controll ${this.myForm.value.AdCategory}`);
   }
+  //////////////////////////////////////////////////////////////////////////////////////////////////////????????????????
   sendForm() {
     this.ad.AdCategory = this.myForm.controls.AdCategory.value;
     this.ad.AdDateBegin= this.myForm.controls.AdDateBegin.value;

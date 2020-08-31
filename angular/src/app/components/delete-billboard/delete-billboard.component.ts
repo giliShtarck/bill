@@ -16,6 +16,7 @@ export class DeleteBillboardComponent implements OnInit {
   constructor(private billBoardService: BillBoardService, private categoryService: CategoryService,private billboardService:BillBoardService) { }
   boardS;
   boardC;
+  //פונקציה המאפשרת כתיבת לינפוט בעיברית ואנגלית בלבד
   public inputValidator(event: any) {
     const pattern = /^[א-ת" "0-9]*$/;
     if (!pattern.test(event.target.value)) {
@@ -52,6 +53,7 @@ export class DeleteBillboardComponent implements OnInit {
   //   this.boardC = this.myForm.value.Boardcity;
   //   console.log(`category ${category} controll ${this.myForm.value.Boardcity}`);
   // }
+  //מחיקת לוח
   Delete() {
     this.boardC = this.myForm.controls.Boardcity.value;
     this.boardS = this.myForm.controls.Boardstreet.value;

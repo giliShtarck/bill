@@ -34,6 +34,7 @@ export class AddBillboardComponent implements OnInit {
       PrecentPrice: new FormControl('', Validators.required)
     });
   }
+  //קבלת רחובות ש"פ עיר לאחר בחירת העיר
   ChangeCity(city): void {
     console.log(city)
     this.b.BoardCity=city;
@@ -46,6 +47,7 @@ export class AddBillboardComponent implements OnInit {
         (error) => { console.log("error") }
     });
   }
+  //הוספת לוח
   AddBillBoard() {
 
     // this.b = this.myForm.value;

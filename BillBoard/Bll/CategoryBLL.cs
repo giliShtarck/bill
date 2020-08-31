@@ -8,9 +8,7 @@ using DTO;
 namespace Bll
 {
     public static class CategoryBLL
-    {
-
-       
+    {       
         static BoardDB3Entities db = new BoardDB3Entities();
         //שליפת כל הקטגוריות
         public static List<CategoryDTO> GetAllCategories()

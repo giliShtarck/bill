@@ -24,38 +24,49 @@ export class AdvertismentService {
   //   console.log(typeof this.arrAdvertisments);
   //   return this.arrAdvertisments;
   // }
-  addadvertisment(a: Advertisements) {
+  //הוספת מודעה לבסיס הנתונים
+  addadvertisment(a: Advertisements):Observable<Advertisements> {
     console.log(a)
-    return this.http.post(environment.url + "advertisment/addadvertisment", a);
+    return this.http.post<Advertisements>(environment.url + "advertisment/addadvertisment", a);
   }
+  //מחיקת מודעה
   deleteadvertisment(a: Advertisements) {
     return this.http.delete(environment.url + "deleteadvertisment/" + a);
   }
+  //שליפת מודעות לפי תאריך 
   getadvertisementsbydate(date: Date): Observable<Advertisements[]> {
     return this.http.get<Advertisements[]>(environment.url + this.basicURL + "/getadvertisementsbydate/" + date);
   }
+  //שליפת מודעות לפי קטגוריה
   getadvertisementsbycategory(category: Category): Observable<Advertisements[]> {
     return this.http.get<Advertisements[]>(environment.url + this.basicURL + "/getadvertisementsbycategory/" + category);
   }
+  //שליפת כל המודעות
   getalladvertisments(): Observable<Advertisements[]> {
     return this.http.get<Advertisements[]>(environment.url + this.basicURL + "/getalladvertisments");
   }
+  //שליפת כל מודעות הלקוח
   getalladvertismentsforuser(userid: number): Observable<Advertisements[]> {
     return this.http.get<Advertisements[]>(environment.url + this.basicURL + "/getalladvertismentsforuser/" + userid);
   }
+  //
   getlastadvertismentsbyuser(userid: number): Observable<Advertisements[]> {
     return this.http.get<Advertisements[]>(environment.url + this.basicURL + "/getlastadvertismentsbyuser/" + userid);
   }
+  //
   getallfalseadvertisments(): Observable<Advertisements[]> {
     return this.http.get<Advertisements[]>(environment.url + this.basicURL + "/getallfalseadvertisments");
   }
+  // שליפת מודעות ע"פ קטגוריה ועיר - חיפוש
   getadvertismentbycategoryandcity(city: string, category: string): Observable<Advertisements[]> {
     console.log(city, category);
     return this.http.get<Advertisements[]>(environment.url + this.basicURL + "/getadvertismentbycategoryandcity/" + city + "/" + category);
   }
+  //עדכון מס הצפיות במודעה
   updateadviews(AdId: number) {
     return this.http.put(environment.url + this.basicURL + "/updateadviews", AdId);
   }
+  //עדכון נתוני המודעה
   updatead(a: Advertisements): Observable<Advertisements> {
     return this.http.put<Advertisements>(environment.url + this.basicURL + "/updatead", a);
   }

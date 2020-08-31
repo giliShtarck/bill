@@ -20,6 +20,7 @@ export class NewPasswordComponent implements OnInit {
       UserMail: new FormControl('', [Validators.required, Validators.email])
     });
   }
+  //שליחת מייל ללקוח -איפוס סיסמא
   SendMail() {
     this.dialogRef.close();
     console.log(typeof this.myForm.controls.UserMail.value)

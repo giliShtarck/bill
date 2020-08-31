@@ -9,7 +9,6 @@ namespace Bll
 {
     public static class BillboardBLL
     {
-
         static BoardDB3Entities db = new BoardDB3Entities();
         //להוסיף לוח למאגר
         public static void AddBillBoard(BillboardDTO b)
@@ -33,7 +32,6 @@ namespace Bll
                 return true;
             }
             return false;
-
         }
         //לעדכן אחוזי מחיר
         public static void UpdatePrice()
@@ -80,13 +78,5 @@ namespace Bll
             }
             return streets;
         }
-
-        //.....פונקציה שבודקת בשעת הוספה שאין מרחק קטן ב 10 מטר האחד מהשני 
-        //בשבת הלוח מראה שבת שלום לפי getdate ובודקת בלוח שנה
-        //vvלפי לוח שנה- זמני היום
-        //התממשקות למזג האויר
-        //add modaha
-
     }
-
 }

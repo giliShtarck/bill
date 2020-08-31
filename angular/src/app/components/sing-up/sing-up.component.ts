@@ -22,9 +22,11 @@ export class SingUpComponent implements OnInit {
       Userpassword: new FormControl('', [Validators.required, Validators.minLength(8)])
     });
   }
+  //פתיחת דיאלוג לאיפוס סיסמא
   OpenDialog (): void {
     const dialogRef = this.dialog.open(NewPasswordComponent, {
       width: '250px',
+      ///////////////////////////////////////////////////////////////////////////////????????????
       data: {name:"aaa", animal: "animal"}
     });
 
@@ -33,7 +35,7 @@ export class SingUpComponent implements OnInit {
      // this.animal = result;
     });
   }
-
+//כניסנה למערכת
   SignIn() {
     this.email = this.myForm.controls.UserMail.value;
     this.password = this.myForm.controls.Userpassword.value;
