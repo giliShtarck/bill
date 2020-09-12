@@ -13,14 +13,28 @@ namespace API.Controllers
     public class AdvertismentController : ApiController
     {
         Bll.Add_Advertisment_BLL adbll = new Bll.Add_Advertisment_BLL();
-       [HttpPost]
+        [HttpPost]
         [Route("addadvertisment")]
         public IHttpActionResult AddAdvertisment([FromBody] AdvertisementsDTO a)
         {
             try
             {
-             AdvertisementsDTO ad= Bll.AdvertismentsBLL.AddAdvertisement(a);
+                AdvertisementsDTO ad = Bll.AdvertismentsBLL.AddAdvertisement(a);
                 return Ok(ad);  // להוסיף תאריך וקוד לוח
+            }
+            catch (Exception e)
+            {
+                return BadRequest();
+            }
+        }
+        [HttpGet]
+        [Route("sendemailmesg/{usermail}/{sub}/{msg}")]
+        public IHttpActionResult SendEmailMesg([FromUri]string usermail, [FromUri] string sub, [FromUri] string msg)
+        {
+            try
+            {
+                Bll.AdvertismentsBLL.SendEmailMesg(usermail, sub, msg);
+                return Ok();
             }
             catch (Exception e)
             {
@@ -63,13 +77,6 @@ namespace API.Controllers
         {
             return Bll.AdvertismentsBLL.GetAllFalseAdvertisments();
         }
-        [HttpPut]
-        [Route("Approval")]
-        public List<DateTime> Approval(AdvertisementsDTO c,int boardid)
-        {
-            Bll.Add_Advertisment_BLL ad = new Bll.Add_Advertisment_BLL();
-            return ad.Approval(c,boardid);
-        }
         [HttpGet]
         [Route("getadvertismentbycategoryandcity/{city}/{category}")]
         public List<AdvertisementsDTO> GetAdvertismentByCategoryAndCity([FromUri] string city, [FromUri]string category)
@@ -88,7 +95,7 @@ namespace API.Controllers
             catch (Exception)
             {
                 return BadRequest();
-            }          
+            }
         }
         [HttpPut]
         [Route("updatead")]
@@ -103,6 +110,43 @@ namespace API.Controllers
             {
                 return BadRequest();
             }
+        }
+        [HttpPut]
+        [Route("changestatus")]
+        public IHttpActionResult ChangeStatus([FromBody] AdvertisementsDTO a)
+        {
+            try
+            {
+                if (Bll.AdvertismentsBLL.ChangeStatus(a))
+                    return Ok();
+                else
+                    return BadRequest();
+            }
+            catch (Exception e)
+            {
+                return BadRequest();
+            }
+        }
+        [HttpDelete]
+        [Route("deleteadvertisment/{AdId}")]
+        public IHttpActionResult DeleteAdvertisment([FromUri] int AdId)
+        {
+            try
+            {
+                if (Bll.AdvertismentsBLL.DeleteAdvertisment(AdId))
+                    return Ok();
+                return BadRequest();
+            }
+            catch (Exception e)
+            {
+                return BadRequest();
+            }
+        }
+        [HttpGet]
+        [Route("approval/{a}/{city}/{street}")]
+        public List<DateTime> Approval([FromBody] AdvertisementsDTO a,[FromUri] string city,[FromUri] string street)
+        {
+            return adbll.Approval(a, city, street);
         }
     }
 }

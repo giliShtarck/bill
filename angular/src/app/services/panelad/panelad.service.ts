@@ -9,14 +9,11 @@ import { PanelAds } from 'src/app/models/panelad/panel-ads';
 })
 export class PaneladService {
   basicURL = "panelad"
-
   constructor(private http: HttpClient) { }
   //קבלת לוחות המודעות ע"פ כתובות ועיר
   getpaneladbyaddressanddate(street: string[], city: string, date: Date): Observable<PanelAds[]> {
-    console.log(city,date);
     street.forEach(element => {
-      console.log(element)
     });
-    return this.http.get<PanelAds[]>(environment.url + this.basicURL + "/getpaneladbyaddressanddate/" + street + "/" + city + "/" + date)
+    return this.http.get<PanelAds[]>(environment.url + this.basicURL + "/getpaneladbyaddressanddate/" + street + "/" + city + "/" + date.toLocaleDateString().replace('.', '-').replace('.', '-'))
   }
 }

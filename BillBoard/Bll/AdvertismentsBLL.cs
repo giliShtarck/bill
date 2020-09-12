@@ -25,7 +25,8 @@ namespace Bll
         //כל המודעות
         public static List<AdvertisementsDTO> GetAllAdvertisements()
         {
-            return AdvertisementsDTO.ListToDTO(db.Advertisements.Where(a => a.AdStatus == true && a.AdDateBegin != null && a.AdDateBegin <= DateTime.Today).ToList());
+
+            return AdvertisementsDTO.ListToDTO(db.Advertisements.Where(a => a.AdStatus == true /*&& a.AdDateBegin != null && a.AdDateBegin <= DateTime.Today*/).ToList());
         }
         //חיפוש מודעה לפי קטגוריה 
         public static List<AdvertisementsDTO> GetAdvertismentByCategory(string category)
@@ -84,6 +85,7 @@ namespace Bll
         //שליחת מייל ללקוח
         public static void SendEmailMesg(string userMail, string subject, string msg)
         {
+
             try
             {
                 MailMessage mail = new MailMessage();
@@ -95,23 +97,27 @@ namespace Bll
                 SmtpServer.Port = 587;
                 SmtpServer.Credentials = new System.Net.NetworkCredential("orgmodaonline@gmail.com", "manageronline");
                 SmtpServer.EnableSsl = true;
+                SmtpServer.Send(mail);
             }
             catch (Exception e)
             {
                 throw;
             }
         }
-        //משנה סטטוס של מודעה שמאושרת
+        //משנה סטטוס של מודעה שאושרה
         public static bool ChangeStatus(AdvertisementsDTO a)
         {
             try
             {
                 Advertisement newad = db.Advertisements.FirstOrDefault(x => x.AdId == a.AdId);
+
+
                 if (newad != null)
                 {
                     newad.AdStatus = true;
                     db.SaveChanges();
                     return true;
+
                 }
                 return false;
             }
@@ -140,6 +146,19 @@ namespace Bll
                 }
             }
             return l3;
+        }
+        //מחיקת מודעה שלא אושרה
+        public static bool DeleteAdvertisment(int AdId)
+        {
+
+            Advertisement ad = db.Advertisements.FirstOrDefault(x => x.AdId == AdId);
+            if(ad!=null)
+            {
+                db.Advertisements.Remove(ad);
+                db.SaveChanges();
+                return true;
+            }
+            return false;
         }
     }
 }

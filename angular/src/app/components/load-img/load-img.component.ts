@@ -31,7 +31,6 @@ export class LoadImgComponent implements OnInit {
     this.addpic.AdViews = 0;
     this.advertismentService.addadvertisment(this.addpic).subscribe(res => {
       console.log("success ")
-      console.log(res);
     },
       (error) => { console.log("error") }
     );
@@ -55,10 +54,10 @@ export class LoadImgComponent implements OnInit {
       console.log(this.addpic.AdFiles);
     };
   }
-  _handleReaderLoaded(readerEvt) {
-    var binaryString = readerEvt.target.result;
-    var filestring = btoa(binaryString);  // Converting binary string data.
-  }
+  // _handleReaderLoaded(readerEvt) {
+  //   var binaryString = readerEvt.target.result;
+  //   var filestring = btoa(binaryString);  // C   onverting binary string data.
+  // }
   // this.ad.AdFiles=this.myForm.controls.AdFiles.value;
   // console.log( this.ad.AdFiles)
 

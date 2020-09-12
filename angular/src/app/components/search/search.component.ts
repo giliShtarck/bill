@@ -3,7 +3,6 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { Category } from 'src/app/models/category/category';
 import { CategoryService } from 'src/app/services/category/category.service';
 import { PaneladService } from 'src/app/services/panelad/panelad.service';
-
 @Component({
   selector: 'app-search',
   templateUrl: './search.component.html',
@@ -15,8 +14,7 @@ export class SearchComponent implements OnInit {
   //בחירת אפשרות של חיפוש לוח או חיפוש מודעה
   changeslidetoggle(): void {
     if (this.checked == false) {
-      this.name = "חיפוש מודעה";
-      
+      this.name = "חיפוש מודעה";   
     }
     else {
       this.name = "חיפוש לוח";
@@ -24,9 +22,6 @@ export class SearchComponent implements OnInit {
     this.checked = !this.checked;
   }
   constructor() { }
-
   ngOnInit(): void {
   }
-
-
 }

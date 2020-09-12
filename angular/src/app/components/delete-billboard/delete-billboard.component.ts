@@ -13,6 +13,7 @@ import { CategoryService } from 'src/app/services/category/category.service';
 export class DeleteBillboardComponent implements OnInit {
   streetarr: string[] = []
   myForm: FormGroup;
+  billboardsCities:string[]=[]
   constructor(private billBoardService: BillBoardService, private categoryService: CategoryService,private billboardService:BillBoardService) { }
   boardS;
   boardC;
@@ -28,6 +29,14 @@ export class DeleteBillboardComponent implements OnInit {
       Boardstreet: new FormControl('', Validators.required),
       Boardcity: new FormControl('', Validators.required),
     });
+    //שליפת ערים שיש בהם לוחות
+    this.billboardService.getallbillboardcities().subscribe(res=>{
+      console.log(res);
+      res.forEach(element => {
+        this.billboardsCities.push(element);
+        console.log("success")
+      },(error)=>{console.log(error)});      
+    })
     // this.categoryService.GetAllCategories().subscribe(res => {
     //   this.Categorylist.push(res);
     //   console.log(this.Categorylist);
@@ -35,14 +44,13 @@ export class DeleteBillboardComponent implements OnInit {
     //   (error) => { alert("error") }
     // );
   }
-  ChangeCity(city): void {
-    console.log(city)
-    this.myForm.controls.Boardcity.setValue(city);
+  //שליפת רחובות לעיר
+  ChangeCity(): void {
     this.streetarr = [];
-    this.billboardService.getallstreets(this.myForm.controls.Boardcity.value).subscribe(res => {
-      console.log(res);
+    this.billboardService.getallstreets(this.myForm.controls.Boardcity.value).subscribe(res => {     
       res.forEach(element => {
         this.streetarr.push(element)
+        console.log("streetarr: "+this.streetarr)
       }),
         (error) => { console.log("error") }
     });
@@ -57,12 +65,10 @@ export class DeleteBillboardComponent implements OnInit {
   Delete() {
     this.boardC = this.myForm.controls.Boardcity.value;
     this.boardS = this.myForm.controls.Boardstreet.value;
-    console.log(this.boardC,this.boardS);
     this.billBoardService.Delete(this.boardC, this.boardS).subscribe(res => {
-      alert("success!");
+       console.log("success!");
     },
-      (error) => { alert("error") }
+      (error) => { console.log("error") }
     );
-
   }
 }

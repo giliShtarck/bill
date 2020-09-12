@@ -7,6 +7,7 @@ import { Router } from '@angular/router';
 
 import { UserService } from 'src/app/services/users/user.service';
 import { Users } from 'src/app/models/user/users';
+
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -19,6 +20,7 @@ export class LoginComponent implements OnInit {
   myForm: FormGroup;
   hide = true;
   user: Users = new Users();
+  //הגבלה להכניס רק ספרות- לפלאפון
   validateNumber(event) {
     const keyCode = event.keyCode;
     const excludedKeys = [8, 37, 39, 46];
@@ -28,6 +30,7 @@ export class LoginComponent implements OnInit {
       event.preventDefault();
     }
   }
+  //הגבלה לשם-רק אותיות
   public inputValidator(event: any) {
     const pattern = /^[a-zA-Zא-ת" "]*$/;
     if (!pattern.test(event.target.value)) {
@@ -50,10 +53,10 @@ export class LoginComponent implements OnInit {
     this.user=this.myForm.value;
     console.log(this.user);
     this.userService.Register(this.user).subscribe(res => {
-      alert("success!");
+      console.log("success!");
       this.router.navigate(["customer"]);
     },
-      (error) => { alert("error") }
+      (error) => { console.log("error") }
     );
   }
 }

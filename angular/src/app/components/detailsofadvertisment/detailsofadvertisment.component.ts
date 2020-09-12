@@ -5,6 +5,9 @@ import { CategoryService } from 'src/app/services/category/category.service';
 import { Category } from 'src/app/models/category/category';
 import { element } from 'protractor';
 import { Router } from '@angular/router';
+import { UserService } from 'src/app/services/users/user.service';
+import { findIndex } from 'rxjs/operators';
+import { strict } from 'assert';
 @Component({
   selector: 'app-detailsofadvertisment',
   templateUrl: './detailsofadvertisment.component.html',
@@ -12,54 +15,70 @@ import { Router } from '@angular/router';
 })
 export class DetailsofadvertismentComponent implements OnInit {
   Arradvertisment: Advertisements[] = [];
-  Categorylist: Category[] = [];
-  c: Category;
-  str:string;
-  constructor(private advertismentService: AdvertismentService, private categoryService: CategoryService,private router: Router) { }
+  str: string;
+  index: number;
+  userMail: string;
+  id: NodeJS.Timeout;
+  body: string;
+  subject: string = "עדכון פרסום המודעה";
+  constructor(private advertismentService: AdvertismentService, private categoryService: CategoryService, private router: Router,
+    private userService: UserService) { }
   ngOnInit(): void {
+    //הכנסת המודעות למערך
     this.advertismentService.getallfalseadvertisments().subscribe(res => {
       res.forEach(element => {
-        //  this.Arradvertisment.push({AdId:element.AdId,AdCategory:element.AdCategory,AdDateBegin:element.AdDateBegin,AdDateEnd:element.AdDateEnd,
-        // AdDateRequest:element.AdDateRequest,AdFiles:element.AdFiles,AdHeight:element.AdHeight,
-        // AdStatus:element.AdStatus,AdViews:element.AdViews,AdWidth:element.AdWidth,AdUserId:element.AdUserId});
         this.Arradvertisment.push(element);
       })
     },
-      (error) => { alert("error") }
+      (error) => { console.log("error") }
     );
-    //קבלת כל הקטגוריות
-    this.categoryService.GetAllCategories().subscribe(res => {
-      res.forEach(element => {
-        this.Categorylist.push({ CategoryId: element.CategoryId, CategoryName: element.CategoryName });
-      });
-    },
-      (error) => { alert("error") }
-
-    );
-  }
-  //קבלת שם הקטגוריה לפי מס' הקטגוריה
-  GetNameCategoty(ca: number): string {
-    this.c = ( this.Categorylist as Category[]).find(x => x.CategoryId == ca) ;
-    console.log(this.c);
-    // console.log((this.c as Category) + " " + (this.c as Category).CategoryId + " " + (this.c as Category).CategoryName)
-    console.log(this.c.CategoryName);
-    this.str=this.c.CategoryName;
-    return this.str;
-    // return this.c;
+    console.log(this.Arradvertisment)
   }
   //אישור מודעה  שינוי סטטוס
-  Approval(c: Advertisements): void {
-    // console.log(c);
+  ChangeStatus(a: Advertisements): void {
+    console.log("ChangeStatus" + typeof a);
+    this.advertismentService.ChangeStatus(a).subscribe(res => {
+      console.log("success");
+      for (let index = 0; index < this.Arradvertisment.length; index++) {
+        if (this.Arradvertisment[index].AdId == a.AdId) {
+          this.Arradvertisment.splice(index, 1);
+          break;
+        }
+      }
+      this.userService.usermail(a.AdUserId).subscribe(res => {
+        this.userMail = res;
+        console.log("res:  " + res);
+        this.body = "שלום לקוח יקר אושר לך פרסום המודעה שמספרה " + a.AdId + " נא הכנס לאזורך האישי להמשך הפרסום   ";
+        this.advertismentService.sendemailmesg(this.userMail, this.subject, this.body).subscribe(res => {
+          console.log("success")
+        }, (error) => { console.log(error) })
+      }, (error) => { console.log(error) })
+    }, (error) => { console.log(error) });
+    console.log(this.Arradvertisment);
 
-    // this.advertismentService.Approval(c).subscribe(res => { console.log("sucses!") }, err => { console.log("err :(") });
   }
   //ביטול המודעה -אינה מאושרת
-  Cancel(c: Advertisements): void {
-    // console.log(c);
-
-    
+  Cancel(a: Advertisements): void {
+    console.log(a);
+    // this.advertismentService.deleteadvertisment(a.AdId).subscribe(res => {
+    //   console.log("success")
+    //   for (let index = 0; index < this.Arradvertisment.length; index++) {
+    //     if (this.Arradvertisment[index].AdId == a.AdId) {
+    //       this.Arradvertisment.splice(index, 1);
+    //       break;
+    //     }
+    //   }
+    // }, (error) => { console.log(error) }
+    // );
+    this.userService.usermail(a.AdUserId).subscribe(res => {
+      this.userMail = res;
+      this.body = "שלום לקוח יקר לצערנו לא אושר לך את פרסום המודעה שמספרה הוא" + a.AdId;
+      this.advertismentService.sendemailmesg(this.userMail, this.subject, "לצערנו לא ניתן לפרסם את המודעה שלך בשל תוכן לא ראוי").subscribe(res => {
+        console.log("success")
+      }, (error) => { console.log(error) })
+    }, (error) => { console.log(error) })
   }
-
 }
+
 
 

@@ -24,7 +24,8 @@ const routes: Routes = [
   {
     path: 'customer', component: CustomerComponent,
     children: [{ path: "loadimg", component: LoadImgComponent },
-    {path:"userad",component:UseradComponent}
+    {path:"userad",component:UseradComponent},
+    {path:"add-advertisment",component:AddAdvertismentComponent}
     ]
   },
   {
@@ -51,7 +52,7 @@ const routes: Routes = [
           ]
       }
     ] },
-  { path: "", component: MasonryComponent },
+  { path: "", component: HomepageComponent }
 ];
 
 @NgModule({

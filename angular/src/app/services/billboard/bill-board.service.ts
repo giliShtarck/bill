@@ -17,13 +17,11 @@ export class BillBoardService {
   }
   //הוספת לוח
   AddBillBoard(b: Billboard) {
-    console.log(typeof b);
     return this.http.post(environment.url + "billboard/addbillboard", b);  
   }
   //מחיקת לוח ע"פ כתובת
   Delete(boardc,boards)
   {
-    console.log(boardc,boards)
     return this.http.delete(environment.url  + "billboard/deletebillboard/"+boardc+"/"+boards);
   }
   // שליפת הלוחות
@@ -33,7 +31,9 @@ export class BillBoardService {
   //קבלת כל הרחובות
   getallstreets(city:string):Observable<string[]>{
     return this.http.get<string[]>(environment.url+"billboard/getallstreets/"+city);
-
   }
-  
+  //שליפת ערים שיש בהם לוחות
+  getallbillboardcities():Observable<string[]>{
+    return this.http.get<string[]>(environment.url+"billboard/getallbillboardcities");
+  }
 }

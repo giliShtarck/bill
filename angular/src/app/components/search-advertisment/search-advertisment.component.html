@@ -1,19 +1,32 @@
 <form class="example-form" [formGroup]="myForm">
-    <mat-form-field >
-      <mat-select name="subject" required autocomplete="off" placeholder="בחר קטגוריה" formControlName="category">
-        <mat-option *ngFor="let option of Categorylist" [value]="option.CategoryName" (click)="selectedCategory(option)">
-          {{option.CategoryName}}
+  <mat-form-field>
+    <mat-select name="subject" required autocomplete="off" placeholder="בחר קטגוריה" formControlName="category">
+      <mat-option *ngFor="let option of Categorylist" [value]="option.CategoryName" (click)="selectedCategory(option)">
+        {{option.CategoryName}}
+      </mat-option>
+    </mat-select>
+    <mat-error *ngIf="myForm.controls.category.invalid">חובה להכניס קטגוריה</mat-error>
+  </mat-form-field>
+  <div>
+    <mat-form-field>
+      <mat-select name="subject" required autocomplete="off" placeholder="בחר עיר" formControlName="AdCity">
+        <mat-option *ngFor="let option of  billboardsCities" [value]="option" (click)="ChangeCity()">
+          {{option}}
         </mat-option>
       </mat-select>
-      <mat-error *ngIf="myForm.controls.category.invalid">חובה להכניס קטגוריה</mat-error>
+      <mat-error *ngIf="myForm.controls.AdCity.invalid">חובה להכניס עיר</mat-error>
     </mat-form-field>
-    <div>
-      <app-cities (outputName)="ChangeCity($event)"></app-cities>
-    </div>
-    <div class="example-button-container">
-      <button mat-fab color="accent" [disabled]="myForm.invalid" (click)="search()">
-        <mat-icon>search</mat-icon>
-      </button>
-    </div>
-    
-  </form>
+  </div>
+  <div class="example-button-container">
+    <button mat-fab color="accent" [disabled]="myForm.invalid" (click)="search()">
+      <mat-icon>search</mat-icon>
+    </button>
+  </div>
+</form>
+<mat-grid-list cols="3" rowHeight="2:1" >   
+  <mat-grid-tile *ngFor="let option of advertismentArr">   
+       <div>
+      <img src={{option.AdFiles}} (click)="updateviews(option)">         
+         </div>      
+     </mat-grid-tile>
+</mat-grid-list>

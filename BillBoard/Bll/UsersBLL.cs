@@ -36,6 +36,25 @@ namespace Bll
         //   שליחת מייל ללקוח ששכח סיסמא
         public static bool SendEmailMesg(string userMail)
         {
+            //try
+            //{
+            //    MailMessage mail = new MailMessage();
+            //    SmtpClient SmtpServer = new SmtpClient("smtp.gmail.com");
+            //    mail.From = new MailAddress("orgmodaonline@gmail.com");
+            //    mail.To.Add(userMail);
+            //    mail.Subject = subject;
+            //    mail.Body = msg;
+            //    SmtpServer.Port = 587;
+            //    SmtpServer.Credentials = new System.Net.NetworkCredential("orgmodaonline@gmail.com", "manageronline");
+            //    SmtpServer.EnableSsl = true;
+            //    SmtpServer.Send(mail);
+            //}
+            //catch (Exception e)
+            //{
+            //    throw;
+            //}
+
+
             try
             {
                 Random r = new Random();
@@ -63,6 +82,7 @@ namespace Bll
                 {
                     newuser.UserPassword = password;
                     db.SaveChanges();
+                    SmtpServer.Send(mail);
                 }
                 return true;
             }
@@ -86,7 +106,11 @@ namespace Bll
             {
                 return null;
             }
-
+        }
+        //מחזיר מייל לקוח לפי קוד לקוח
+        public static string UserMail(int userId)
+        {
+           return db.Users.FirstOrDefault(x => x.UserId == userId).UserMail;
         }
     }
 }

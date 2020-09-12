@@ -3,8 +3,7 @@
    <mat-form-field appearance="fill">
       <mat-label>הכנס מייל</mat-label>
       <input matInput placeholder="pat@example.com" required formControlName="UserMail" autocomplete="off"
-      type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" >
-      
+      type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" >   
       <mat-error *ngIf="myForm.controls.UserMail.invalid">חובה להכניס מייל תקין</mat-error>
   </mat-form-field>
   </div>
@@ -35,7 +34,5 @@
       <mat-error *ngIf="myForm.controls.UserName.invalid">חובה להכניס שם</mat-error>
     </mat-form-field>
   </div>
-<button mat-raised-button color="accent" class="example-button-row" (click)="Register()" ng-disabled="myForm.controls['email'].errors.email">התחבר</button>
+<button mat-raised-button color="accent" class="example-button-row" (click)="Register()" [disabled]="myForm.invalid">התחבר</button>
 </form>
-
-

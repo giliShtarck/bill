@@ -1,8 +1,10 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, EventEmitter, Output, OnInit } from '@angular/core';
 import xml2js from 'xml2js';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { CityService } from 'src/app/services/cities/city.service';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { Observable } from 'rxjs';
+import { map, startWith } from 'rxjs/operators';
 @Component({
   selector: 'app-cities',
   templateUrl: './cities.component.html',
@@ -18,7 +20,6 @@ export class CitiesComponent {
     this.myForm = new FormGroup({
       city: new FormControl('', Validators.required),
     });
-
   }
   // טעינת קובץ הקסמל
   loadXML() {
@@ -37,7 +38,6 @@ export class CitiesComponent {
             this.xmlItems = data;
           });
       });
-
   }
   //המרת הקובץ 
   parseXML(data) {
@@ -70,5 +70,5 @@ export class CitiesComponent {
     this.outputName.emit(this.myForm.controls.city.value);
     this.citiesService.SetCities(this.xmlItems);
   }
-}
 
+}

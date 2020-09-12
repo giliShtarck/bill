@@ -8,9 +8,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./customer.component.scss']
 })
 export class CustomerComponent implements OnInit {
-
   constructor(private router: Router) { }
-
   ngOnInit(): void {
   }
   //חזרה לדף הבית

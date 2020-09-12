@@ -8,23 +8,21 @@ import { Users } from 'src/app/models/user/users';
 })
 export class UserService {
   basicURL = "users"
-
   constructor(private http: HttpClient) { }
   //כניסה למערכת
   SignIn(mail: string, password: string): Observable<Users> {
-    console.log(mail);
-    console.log(password);
     return this.http.get<Users>(environment.url + this.basicURL + "/signin/" + mail + "/" + password);
   }
   //התחברות  ראשונית למערכת
   Register(user: Users) {
-    console.log(typeof user)
     return this.http.post(environment.url + this.basicURL + "/register", user);
   }
   //שליחת מייל לאיפוס סיסמא ללקוח
   sendemail(useremail: string) {
-    console.log(useremail);
-    debugger;
-    return this.http.get(environment.url  + "users/sendemail/" +  useremail);
+    return this.http.get(environment.url + "users/sendemail/" + useremail);
+  }
+  //קבלת מייל לקוח ע"פ הקוד
+  usermail(userId: number): Observable<string> {
+    return this.http.get<string>(environment.url + this.basicURL + "/usermail/" + userId);
   }
 }

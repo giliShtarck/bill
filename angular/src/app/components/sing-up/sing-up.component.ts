@@ -26,13 +26,11 @@ export class SingUpComponent implements OnInit {
   OpenDialog (): void {
     const dialogRef = this.dialog.open(NewPasswordComponent, {
       width: '250px',
-      ///////////////////////////////////////////////////////////////////////////////????????????
       data: {name:"aaa", animal: "animal"}
     });
 
     dialogRef.afterClosed().subscribe(result => {
       console.log('The dialog was closed');
-     // this.animal = result;
     });
   }
 //כניסנה למערכת
@@ -51,7 +49,7 @@ export class SingUpComponent implements OnInit {
         this.router.navigate(["customer"]);
       }
       console.log(localStorage.getItem("currentUserId"))
-      alert("success!");
+      console.log("success!");
     },
       (error) => {
         console.log(error, "user not found");

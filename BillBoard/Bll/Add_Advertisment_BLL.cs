@@ -68,10 +68,10 @@ namespace Bll
                 {
                     if (mat[i, j] == 0)
                     {
-                        if (CountPlace((int)a.AdWidth,(int) a.AdHeight, i, j))
+                        if (CountPlace((int)a.AdWidth, (int)a.AdHeight, i, j))
                         {
                             flag = 1;
-                            cnt = neighbors((int)a.AdWidth,(int) a.AdHeight, i, j);
+                            cnt = neighbors((int)a.AdWidth, (int)a.AdHeight, i, j);
                             if (cnt > max)
                             {
                                 max = cnt;
@@ -100,25 +100,25 @@ namespace Bll
                 }
 
             }
-            PanelToDal(ad.AdId, begin,(int) ad.AdHeight,(int) ad.AdWidth);
-        }      
+            PanelToDal(ad.AdId, begin, (int)ad.AdHeight, (int)ad.AdWidth);
+        }
         //פונקציה שממירה את המטריצה לסוג של הדל
         //add the new panel to sql
         public void PanelToDal(int AdId, int begin, int AdHeight, int AdWidth)
         {
-            
-                PanelAd p = new PanelAd()
-                {
-                    AdId = AdId,
-                    BoardId = this.boardId,
-                    PanelColumnEnd = begin % 10 + AdWidth,
-                    PanelColumnStart = begin % 10,
-                    PanelDate = this.date,
-                    PanelLineEnd = begin / 10 + AdHeight,
-                    PanelLineStart = begin / 10
-                };
-                db.PanelAds.Add(p);
-                db.SaveChanges();            
+
+            PanelAd p = new PanelAd()
+            {
+                AdId = AdId,
+                BoardId = this.boardId,
+                PanelColumnEnd = begin % 10 + AdWidth,
+                PanelColumnStart = begin % 10,
+                PanelDate = this.date,
+                PanelLineEnd = begin / 10 + AdHeight,
+                PanelLineStart = begin / 10
+            };
+            db.PanelAds.Add(p);
+            db.SaveChanges();
             //for (int i = 0; i < x; i++)
             //{
             //    for (int j = 0; j < y; j++)
@@ -164,18 +164,24 @@ namespace Bll
         //A function to reduce a matrix by allowing empty cells adjacent to each other to search
 
         //בודק האם יש מקום למודעה בתאריכים הרצויים
-        public List<DateTime> Approval(AdvertisementsDTO a, int boardid)
+        public List<DateTime> Approval(AdvertisementsDTO a, string city, string street)
         {
+            int boardid;
+            Billboard bill = db.Billboards.FirstOrDefault(x => x.BoardCity == city && x.BoardStreet == street);
             List<DateTime> listDates = new List<DateTime>();
-            bool begin = false;
-            DateTime date =(DateTime) a.AdDateBegin;
-            while (date < a.AdDateEnd)
+            if (bill != null)
             {
-                begin = ArrangePlace(a, date, boardid);
-                if (begin == true)
+                boardid = bill.BoardId;
+                bool begin = false;
+                DateTime date = (DateTime)a.AdDateBegin;
+                while (date < a.AdDateEnd)
                 {
-                    listDates.Add(date);
-                    date.AddDays(7);
+                    begin = ArrangePlace(a, date, boardid);
+                    if (begin == true)
+                    {
+                        listDates.Add(date);
+                        date.AddDays(7);
+                    }
                 }
             }
             return listDates;

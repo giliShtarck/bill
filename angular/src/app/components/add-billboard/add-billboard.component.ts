@@ -14,19 +14,15 @@ export class AddBillboardComponent implements OnInit {
   streetarr: string[] = []
   b: Billboard = new Billboard();
   myForm: FormGroup;
-  
-
+  //הגבלת הכנסה תוים, שיהיו רק בעברית
   public inputValidator(event: any) {
-
     const pattern = /^[0-9א-ת" "]*$/;
-
     if (!pattern.test(event.target.value)) {
       event.target.value = event.target.value.replace(/[^0-9א-ת" "]/g, "");
 
     }
   }
   constructor(private billboardservice: BillBoardService ) { }
-
   ngOnInit(): void {
     this.myForm = new FormGroup({
       BoardCity: new FormControl('', Validators.required),
@@ -39,8 +35,7 @@ export class AddBillboardComponent implements OnInit {
     console.log(city)
     this.b.BoardCity=city;
     this.streetarr = [];
-    this.billboardservice.getallstreets(this.b.BoardCity).subscribe(res => {
-      
+    this.billboardservice.getallstreets(this.b.BoardCity).subscribe(res => {  
       res.forEach(element => {
         this.streetarr.push(element)
       }),
@@ -49,16 +44,15 @@ export class AddBillboardComponent implements OnInit {
   }
   //הוספת לוח
   AddBillBoard() {
-
     // this.b = this.myForm.value;
     this.b.BoardId=0;
     this.b.BoardStreet=this.myForm.controls.BoardStreet.value;
     this.b.PrecentPrice=this.myForm.controls.PrecentPrice.value;
     console.log(this.b);
     this.billboardservice.AddBillBoard(this.b).subscribe(res => {
-      alert("success!");
+      console.log("success!");
     },
-      (error) => { alert("error") }
+      (error) => { console.log("error") }
     );
   }
 }

@@ -41,5 +41,19 @@ namespace API.Controllers
                 return Ok();
             return BadRequest();
         }
+        [HttpGet]
+        [Route("usermail/{userId}")]
+        public string UserMail([FromUri] int userId)
+        {
+            try
+            {
+              string mail=  Bll.UsersBLL.UserMail(userId);
+                return mail;
+            }
+            catch(Exception e)
+            {
+                return "לקוח זה אינו קיים";
+            }
+        }
     }
 }

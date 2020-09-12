@@ -31,6 +31,7 @@ namespace API.Controllers
         [Route("getpaneladbyaddressanddate/{street}/{city}/{date}")]
         public List<PanelDTO> GetPanelAdByAddressAndDate([FromUri]List<string> street, [FromUri]string city, [FromUri]DateTime date)
         {
+            
             return PanelAdBll.GetPanelAdByAddressAndDate(street, city, date);
         }
     }

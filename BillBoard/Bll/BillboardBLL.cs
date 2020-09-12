@@ -58,13 +58,16 @@ namespace Bll
         public static List<BillboardDTO> GetBillBoardByCityAndArrStreet(string city, List<string> street)
         {
             List<BillboardDTO> billboard = new List<BillboardDTO>();
-            BillboardDTO bill;
+            BillboardDTO billDTO;
+            Billboard bill;
             foreach (var item in street)
             {
-                bill = BillboardDTO.convertDalToDTO(db.Billboards.FirstOrDefault(x => x.BoardCity == city
-                  && x.BoardStreet == item));
+                bill = db.Billboards.FirstOrDefault(x => x.BoardCity == city && x.BoardStreet == item);
                 if (bill != null)
-                    billboard.Add(bill);
+                {
+                    billDTO = BillboardDTO.convertDalToDTO(bill);
+                    billboard.Add(billDTO);
+                }
             }
             return billboard;
         }
@@ -77,6 +80,33 @@ namespace Bll
                 streets.Add(item.BoardStreet);
             }
             return streets;
+        }
+        //שליפת ערים שקימים בהם לוחות
+        public static List<string> GetAllBillboardCities()
+        {
+            bool exsist = false;
+            List<string> cityList = new List<string>();
+            
+            foreach (var item in db.Billboards)
+            {
+                foreach (var item2 in cityList)
+                {
+                    if (item2 == item.BoardCity)
+                    {
+                        exsist = true;
+                        break;
+                    }
+
+                }
+
+                if (!exsist)
+                {
+                    cityList.Add(item.BoardCity);
+                    
+                }
+                exsist = false;
+            }
+            return cityList;
         }
     }
 }

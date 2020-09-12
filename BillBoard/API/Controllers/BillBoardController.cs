@@ -66,6 +66,12 @@ namespace API.Controllers
         {
             return Bll.BillboardBLL.GetBillBoardByCityAndArrStreet(city, street);
         }
+        [HttpGet]
+        [Route("getallbillboardcities")]
+        public List<string> GetAllBillboardCities()
+        {
+            return Bll.BillboardBLL.GetAllBillboardCities();
+        }
     }
 }
 

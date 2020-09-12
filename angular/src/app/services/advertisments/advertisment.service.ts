@@ -8,30 +8,16 @@ import { Category } from 'src/app/models/category/category';
   providedIn: 'root'
 })
 export class AdvertismentService {
-  Approval(c: Advertisements) {
-    return this.http.put(environment.url + this.basicURL + "/Approval", c);
-  }
+  advertismetToEdit: Advertisements;
   basicURL = "advertisment"
-  arrAdvertisments: Advertisements[] = [{
-    AdId: 111, AdCategory: 1, AdDateBegin: new Date(), AdDateEnd: new Date(),
-    AdDateRequest: new Date(), AdHeight: 2, AdUserId: 3, AdWidth: 3, AdViews: 0, AdFiles: "", AdStatus: false
-  }];
   constructor(private http: HttpClient) { }
-  // AddAdvertismentToArr(ad: Advertisements): void {
-  //   this.arrAdvertisments.push(ad);
-  // }
-  // GetArrAdvertisments():Advertisements[]{
-  //   console.log(typeof this.arrAdvertisments);
-  //   return this.arrAdvertisments;
-  // }
   //הוספת מודעה לבסיס הנתונים
-  addadvertisment(a: Advertisements):Observable<Advertisements> {
-    console.log(a)
+  addadvertisment(a: Advertisements): Observable<Advertisements> {
     return this.http.post<Advertisements>(environment.url + "advertisment/addadvertisment", a);
   }
   //מחיקת מודעה
-  deleteadvertisment(a: Advertisements) {
-    return this.http.delete(environment.url + "deleteadvertisment/" + a);
+  deleteadvertisment(adid: number) {
+    return this.http.delete(environment.url + this.basicURL + "/deleteadvertisment/" + adid);
   }
   //שליפת מודעות לפי תאריך 
   getadvertisementsbydate(date: Date): Observable<Advertisements[]> {
@@ -49,17 +35,16 @@ export class AdvertismentService {
   getalladvertismentsforuser(userid: number): Observable<Advertisements[]> {
     return this.http.get<Advertisements[]>(environment.url + this.basicURL + "/getalladvertismentsforuser/" + userid);
   }
-  //
+  //מחזיר את המודעה האחרונה לפי קוד לקוח
   getlastadvertismentsbyuser(userid: number): Observable<Advertisements[]> {
     return this.http.get<Advertisements[]>(environment.url + this.basicURL + "/getlastadvertismentsbyuser/" + userid);
   }
-  //
+  //למנהל -כל המודעות שממתינות לאישור
   getallfalseadvertisments(): Observable<Advertisements[]> {
     return this.http.get<Advertisements[]>(environment.url + this.basicURL + "/getallfalseadvertisments");
   }
   // שליפת מודעות ע"פ קטגוריה ועיר - חיפוש
   getadvertismentbycategoryandcity(city: string, category: string): Observable<Advertisements[]> {
-    console.log(city, category);
     return this.http.get<Advertisements[]>(environment.url + this.basicURL + "/getadvertismentbycategoryandcity/" + city + "/" + category);
   }
   //עדכון מס הצפיות במודעה
@@ -69,5 +54,25 @@ export class AdvertismentService {
   //עדכון נתוני המודעה
   updatead(a: Advertisements): Observable<Advertisements> {
     return this.http.put<Advertisements>(environment.url + this.basicURL + "/updatead", a);
+  }
+  //שליחת מייל עדכון לגבי פרסום המודעה
+  sendemailmesg(mail: string, sub: string, msg: string) {
+    return this.http.get(environment.url + this.basicURL + "/sendemailmesg/" + mail + "/" + sub + "/" + msg);
+  }
+  // שינוי סטטוס למודעה שאושרה
+  ChangeStatus(a: Advertisements) {
+    return this.http.put(environment.url + this.basicURL + "/changestatus/", a)
+  }
+  //שמירת המודעה הנוכחית לעריכה
+  EditAd(ad: Advertisements) {
+    this.advertismetToEdit = ad;
+  }
+  //שליפת המודעה להמשך עריכה
+  GetEditAd():Advertisements{
+    return this.advertismetToEdit;
+  }
+  //שליחת מודעה לבדיקה איזה תאריכים פנויים לה
+  Approval(a:Advertisements,city:string,street:string):Observable<Date[]>{
+    return this.http.get<Date[]>(environment.url+this.basicURL+"/approval/"+a+"/"+city+"/"+street)
   }
 }
