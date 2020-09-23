@@ -21,6 +21,10 @@ namespace DTO
         public Nullable<int> AdViews { get; set; }
         public bool AdStatus { get; set; }
         //From DAL to DTO
+        public AdvertisementsDTO()
+        {
+
+        }
         public static AdvertisementsDTO convertDalToDTO(Advertisement a)
         {
             return new AdvertisementsDTO()

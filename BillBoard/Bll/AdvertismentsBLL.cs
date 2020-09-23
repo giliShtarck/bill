@@ -35,9 +35,10 @@ namespace Bll
             && x.AdDateBegin != null && x.AdDateBegin <= DateTime.Today).ToList());
         }
         //עדכון מספר צפיות למודעה
-        public static void UpdateAdViews(int AdId)
+        public static void UpdateAdViews(AdvertisementsDTO a)
         {
-            db.Advertisements.FirstOrDefault(x => x.AdId == AdId).AdViews += 1;
+            Advertisement ad = db.Advertisements.FirstOrDefault(x => x.AdId == a.AdId);
+            ad.AdViews = ad.AdViews + 1;
             db.SaveChanges();
         }
         //עידכון מודעה 
@@ -152,7 +153,7 @@ namespace Bll
         {
 
             Advertisement ad = db.Advertisements.FirstOrDefault(x => x.AdId == AdId);
-            if(ad!=null)
+            if (ad != null)
             {
                 db.Advertisements.Remove(ad);
                 db.SaveChanges();

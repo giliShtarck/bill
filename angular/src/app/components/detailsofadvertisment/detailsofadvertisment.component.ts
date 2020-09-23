@@ -60,24 +60,24 @@ export class DetailsofadvertismentComponent implements OnInit {
   //ביטול המודעה -אינה מאושרת
   Cancel(a: Advertisements): void {
     console.log(a);
-    // this.advertismentService.deleteadvertisment(a.AdId).subscribe(res => {
-    //   console.log("success")
-    //   for (let index = 0; index < this.Arradvertisment.length; index++) {
-    //     if (this.Arradvertisment[index].AdId == a.AdId) {
-    //       this.Arradvertisment.splice(index, 1);
-    //       break;
-    //     }
-    //   }
-    // }, (error) => { console.log(error) }
-    // );
-    this.userService.usermail(a.AdUserId).subscribe(res => {
-      this.userMail = res;
-      this.body = "שלום לקוח יקר לצערנו לא אושר לך את פרסום המודעה שמספרה הוא" + a.AdId;
-      this.advertismentService.sendemailmesg(this.userMail, this.subject, "לצערנו לא ניתן לפרסם את המודעה שלך בשל תוכן לא ראוי").subscribe(res => {
-        console.log("success")
-      }, (error) => { console.log(error) })
-    }, (error) => { console.log(error) })
-  }
+    this.advertismentService.deleteadvertisment(a.AdId).subscribe(res => {
+      console.log("success")
+      for (let index = 0; index < this.Arradvertisment.length; index++) {
+        if (this.Arradvertisment[index].AdId == a.AdId) {
+          this.Arradvertisment.splice(index, 1);
+          break;
+        }
+      }
+    }, (error) => { console.log(error) }
+    );
+  //   this.userService.usermail(a.AdUserId).subscribe(res => {
+  //     this.userMail = res;
+  //     this.body = "שלום לקוח יקר לצערנו לא אושר לך את פרסום המודעה שמספרה הוא" + a.AdId;
+  //     this.advertismentService.sendemailmesg(this.userMail, this.subject, "לצערנו לא ניתן לפרסם את המודעה שלך בשל תוכן לא ראוי").subscribe(res => {
+  //       console.log("success")
+  //     }, (error) => { console.log(error) })
+  //   }, (error) => { console.log(error) })
+   }
 }
 
 

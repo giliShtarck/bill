@@ -3,9 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
+using System.Web.Helpers;
 using System.Web.Http;
 using System.Web.Http.Cors;
 using DTO;
+using Newtonsoft.Json;
+
 namespace API.Controllers
 {
     [RoutePrefix("advertisment")]
@@ -85,11 +88,11 @@ namespace API.Controllers
         }
         [HttpPut]
         [Route("updateadviews")]
-        public IHttpActionResult UpdateAdViews([FromUri]int AdId)
+        public IHttpActionResult UpdateAdViews([FromBody]AdvertisementsDTO a)
         {
             try
             {
-                Bll.AdvertismentsBLL.UpdateAdViews(AdId);
+                Bll.AdvertismentsBLL.UpdateAdViews(a);
                 return Ok();
             }
             catch (Exception)
@@ -128,12 +131,12 @@ namespace API.Controllers
             }
         }
         [HttpDelete]
-        [Route("deleteadvertisment/{AdId}")]
-        public IHttpActionResult DeleteAdvertisment([FromUri] int AdId)
+        [Route("deleteadvertisment/{adid}")]
+        public IHttpActionResult DeleteAdvertisment([FromUri] int adid)
         {
             try
             {
-                if (Bll.AdvertismentsBLL.DeleteAdvertisment(AdId))
+                if (Bll.AdvertismentsBLL.DeleteAdvertisment(adid))
                     return Ok();
                 return BadRequest();
             }
@@ -142,11 +145,14 @@ namespace API.Controllers
                 return BadRequest();
             }
         }
-        [HttpGet]
-        [Route("approval/{a}/{city}/{street}")]
-        public List<DateTime> Approval([FromBody] AdvertisementsDTO a,[FromUri] string city,[FromUri] string street)
+        [HttpPut]
+        [Route("approval")]
+        public List<DateTime>  Approval([FromBody] object []arr)
         {
-            return adbll.Approval(a, city, street);
+           var advertisment = Newtonsoft.Json.JsonConvert.DeserializeObject<AdvertisementsDTO>(JsonConvert.SerializeObject(arr[0]));
+            //AdvertisementsDTO a = (AdvertisementsDTO)arr[0];
+            return adbll.Approval(advertisment,arr[1].ToString(),arr[2].ToString());
+            //return Ok();
         }
     }
 }

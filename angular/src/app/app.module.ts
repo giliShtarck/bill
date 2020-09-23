@@ -22,13 +22,15 @@ import { LoadImgComponent } from './components/load-img/load-img.component';
 import { NewPasswordComponent } from './components/new-password/new-password.component';
 import { SearchAdvertismentComponent } from './components/search-advertisment/search-advertisment.component';
 import { SearchPanelAdComponent } from './components/search-panel-ad/search-panel-ad.component';
-
 import { CitiesComponent } from './components/cities/cities.component';
 import { UseradComponent } from './components/userad/userad.component';
 import { MasonryComponent } from './components/masonry/masonry.component';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { PendingPipeModule } from '@fivethree/async-pipes';
 import {MatAutocompleteModule} from '@angular/material/autocomplete';
+import { PaymentDetailsComponent } from './components/payment-details/payment-details.component';
+// import { NgxPayPalModule } from 'ngx-paypal';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 @NgModule({
   declarations: [
     AppComponent,
@@ -51,6 +53,7 @@ import {MatAutocompleteModule} from '@angular/material/autocomplete';
     CitiesComponent,
     UseradComponent,
     MasonryComponent,
+    PaymentDetailsComponent,
   ],
   imports: [
     FormsModule,
@@ -62,10 +65,13 @@ import {MatAutocompleteModule} from '@angular/material/autocomplete';
     ReactiveFormsModule,
     MatGridListModule,
     PendingPipeModule,
-    MatAutocompleteModule
-
+    MatAutocompleteModule,
+    MatCheckboxModule
+    // NgxPayPalModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+

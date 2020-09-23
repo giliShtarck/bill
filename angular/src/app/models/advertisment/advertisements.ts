@@ -1,15 +1,15 @@
 import { DatePipe } from '@angular/common';
 
 export class Advertisements {
-    AdId:number;
-    AdDateRequest:Date;
-    AdDateBegin:Date;
-    AdDateEnd:Date;
-    AdHeight:number;
-    AdWidth:number;
-    AdViews:number;
-    AdUserId:number;
-    AdFiles:string;
-    AdCategory:number;
-    AdStatus:boolean;
+    AdId: number;
+    AdCategory?: number;
+    AdDateRequest?: Date;
+    AdDateBegin?: Date;
+    AdDateEnd?: Date;
+    AdHeight?: number;
+    AdWidth?: number;
+    AdUserId: number;
+    AdFiles: string;
+    AdViews?: number;
+    AdStatus: boolean;
 }

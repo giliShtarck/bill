@@ -41,7 +41,7 @@ export class DeleteBillboardComponent implements OnInit {
     //   this.Categorylist.push(res);
     //   console.log(this.Categorylist);
     // },
-    //   (error) => { alert("error") }
+     //  (error) => { console.log("error") }
     // );
   }
   //שליפת רחובות לעיר

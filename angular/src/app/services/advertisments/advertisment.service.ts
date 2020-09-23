@@ -1,16 +1,25 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpParams } from '@angular/common/http';
 import { Advertisements } from 'src/app/models/advertisment/advertisements';
 import { environment } from 'src/environments/environment';
 import { Observable } from 'rxjs';
 import { Category } from 'src/app/models/category/category';
+import { JsonPipe } from '@angular/common';
 @Injectable({
   providedIn: 'root'
 })
 export class AdvertismentService {
   advertismetToEdit: Advertisements;
+  IfIsSearch: boolean = false;
+  arr: any[]=[]
   basicURL = "advertisment"
   constructor(private http: HttpClient) { }
+  SetFlag(b: boolean) {
+    this.IfIsSearch = b;
+  }
+  GetFlag(): boolean {
+    return this.IfIsSearch;
+  }
   //הוספת מודעה לבסיס הנתונים
   addadvertisment(a: Advertisements): Observable<Advertisements> {
     return this.http.post<Advertisements>(environment.url + "advertisment/addadvertisment", a);
@@ -48,8 +57,8 @@ export class AdvertismentService {
     return this.http.get<Advertisements[]>(environment.url + this.basicURL + "/getadvertismentbycategoryandcity/" + city + "/" + category);
   }
   //עדכון מס הצפיות במודעה
-  updateadviews(AdId: number) {
-    return this.http.put(environment.url + this.basicURL + "/updateadviews", AdId);
+  updateadviews(a: Advertisements) {
+    return this.http.put(environment.url + "advertisment/updateadviews", a);
   }
   //עדכון נתוני המודעה
   updatead(a: Advertisements): Observable<Advertisements> {
@@ -68,11 +77,17 @@ export class AdvertismentService {
     this.advertismetToEdit = ad;
   }
   //שליפת המודעה להמשך עריכה
-  GetEditAd():Advertisements{
+  GetEditAd(): Advertisements {
     return this.advertismetToEdit;
   }
   //שליחת מודעה לבדיקה איזה תאריכים פנויים לה
-  Approval(a:Advertisements,city:string,street:string):Observable<Date[]>{
-    return this.http.get<Date[]>(environment.url+this.basicURL+"/approval/"+a+"/"+city+"/"+street)
+  Approval(ad: Advertisements, city: string, street: string): Observable<Date[]> {
+    debugger;
+    this.arr[0] = ad;
+    this.arr[1] = city;
+    this.arr[2] = street
+    console.log("city", city);
+    // return this.http.put<Date[]>(environment.url + this.basicURL + "/approval?a="+ad+"&city=",city+"&street="+street)
+    return this.http.put<Date[]>(environment.url + this.basicURL + "/approval", this.arr);
   }
 }

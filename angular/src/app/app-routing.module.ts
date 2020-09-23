@@ -19,6 +19,8 @@ import { SearchPanelAdComponent } from './components/search-panel-ad/search-pane
  import { CitiesComponent } from './components/cities/cities.component';
 import { UseradComponent } from './components/userad/userad.component';
 import { MasonryComponent } from './components/masonry/masonry.component';
+// import { NgxPayPalModule } from 'ngx-paypal';
+
 
 const routes: Routes = [
   {
@@ -54,6 +56,7 @@ const routes: Routes = [
     ] },
   { path: "", component: HomepageComponent }
 ];
+
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

@@ -26,6 +26,7 @@ export class UseradComponent implements OnInit {
     //קבלת כל מודעות הלקוח שהתפרסמו
     this.advertismentService.getalladvertismentsforuser(Number(localStorage.getItem("currentUserId"))).subscribe(res => {
       res.forEach(element => {
+        console.log(element);
         this.userAdArr.push(element);
       }
       );
@@ -37,8 +38,9 @@ export class UseradComponent implements OnInit {
     )
   }
   //קבלת שם קטגוריה לפי הקוד
-  GetNameCategoty(c: Category): string {
-    return this.Categorylist.find(x => x.CategoryId == c.CategoryId).CategoryName;
+  GetNameCategoty(c: number): string {
+    console.log(c);
+    return this.Categorylist.find(x => x.CategoryId == c).CategoryName;
   }
   //העברת מודעה לקומפוננטה אחרת ע"י שליחה לסרביס
   edit(ad: Advertisements) {

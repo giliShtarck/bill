@@ -23,9 +23,10 @@
     </button>
   </div>
 </form>
-<mat-grid-list cols="3" rowHeight="2:1" >   
+<p *ngIf="!Exists">לא קימת מודעה לפי הקריטריונים שהזנת</p>
+<mat-grid-list cols="2" rowHeight="1:1" *ngIf="Exists">   
   <mat-grid-tile *ngFor="let option of advertismentArr">   
-       <div>
+       <div class="ad">
       <img src={{option.AdFiles}} (click)="updateviews(option)">         
          </div>      
      </mat-grid-tile>

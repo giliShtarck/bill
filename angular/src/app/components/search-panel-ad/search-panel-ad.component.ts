@@ -52,15 +52,17 @@ export class SearchPanelAdComponent implements OnInit {
   }
   //חיפוש לוחות
   search(): void {
+    this.panelad=[]
     this.paneladservice.getpaneladbyaddressanddate
       (this.checkedStreets, this.myForm.controls.city.value, this.myForm.controls.date.value).subscribe(res => {
+     debugger
         if (res != null) {
           this.Exists=true;
           res.forEach(element => {
             this.panelad.push(element);
           });
-          console.log(this.panelad);
-          this.drawBoard();
+          this.advertismentService.SetFlag(true)
+          this.drawBoard();       
         }
         else{
           this.Exists=false;
@@ -90,7 +92,9 @@ export class SearchPanelAdComponent implements OnInit {
       res.forEach(element => {
         this.streetarr.push(element)
         console.log("streetarr: "+this.streetarr)
-      }),
+      },
+      this.myForm.controls.street.setValue('')
+      ),
         (error) => { console.log("error") }
     });
   }
@@ -120,6 +124,7 @@ export class SearchPanelAdComponent implements OnInit {
   }
   //בדיקת ולידציה לטופס
   checkFormValid(): boolean {
+  
     if (this.myForm.invalid || this.checkDate())
       return true;
     return false

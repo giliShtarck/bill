@@ -14,5 +14,17 @@ namespace Bll
         {
             return int.Parse(db.Prices.First(a => a.NumsUnit == num).ToString());
         }
+        //שליפת המחירים עם כל הפרטים
+        public static List<PricesDTO> GetAllPrices()
+        {
+            try
+            {
+                return PricesDTO.ListToDTO(db.Prices.ToList());
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
     }
 }

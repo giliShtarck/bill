@@ -28,24 +28,34 @@ namespace Bll
                 }
             }
         }
-        //how many neigbers are catch
+        //how many neighbors are catch
         public int neighbors(int width, int height, int i, int j)
         {
             int[,] mat2 = new int[x + 2, y + 2];
+            int a1=0,b1=0;
             int cnt = 0;
             for (int a = 0; a < x + 2; a++)
             {
+                b1 = 0;
                 for (int b = 0; b < y + 2; b++)
                 {
-                    if (a == 0 || b == 0)
+                    if (a == 0 || b == 0 || a == x + 1 || b == y + 1)
                         mat2[a, b] = 1;
                     else
-                        mat2[a + 1, b + 1] = mat[a, b];
+                    { 
+                        mat2[a, b] = mat[a1, b1];
+                        b1++;
+                    }
+                }
+                if (a != 0)
+                {
+                    a1++;
                 }
             }
-            for (int a = i - 1; a < i + width; a++)
+            int i1 = i + 1, j1 = j + 1;
+            for (int a = i1-1; a < i1 + height+1; a++)
             {
-                for (int b = j - 1; b < j + height; b++)
+                for (int b = j1-1; b < j1 + width+1; b++)
                 {
                     if (mat2[a, b] != 0)
                     {

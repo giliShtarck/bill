@@ -27,6 +27,11 @@ namespace API.Controllers
                 return BadRequest();
             }
         }
-
+        [HttpGet]
+        [Route("getallprices")]
+        public List<PricesDTO> GetAllPrices()
+        {
+            return PriceBLL.GetAllPrices();
+        }
     }
 }

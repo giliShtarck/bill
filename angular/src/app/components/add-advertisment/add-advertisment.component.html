@@ -1,5 +1,28 @@
 <form [formGroup]="myForm">
   <div>
+    <mat-form-field>
+      <mat-select name="subject" required autocomplete="off" placeholder="בחר אורך" formControlName="AdHeight">
+        <mat-option *ngFor="let option of HeightArr" [value]="option" (click)="selectedAdHeight(option)">
+          {{option}}
+        </mat-option>
+      </mat-select>
+      <mat-error *ngIf="myForm.controls.AdHeight.invalid">חובה להכניס אורך</mat-error>
+    </mat-form-field>
+  </div>
+  <div>
+    <mat-form-field>
+      <mat-select name="subject" required autocomplete="off" placeholder="בחר רוחב" formControlName="AdWidth">
+        <mat-option *ngFor="let option of WidthArr" [value]="option" (click)="selectedAdWidth(option)">
+          {{option}}
+        </mat-option>
+      </mat-select>
+      <mat-error *ngIf="myForm.controls.AdWidth.invalid">חובה להכניס רוחב</mat-error>
+    </mat-form-field>
+  </div>
+  <div>
+  <button (click)="Reset()">איפוס אורך ורוחב</button>
+  </div>
+  <!-- <div>
     <mat-form-field appearance="fill">
       <mat-label>הכנס אורך</mat-label>
       <input matInput required placeholder="AdHeight" min="1" max="8" formControlName="AdHeight" type="number"
@@ -16,55 +39,58 @@
       <mat-error *ngIf="myForm.controls.AdHeight.invalid">חובה להכניס רוחב</mat-error>
     </mat-form-field>
     <p *ngIf="myForm.controls.AdWidth.value>4" [style.color]="'red'">חובה להכניס רוחב קטן מחמש יחידות</p>
-  </div>
+  </div>-->
   <div>
     <mat-form-field>
       <mat-label> בחר תאריך התחלה</mat-label>
-      <input matInput [matDatepicker]="picker" required  formControlName="AdDateBegin" >
-      <mat-datepicker-toggle matSuffix [for]="picker" ></mat-datepicker-toggle>
-      <mat-datepicker #picker ></mat-datepicker>    
+      <input matInput [matDatepicker]="picker" required formControlName="AdDateBegin">
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
       <mat-error *ngIf="myForm.controls.AdDateBegin.invalid">חובה להכניס תאריך התחלה</mat-error>
     </mat-form-field>
-    <p *ngIf="!myForm.controls.AdDateBegin.invalid&&checkDateBegin()" [style.color]="'red'">לא ניתן לבחור תאריך קטן מהיום</p>
+    <p *ngIf="!myForm.controls.AdDateBegin.invalid&&checkDateBegin()" [style.color]="'red'">לא ניתן לבחור תאריך קטן
+      מהיום</p>
   </div>
   <div>
     <mat-form-field>
       <mat-label> בחר תאריך סיום</mat-label>
-      <input matInput [matDatepicker]="picker1" required  formControlName="AdDateEnd">
+      <input matInput [matDatepicker]="picker1" required formControlName="AdDateEnd">
       <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
       <mat-datepicker #picker1></mat-datepicker>
       <mat-error *ngIf="myForm.controls.AdDateEnd.invalid">חובה להכניס תאריך סיום</mat-error>
     </mat-form-field>
-    <p *ngIf="!myForm.controls.AdDateEnd.invalid&&checkDateEnd()" [style.color]="'red'">לא ניתן לבחור תאריך קטן מתאריך ההתחלה</p>
+    <p *ngIf="!myForm.controls.AdDateEnd.invalid&&checkDateEnd()" [style.color]="'red'">לא ניתן לבחור תאריך קטן מתאריך
+      ההתחלה</p>
   </div>
-  <mat-form-field >
-      <mat-select  name="subject" required   autocomplete="off" placeholder="בחר קטגוריה" formControlName="AdCategory">
-        <mat-option *ngFor="let option of Categorylist" [value]="option.CategoryId"  (click)="selectedCategory(option)">
-          {{option.CategoryName}}
+  <mat-form-field>
+    <mat-select name="subject" required autocomplete="off" placeholder="בחר קטגוריה" formControlName="AdCategory">
+      <mat-option *ngFor="let option of Categorylist" [value]="option.CategoryId">
+        {{option.CategoryName}}
+      </mat-option>
+    </mat-select>
+    <mat-error *ngIf="myForm.controls.AdCategory.invalid">חובה להכניס קטגוריה</mat-error>
+  </mat-form-field>
+  <div>
+    <mat-form-field>
+      <mat-select name="subject" required autocomplete="off" placeholder="בחר עיר" formControlName="AdCity">
+        <mat-option *ngFor="let option of  billboardsCities" [value]="option" (click)="ChangeCity()">
+          {{option}}
         </mat-option>
       </mat-select>
-      <mat-error *ngIf="myForm.controls.AdCategory.invalid">חובה להכניס קטגוריה</mat-error>
+      <mat-error *ngIf="myForm.controls.AdCity.invalid">חובה להכניס עיר</mat-error>
     </mat-form-field>
-    <div>    
-      <mat-form-field >
-          <mat-select name="subject" required autocomplete="off" placeholder="בחר עיר" formControlName="AdCity" >
-            <mat-option *ngFor="let option of  billboardsCities" [value]="option" (click)="ChangeCity()">            
-             {{option}}
-            </mat-option>
-          </mat-select>
-          <mat-error *ngIf="myForm.controls.AdCity.invalid">חובה להכניס עיר</mat-error>
-        </mat-form-field>
-    </div>
-    <div >
-      <mat-form-field >
-          <mat-select name="subject" required autocomplete="off" placeholder="בחר רחוב" formControlName="AdAddress" >
-            <mat-option *ngFor="let option of streetarr" [value]="option" >            
-             {{option}}
-            </mat-option>
-          </mat-select>
-          <mat-error *ngIf="myForm.controls.AdAddress.invalid">חובה להכניס רחוב</mat-error>
-        </mat-form-field>
-    </div>
-    <div><button mat-raised-button color="accent" class="example-button-row" (click)="sendForm()"[disabled]="checkFormValid()">שלח לבדיקה</button></div>
-    <div class="img" dir="ltr"><img src={{ad.AdFiles}}></div>
-  </form>
+  </div>
+  <div>
+    <mat-form-field>
+      <mat-select name="subject" required autocomplete="off" placeholder="בחר רחוב" formControlName="AdAddress">
+        <mat-option *ngFor="let option of streetarr" [value]="option">
+          {{option}}
+        </mat-option>
+      </mat-select>
+      <mat-error *ngIf="myForm.controls.AdAddress.invalid">חובה להכניס רחוב</mat-error>
+    </mat-form-field>
+  </div>
+  <div><button mat-raised-button color="accent" class="example-button-row" (click)="sendForm()"
+      [disabled]="checkFormValid()">שלח לבדיקה</button></div>
+  <div class="img" dir="ltr"><img src={{ad.AdFiles}}></div>
+</form>

@@ -5,6 +5,7 @@ import { Category } from 'src/app/models/category/category';
 import { AdvertismentService } from 'src/app/services/advertisments/advertisment.service';
 import { Advertisements } from 'src/app/models/advertisment/advertisements';
 import { BillBoardService } from 'src/app/services/billboard/bill-board.service';
+import { exists } from 'fs';
 
 @Component({
   selector: 'app-search-advertisment',
@@ -12,25 +13,27 @@ import { BillBoardService } from 'src/app/services/billboard/bill-board.service'
   styleUrls: ['./search-advertisment.component.scss']
 })
 export class SearchAdvertismentComponent implements OnInit {
+
   myForm: FormGroup;
   Categorylist: Category[] = [];
   advertismentArr: Advertisements[] = [];
-  streetarr:string[]=[]
-  billboardsCities:string[]=[]
-  constructor(private categoryService: CategoryService, private advertismentService: AdvertismentService,private billboardService:BillBoardService) { }
+  streetarr: string[] = []
+  billboardsCities: string[] = []
+  Exists: boolean = true;
+  constructor(private categoryService: CategoryService, private advertismentService: AdvertismentService, private billboardService: BillBoardService) { }
   ngOnInit(): void {
     this.myForm = new FormGroup({
       category: new FormControl('', Validators.required),
-       AdCity: new FormControl('',Validators.required),
+      AdCity: new FormControl('', Validators.required),
     });
 
     //שליפת ערים שיש בהם לוחות
-    this.billboardService.getallbillboardcities().subscribe(res=>{
+    this.billboardService.getallbillboardcities().subscribe(res => {
       console.log(res);
       res.forEach(element => {
         this.billboardsCities.push(element);
         console.log("success")
-      },(error)=>{console.log(error)});      
+      }, (error) => { console.log(error) });
     })
     //קבלת כל הקטגוריות
     this.categoryService.GetAllCategories().subscribe(res => {
@@ -48,36 +51,47 @@ export class SearchAdvertismentComponent implements OnInit {
   //עדכון מערך הרחובות בכל שינוי של עיר
   ChangeCity(): void {
     this.streetarr = [];
-    this.billboardService.getallstreets(this.myForm.controls.AdCity.value).subscribe(res => {     
+    this.billboardService.getallstreets(this.myForm.controls.AdCity.value).subscribe(res => {
       res.forEach(element => {
         this.streetarr.push(element)
-        console.log("streetarr: "+this.streetarr)
+        console.log("streetarr: " + this.streetarr)
       }),
         (error) => { console.log("error") }
     });
   }
   //חיפוש
   search(): void {
-    console.log(this.myForm.controls.AdCity.value, this.myForm.controls.category.value)
+    debugger
+    this.advertismentArr = []
     this.advertismentService.getadvertismentbycategoryandcity(this.myForm.controls.AdCity.value, this.myForm.controls.category.value).subscribe(res => {
-      res.forEach(element => {
-        this.advertismentArr.push(element);
-      });
-      console.log(this.advertismentArr);
-      console.log("success");
+      debugger
+      if (res.length==0) {
+        this.Exists = false;
+      }
+      else {
+        res.forEach(element => {
+          this.advertismentArr.push(element);
+        });
+        this.advertismentService.SetFlag(true);
+        this.Exists = true;
+        console.log("success");
+      }
     }, (error) => { console.log("error") }
     );
   }
   //לאפשר את כפתור החיפוש עם בחרו את כל הנתונים
   checkValid(): boolean {
+    //this.advertismentService.SetFlag(true)
     if (this.myForm.controls.city.value != '' && this.myForm.valid)
       return false;
     return true;
   }
   //עדכון מספר הצפיות בעת לחיצה על מודעה
-  updateviews(a:Advertisements){
-    this.advertismentService.updateadviews(a.AdId).subscribe(res=>{
+  updateviews(a: Advertisements) {
+    debugger
+    console.log(a)
+    this.advertismentService.updateadviews(a).subscribe(res => {
       console.log("success")
-    },(error)=>{console.log(error)});
+    }, (error) => { console.log(error) });
   }
 }
