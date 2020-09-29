@@ -15,9 +15,11 @@ namespace Bll
         // שליפת מודעות ללוח לפי תאריך וקוד
         public static List<PanelDTO> GetPanelAdByBoardAndDate(int boardid, System.DateTime date)
         {
-
-            panel = PanelDTO.ListToDTO(db.PanelAds.Where(x => x.BoardId == boardid && x.PanelDate == date).ToList());
-            return panel;
+            using(BoardDB3Entities db2 = new BoardDB3Entities())
+            {
+                panel = PanelDTO.ListToDTO(db2.PanelAds.Where(x => x.BoardId == boardid && x.PanelDate == date).ToList());
+                return panel;
+            } 
         }
         //שליפת  לוחות לפי כתובת ותאריך
         public static List<PanelDTO> GetPanelAdByAddressAndDate(List<string> street, string city, System.DateTime date)

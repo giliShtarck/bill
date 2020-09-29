@@ -10,31 +10,11 @@
     </mat-form-field>
   </div>
 
-
-<!-- 
-  <div ng-controller="AppCtrl" class="md-padding" ng-cloak style="min-height:270px">
-    <div layout="row" layout-wrap>
-  
-      <div flex="100" flex-gt-sm="50" layout="column">
-        <div>
-          <fieldset class="standard" >
-            <legend>Using &lt;md-checkbox&gt; with &lt;ng-checked&gt; </legend>
-            <div layout="row" layout-wrap flex>
-              <div flex="50" ng-repeat="item in items">
-                <md-checkbox ng-checked="exists(item, selected)" ng-click="toggle(item, selected)">
-                  {{ item }} <span ng-if="exists(item, selected)">selected</span>
-                </md-checkbox>
-              </div>
-            </div>
-          </fieldset>
-        </div>
-      </div> -->
   <div>
     <mat-form-field>
       <mat-select name="subject" required autocomplete="off" placeholder="בחר רחוב" formControlName="street">
         <mat-option *ngFor="let option of streetarr" [value]="option">
-          <input type="checkbox" (change)="onChange($event.target.checked, option)">
-           <mat-checkbox class="example-margin" (change)="onChange($event.target.checked, option)"></mat-checkbox> -->
+          <input type="checkbox" (change)="onChange($event.target.checked, option)">   
           {{option}}
         </mat-option>
       </mat-select>
@@ -59,6 +39,6 @@
 <mat-grid-list cols="4" rowHeight="100px" *ngIf="Exists">
   <mat-grid-tile style="border:3px solid black" *ngFor="let tile of divList" [colspan]="tile.cols" [rowspan]="tile.rows"
     [style.background]="tile.color">
-    <img src={{tile.text}}>
+    <img src={{tile.text}} (click)="openDialog(tile)">
   </mat-grid-tile>
 </mat-grid-list>

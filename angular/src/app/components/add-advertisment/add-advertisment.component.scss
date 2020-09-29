@@ -1,10 +1,44 @@
 .example-container .mat-form-field + .mat-form-field {
-    margin-left: 8px;
-  }
-  .img{
-    direction: rtl;
-  }
-  // .file-field.big .file-path-wrapper {
-  //   height: 3.2rem; }
-  //   .file-field.big .file-path-wrapper .file-path {
-  //   height: 3rem; }
+  margin-left: 8px;
+}
+.img {
+  direction: rtl;
+  left: 45vw;
+  vertical-align: middle;
+  border-style: none;
+  position: absolute;
+  bottom: 25vh;
+}
+.basicButton {
+  display: inline-block;
+  grid-gap: 5vw;
+}
+fieldset {
+  height: 22vh;
+  border: black 2px solid;
+  position: absolute;
+  top: 76vh;
+  width: 80vw;
+  right: 20vh;
+  border-color: fuchsia;
+}
+legend {
+  direction: ltr;
+  display: block;
+  width: 100%;
+  max-width: 20%;
+  padding: 0;
+  margin-bottom: 0.5rem;
+  font-size:large;
+  line-height: inherit;
+  color: rgb(87, 84, 84);
+  white-space: normal;
+}
+.example-button-row button,
+.example-button-row a {
+  margin-right: 8px;
+}
+// .file-field.big .file-path-wrapper {
+//   height: 3.2rem; }
+//   .file-field.big .file-path-wrapper .file-path {
+//   height: 3rem; }

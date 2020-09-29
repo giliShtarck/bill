@@ -32,7 +32,7 @@ namespace Bll
         public int neighbors(int width, int height, int i, int j)
         {
             int[,] mat2 = new int[x + 2, y + 2];
-            int a1=0,b1=0;
+            int a1 = 0, b1 = 0;
             int cnt = 0;
             for (int a = 0; a < x + 2; a++)
             {
@@ -42,7 +42,7 @@ namespace Bll
                     if (a == 0 || b == 0 || a == x + 1 || b == y + 1)
                         mat2[a, b] = 1;
                     else
-                    { 
+                    {
                         mat2[a, b] = mat[a1, b1];
                         b1++;
                     }
@@ -53,9 +53,9 @@ namespace Bll
                 }
             }
             int i1 = i + 1, j1 = j + 1;
-            for (int a = i1-1; a < i1 + height+1; a++)
+            for (int a = i1 - 1; a < i1 + height + 1; a++)
             {
-                for (int b = j1-1; b < j1 + width+1; b++)
+                for (int b = j1 - 1; b < j1 + width + 1; b++)
                 {
                     if (mat2[a, b] != 0)
                     {
@@ -94,7 +94,7 @@ namespace Bll
             }
             if (flag == 1)
             {
-                //AddAdvertismentToMat(a, begin);
+                AddAdvertismentToMat(a, begin);
                 return true;
             }
             return false;
@@ -169,12 +169,8 @@ namespace Bll
             }
             return mat;
         }
-        //פונקציה שמנסה לסדר מקום למודעה חדשה
-        //פונקציה לצמצום מטריצה ע"מ לאפשר תאים  ריקים צמודים אחד לשני לחפש
-        //A function to reduce a matrix by allowing empty cells adjacent to each other to search
-
         //בודק האם יש מקום למודעה בתאריכים הרצויים
-        public List<DateTime> Approval(AdvertisementsDTO a, string city, string street)
+        public List<DateTime> Approval(AdvertisementsDTO a, string city, string street, bool IsToCheck)
         {
             int boardid;
             Billboard bill = db.Billboards.FirstOrDefault(x => x.BoardCity == city && x.BoardStreet == street);
@@ -186,16 +182,34 @@ namespace Bll
                 DateTime date = (DateTime)a.AdDateBegin;
                 while (date < a.AdDateEnd)
                 {
-                    begin = ArrangePlace(a, date, boardid);
+                    if (IsToCheck == true)
+                      begin=CheckPlace(a, date, boardid);
+                    else
+                        begin = ArrangePlace(a, date, boardid);
                     if (begin == true)
                     {
                         listDates.Add(date);
-                        date.AddDays(7);
+                        date = date.AddDays(7);
                     }
                 }
             }
             return listDates;
         }
+        //כאשר  הלקוח בוחר טווח תאריכים, בודק האם יש מקום למודעה, בלי להתחשב במיקום המדויק
+        public bool CheckPlace(AdvertisementsDTO a, DateTime date, int boardid)
+        {
+            for (int i = 0; i < x; i++)
+            {
+                for (int j = 0; j < y; j++)
+                {
+                    if (mat[i, j] == 0)
+                    {
+                        if (CountPlace((int)a.AdWidth, (int)a.AdHeight, i, j))
+                            return true;
+                    }
+                }
+            }
+            return false;
+        }
     }
-
 }

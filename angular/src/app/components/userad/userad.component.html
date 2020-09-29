@@ -15,7 +15,7 @@
             <td class="text-left" *ngIf="item.AdCategory==null">לא נבחרה קטגוריה</td>
             <td class="text-left"><img src={{item.AdFiles}}></td>
             <td class="text-left">{{item.AdViews}}</td>
-            <td><button *ngIf="item.AdDateBegin==null" (click)="edit(item)">לחץ כאן להמשך תהליך הפרסום</button></td>
+            <td><button (click)="edit(item)">לחץ כאן להמשך תהליך הפרסום</button></td>
         </tr>
     </tbody>
 </table>

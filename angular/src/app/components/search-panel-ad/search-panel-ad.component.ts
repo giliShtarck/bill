@@ -6,6 +6,8 @@ import { element, EventEmitter } from 'protractor';
 import { PanelAds } from 'src/app/models/panelad/panel-ads';
 import { Advertisements } from 'src/app/models/advertisment/advertisements';
 import { AdvertismentService } from 'src/app/services/advertisments/advertisment.service';
+import { MatDialog } from '@angular/material/dialog';
+import { PopupComponent } from '../popup/popup.component';
 export interface Tile {
   color: string;
   cols: number;
@@ -26,8 +28,9 @@ export class SearchPanelAdComponent implements OnInit {
   divList: Tile[] = [];
   billboardsCities:string[]=[];
   Exists:boolean=true;
+  tile:Tile;
   constructor(private paneladservice: PaneladService, private billboardService: BillBoardService, private renderer: Renderer2,
-    private advertismentService: AdvertismentService) {
+    private advertismentService: AdvertismentService,public dialog: MatDialog) {
   }
   ngOnInit(): void {
     this.myForm = new FormGroup({
@@ -128,6 +131,21 @@ export class SearchPanelAdComponent implements OnInit {
     if (this.myForm.invalid || this.checkDate())
       return true;
     return false
+  }
+ 
+  openDialog(pic:Tile): void {
+    this.tile=pic;
+    console.log(typeof pic)
+    const dialogRef = this.dialog.open(PopupComponent, {
+      width: '750px',
+      height:'750px',    
+      data: {color:this.tile.color,cols:this.tile.cols,rows:this.tile.rows,text:this.tile.text}
+    });
+
+    // dialogRef.afterClosed().subscribe(result => {
+    //   console.log('The dialog was closed');
+    //   this.pic = result;
+    // });
   }
 
 }

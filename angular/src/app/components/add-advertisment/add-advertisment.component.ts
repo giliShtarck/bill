@@ -11,12 +11,18 @@ import { BillBoardService } from 'src/app/services/billboard/bill-board.service'
 import { invalid } from '@angular/compiler/src/render3/view/util';
 import { Prices } from 'src/app/models/prices/prices';
 import { PricesService } from 'src/app/services/prices/prices.service';
+
 @Component({
   selector: 'app-add-advertisment',
   templateUrl: './add-advertisment.component.html',
   styleUrls: ['./add-advertisment.component.scss']
 })
 export class AddAdvertismentComponent implements OnInit {
+  DateBegin: Date;
+  DateEnd: Date;
+  CheckDate: Date;
+  cnt: number = 0;
+  secondDateList: Date[] = []
   ArrBillboard: Billboard[] = [];
   streetarr: string[] = []
   myForm: FormGroup;
@@ -26,17 +32,21 @@ export class AddAdvertismentComponent implements OnInit {
   PriceArr: Prices[] = [];
   WidthArr: number[] = [1, 2, 3, 4];
   HeightArr: number[] = [1, 2, 3, 4, 5, 6, 7, 8]
+  DateList: Date[] = [];
   flag: boolean;
-  width: number
+  width: number;
+  numWeek: number;
   public inputValidator(event: any) {
     const pattern = /^[a-zA-Zא-ת]*$/;
     if (!pattern.test(event.target.value)) {
       event.target.value = event.target.value.replace(/[^a-zA-Zא-ת]/g, "");
     }
   }
-  constructor(private priceService: PricesService, private categoryService: CategoryService, private advertismentservice: AdvertismentService, private billboardService: BillBoardService) {
+  constructor(private priceService: PricesService, private categoryService: CategoryService,
+    private advertismentservice: AdvertismentService, private billboardService: BillBoardService) {
   }
   ngOnInit(): void {
+    console.log("datelist", this.DateList)
     this.myForm = new FormGroup({
       AdDateBegin: new FormControl('', [Validators.required]),
       AdDateEnd: new FormControl('', [Validators.required]),
@@ -98,8 +108,15 @@ export class AddAdvertismentComponent implements OnInit {
     this.ad.AdHeight = this.myForm.controls.AdHeight.value;
     this.ad.AdWidth = this.myForm.controls.AdWidth.value;
     console.log(this.myForm.value)
-    this.advertismentservice.Approval(this.ad, this.myForm.controls.AdCity.value, this.myForm.controls.AdAddress.value).subscribe(res => {
+    this.advertismentservice.Approval(this.ad, this.myForm.controls.AdCity.value, this.myForm.controls.AdAddress.value, true).subscribe(res => {
       console.log("success!");
+      this.DateList = [];
+      res.forEach(element => {
+        this.DateList.push(element);
+        this.secondDateList.push(element);
+      });
+      console.log(this.DateList);
+
     },
       (error) => { console.log("error") }
     );
@@ -124,8 +141,8 @@ export class AddAdvertismentComponent implements OnInit {
       return true;
     return false;
   }
+  //מספר יחידות רוחב אפשריות לאחר שבחר אורך
   selectedAdHeight(AdHeight: number) {
-    debugger
     this.WidthArr = [];
     for (let i = 1; i < 5; i++) {
       this.flag = false;
@@ -140,6 +157,7 @@ export class AddAdvertismentComponent implements OnInit {
         this.WidthArr.push(i)
     }
   }
+  //מספר היחידות האפשריות של אורך לאחר שבחר רוחב
   selectedAdWidth(AdWidth: number) {
     this.HeightArr = []
     for (let i = 1; i < 9; i++) {
@@ -154,10 +172,68 @@ export class AddAdvertismentComponent implements OnInit {
         this.HeightArr.push(i)
     }
   }
+  //איפוס אורך ורוחב מודעה
   Reset() {
     this.myForm.controls.AdWidth.setValue(" ");
     this.myForm.controls.AdHeight.setValue(" ");
     this.WidthArr = [1, 2, 3, 4];
     this.HeightArr = [1, 2, 3, 4, 5, 6, 7, 8];
+  }
+  cnt2: number = 0;
+  //בדיקת התאריכים שהלקוח בחר, האם הם ברצף
+  dates(date: Date) {
+
+    // this.cnt = 0;
+    // if (this.DateBegin == null) {
+    //   this.DateBegin = date
+    // }
+    // else {
+    //   this.DateList.forEach(element => {
+    //     if (this.flag == true) {
+    //       this.cnt++;
+    //     }
+    //     if (element == this.DateBegin) {
+    //       this.flag = false
+    //     }
+    //   });    
+    //   this.DateList.forEach(element => {
+    //     this.cnt2++;
+    //   });
+    // }
+    debugger
+    this.secondDateList=[];
+    if (this.DateBegin == null) {
+      this.DateBegin=this.CheckDate = date;
+      this.DateList.forEach(element => {
+        this.CheckDate.setDate(this.CheckDate.getDate() + 7)
+        if (this.CheckDate == element){
+          debugger
+          this.secondDateList.push(this.CheckDate)
+        }
+      });
+    }
+    else {
+      if (this.DateEnd == null) {
+        this.DateEnd = date;
+      }
+    }
+  }
+  //חישוב תשלום
+  paymant() {
+
+    // this.numWeek=
+    this.priceService.calcPrice(this.ad.AdHeight * this.ad.AdWidth, this.myForm.controls.AdCity.value,
+      this.myForm.controls.AdAddress.value, this.numWeek).subscribe(res => {
+
+      });
+  }
+  //אישור מודעה והוספתה ללוח המתאים ולבסיס נתונים
+  ok() {
+    this.advertismentservice.Approval(this.ad, this.myForm.controls.AdCity.value, this.myForm.controls.AdAddress.value,
+      false).subscribe(res => {
+        console.log("succsess");
+      }), (error) => {
+        console.log("error");
+      }
   }
 }

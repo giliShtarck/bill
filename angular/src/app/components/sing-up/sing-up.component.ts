@@ -41,6 +41,7 @@ export class SingUpComponent implements OnInit {
       console.log(res);
       localStorage.setItem("currentUserId", res.UserId.toString());
       localStorage.setItem("currentUserMail", res.UserMail);
+      localStorage.setItem("currentUserName", res.UserName);
       if (res.UserMail == "manager@gmail.com") {
         console.log("true");
         this.router.navigate(["manager"]);

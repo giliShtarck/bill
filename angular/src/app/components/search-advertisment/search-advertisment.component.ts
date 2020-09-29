@@ -5,7 +5,9 @@ import { Category } from 'src/app/models/category/category';
 import { AdvertismentService } from 'src/app/services/advertisments/advertisment.service';
 import { Advertisements } from 'src/app/models/advertisment/advertisements';
 import { BillBoardService } from 'src/app/services/billboard/bill-board.service';
-import { exists } from 'fs';
+import { Tile } from '../search-panel-ad/search-panel-ad.component';
+import { PopupadComponent } from '../popupad/popupad.component';
+import { MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-search-advertisment',
@@ -13,14 +15,14 @@ import { exists } from 'fs';
   styleUrls: ['./search-advertisment.component.scss']
 })
 export class SearchAdvertismentComponent implements OnInit {
-
   myForm: FormGroup;
   Categorylist: Category[] = [];
   advertismentArr: Advertisements[] = [];
   streetarr: string[] = []
   billboardsCities: string[] = []
   Exists: boolean = true;
-  constructor(private categoryService: CategoryService, private advertismentService: AdvertismentService, private billboardService: BillBoardService) { }
+  constructor(private categoryService: CategoryService, private advertismentService: AdvertismentService,
+     private billboardService: BillBoardService,public dialog: MatDialog) { }
   ngOnInit(): void {
     this.myForm = new FormGroup({
       category: new FormControl('', Validators.required),
@@ -65,7 +67,7 @@ export class SearchAdvertismentComponent implements OnInit {
     this.advertismentArr = []
     this.advertismentService.getadvertismentbycategoryandcity(this.myForm.controls.AdCity.value, this.myForm.controls.category.value).subscribe(res => {
       debugger
-      if (res.length==0) {
+      if (res.length == 0) {
         this.Exists = false;
       }
       else {
@@ -88,8 +90,13 @@ export class SearchAdvertismentComponent implements OnInit {
   }
   //עדכון מספר הצפיות בעת לחיצה על מודעה
   updateviews(a: Advertisements) {
-    debugger
-    console.log(a)
+    const dialogRef = this.dialog.open(PopupadComponent, {
+      width: '750px',
+      height:'750px',    
+      data: {AdId:a.AdId,AdCategory:a.AdCategory,AdDateRequest:a.AdDateRequest,AdDateBegin:a.AdDateBegin,
+        AdDateEnd:a.AdDateEnd,AdHeight:a.AdHeight,AdWidth:a.AdWidth,AdUserId:a.AdUserId,AdFiles:a.AdFiles,
+        AdViews:a.AdViews,AdStatus:a.AdStatus}
+    });
     this.advertismentService.updateadviews(a).subscribe(res => {
       console.log("success")
     }, (error) => { console.log(error) });

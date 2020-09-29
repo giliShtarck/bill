@@ -25,4 +25,8 @@ export class UserService {
   usermail(userId: number): Observable<string> {
     return this.http.get<string>(environment.url + this.basicURL + "/usermail/" + userId);
   }
+  // קבלת שם לקוח ע"פ קוד לקוח
+  username(userId:number):Observable<string>{
+    return this.http.get<string>(environment.url+this.basicURL+"/username/"+userId);
+  }
 }

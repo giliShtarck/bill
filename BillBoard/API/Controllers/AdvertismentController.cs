@@ -149,9 +149,10 @@ namespace API.Controllers
         [Route("approval")]
         public List<DateTime>  Approval([FromBody] object []arr)
         {
-           var advertisment = Newtonsoft.Json.JsonConvert.DeserializeObject<AdvertisementsDTO>(JsonConvert.SerializeObject(arr[0]));
+           
+            var advertisment = Newtonsoft.Json.JsonConvert.DeserializeObject<AdvertisementsDTO>(JsonConvert.SerializeObject(arr[0]));
             //AdvertisementsDTO a = (AdvertisementsDTO)arr[0];
-            return adbll.Approval(advertisment,arr[1].ToString(),arr[2].ToString());
+            return adbll.Approval(advertisment,arr[1].ToString(),arr[2].ToString(),(bool)arr[3]);
             //return Ok();
         }
     }

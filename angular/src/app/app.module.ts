@@ -31,6 +31,9 @@ import {MatAutocompleteModule} from '@angular/material/autocomplete';
 import { PaymentDetailsComponent } from './components/payment-details/payment-details.component';
 // import { NgxPayPalModule } from 'ngx-paypal';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { PopupComponent } from './components/popup/popup.component';
+import { PopupadComponent } from './components/popupad/popupad.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -54,6 +57,8 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
     UseradComponent,
     MasonryComponent,
     PaymentDetailsComponent,
+    PopupComponent,
+    PopupadComponent,
   ],
   imports: [
     FormsModule,

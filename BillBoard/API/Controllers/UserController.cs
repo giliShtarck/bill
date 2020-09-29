@@ -55,5 +55,19 @@ namespace API.Controllers
                 return "לקוח זה אינו קיים";
             }
         }
+        [HttpGet]
+        [Route("username/{userId}")]
+        public string UserName([FromUri] int userId)
+        {
+            try
+            {
+                string name = Bll.UsersBLL.UserName(userId);
+                return name;
+            }
+            catch (Exception e)
+            {
+                return "לקוח זה אינו קיים";
+            }
+        }
     }
 }

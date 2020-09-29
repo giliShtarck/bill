@@ -112,5 +112,10 @@ namespace Bll
         {
            return db.Users.FirstOrDefault(x => x.UserId == userId).UserMail;
         }
+        // מחזיר שם לקוח לפי קוד לקוח
+        public static string UserName(int userId)
+        {
+            return db.Users.FirstOrDefault(x => x.UserId == userId).UserName;
+        }
     }
 }

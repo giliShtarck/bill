@@ -81,11 +81,11 @@ export class AdvertismentService {
     return this.advertismetToEdit;
   }
   //שליחת מודעה לבדיקה איזה תאריכים פנויים לה
-  Approval(ad: Advertisements, city: string, street: string): Observable<Date[]> {
-    debugger;
+  Approval(ad: Advertisements, city: string, street: string, IsToCheck:boolean): Observable<Date[]> {
     this.arr[0] = ad;
     this.arr[1] = city;
     this.arr[2] = street
+    this.arr[3]=IsToCheck;
     console.log("city", city);
     // return this.http.put<Date[]>(environment.url + this.basicURL + "/approval?a="+ad+"&city=",city+"&street="+street)
     return this.http.put<Date[]>(environment.url + this.basicURL + "/approval", this.arr);

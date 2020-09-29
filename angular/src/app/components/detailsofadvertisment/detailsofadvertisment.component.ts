@@ -20,6 +20,7 @@ export class DetailsofadvertismentComponent implements OnInit {
   userMail: string;
   id: NodeJS.Timeout;
   body: string;
+  userName:string;
   subject: string = "עדכון פרסום המודעה";
   constructor(private advertismentService: AdvertismentService, private categoryService: CategoryService, private router: Router,
     private userService: UserService) { }
@@ -46,9 +47,13 @@ export class DetailsofadvertismentComponent implements OnInit {
         }
       }
       this.userService.usermail(a.AdUserId).subscribe(res => {
+        //this.userService.username(a.AdUserId).subscribe(x=>{
+        //  this.userName=x;
+        //  console.log(this.userName)
+      // }, (error) => { console.log(error) })
         this.userMail = res;
         console.log("res:  " + res);
-        this.body = "שלום לקוח יקר אושר לך פרסום המודעה שמספרה " + a.AdId + " נא הכנס לאזורך האישי להמשך הפרסום   ";
+        this.body = " שלום לך "+localStorage.getItem("currentUserName")+"  אושר לך פרסום המודעה שמספרה " + a.AdId + " יש להכנס לאזורך האישי שבאתר להמשך תהליך הפרסום   ";
         this.advertismentService.sendemailmesg(this.userMail, this.subject, this.body).subscribe(res => {
           console.log("success")
         }, (error) => { console.log(error) })
@@ -70,13 +75,17 @@ export class DetailsofadvertismentComponent implements OnInit {
       }
     }, (error) => { console.log(error) }
     );
-  //   this.userService.usermail(a.AdUserId).subscribe(res => {
-  //     this.userMail = res;
-  //     this.body = "שלום לקוח יקר לצערנו לא אושר לך את פרסום המודעה שמספרה הוא" + a.AdId;
-  //     this.advertismentService.sendemailmesg(this.userMail, this.subject, "לצערנו לא ניתן לפרסם את המודעה שלך בשל תוכן לא ראוי").subscribe(res => {
-  //       console.log("success")
-  //     }, (error) => { console.log(error) })
-  //   }, (error) => { console.log(error) })
+    this.userService.usermail(a.AdUserId).subscribe(res => {
+      // this.userService.username(a.AdUserId).subscribe(x=>{
+      //   this.userName=x;
+      //   console.log(this.userName)
+      // }, (error) => { console.log(error) })
+      this.userMail = res;
+      this.body = "שלום לך "+localStorage.getItem("currentUserName")+ "  לצערנו לא אושר לך את פרסום המודעה שמספרה הוא" + a.AdId+" בשל תוכן לא ראוי";
+      this.advertismentService.sendemailmesg(this.userMail, this.subject, this.body).subscribe(res => {
+        console.log("success")
+      }, (error) => { console.log(error) })
+    }, (error) => { console.log(error) })
    }
 }
 

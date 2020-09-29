@@ -14,15 +14,15 @@ namespace API.Controllers
     public class PriceController : ApiController
     {
         [HttpGet]
-        [Route("calcprice")]
-        public IHttpActionResult CalcPrice([FromUri] int num)
+        [Route("calcprice/{num}/{city}/{street}/{numWeek}")]
+        public IHttpActionResult CalcPrice([FromUri] int num, [FromUri] string city, [FromUri] string street, [FromUri] int numWeek)
         {
             try
             {
-                PriceBLL.CalcPrice(num);
-                return Ok();
+                double price = PriceBLL.CalcPrice(num, city, street, numWeek);
+                return Ok(price);
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 return BadRequest();
             }
