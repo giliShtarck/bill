@@ -98,7 +98,7 @@ namespace Bll
                 return true;
             }
             return false;
-        }
+         }
         //place advertisment
         public void AddAdvertismentToMat(AdvertisementsDTO ad, int begin)
         {
@@ -121,10 +121,10 @@ namespace Bll
             {
                 AdId = AdId,
                 BoardId = this.boardId,
-                PanelColumnEnd = begin % 10 + AdWidth,
+                PanelColumnEnd = begin % 10 + AdWidth-1,
                 PanelColumnStart = begin % 10,
                 PanelDate = this.date,
-                PanelLineEnd = begin / 10 + AdHeight,
+                PanelLineEnd = begin / 10 + AdHeight-1,
                 PanelLineStart = begin / 10
             };
             db.PanelAds.Add(p);
@@ -156,6 +156,7 @@ namespace Bll
         //פונקציה הממירה טבלת לוח מודעות למטריצה
         public int[,] BuildMat(System.DateTime date, int boardid)
         {
+            mat = new int[x, y];
             List<DTO.PanelDTO> panel = PanelAdBll.GetPanelAdByBoardAndDate(boardid, date);
             foreach (var item in panel)
             {

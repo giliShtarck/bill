@@ -6,4 +6,5 @@ export class PanelAds {
     PanelLineEnd:number;
     PanelColumnStart:number;
     PanelColumnEnd:number;
+    PanelId:number;
 }

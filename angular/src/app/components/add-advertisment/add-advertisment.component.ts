@@ -11,6 +11,7 @@ import { BillBoardService } from 'src/app/services/billboard/bill-board.service'
 import { invalid } from '@angular/compiler/src/render3/view/util';
 import { Prices } from 'src/app/models/prices/prices';
 import { PricesService } from 'src/app/services/prices/prices.service';
+import { HebrewCalendar } from '@hebcal/core';
 
 @Component({
   selector: 'app-add-advertisment',
@@ -36,6 +37,10 @@ export class AddAdvertismentComponent implements OnInit {
   flag: boolean;
   width: number;
   numWeek: number;
+  LastPaymant: number;
+
+  dateFilter = (date: Date) =>
+    date.getDay() == 0 && HebrewCalendar.getHolidaysOnDate(date) == undefined;
   public inputValidator(event: any) {
     const pattern = /^[a-zA-Zא-ת]*$/;
     if (!pattern.test(event.target.value)) {
@@ -104,13 +109,16 @@ export class AddAdvertismentComponent implements OnInit {
   sendForm() {
     this.ad.AdCategory = this.myForm.controls.AdCategory.value;
     this.ad.AdDateBegin = this.myForm.controls.AdDateBegin.value;
+    this.ad.AdDateBegin = new Date(this.ad.AdDateBegin.getTime() + Math.abs(this.ad.AdDateBegin.getTimezoneOffset() * 60000));
     this.ad.AdDateEnd = this.myForm.controls.AdDateEnd.value;
+    this.ad.AdDateEnd = new Date(this.ad.AdDateEnd.getTime() + Math.abs(this.ad.AdDateEnd.getTimezoneOffset() * 60000));
     this.ad.AdHeight = this.myForm.controls.AdHeight.value;
     this.ad.AdWidth = this.myForm.controls.AdWidth.value;
     console.log(this.myForm.value)
     this.advertismentservice.Approval(this.ad, this.myForm.controls.AdCity.value, this.myForm.controls.AdAddress.value, true).subscribe(res => {
       console.log("success!");
       this.DateList = [];
+      this.secondDateList = [];
       res.forEach(element => {
         this.DateList.push(element);
         this.secondDateList.push(element);
@@ -201,12 +209,12 @@ export class AddAdvertismentComponent implements OnInit {
     //   });
     // }
     debugger
-    this.secondDateList=[];
+    this.secondDateList = [];
     if (this.DateBegin == null) {
-      this.DateBegin=this.CheckDate = date;
+      this.DateBegin = this.CheckDate = date;
       this.DateList.forEach(element => {
-        this.CheckDate.setDate(this.CheckDate.getDate() + 7)
-        if (this.CheckDate == element){
+        this.CheckDate.setDate(this.CheckDate.getDay() + 7)
+        if (this.CheckDate == element) {
           debugger
           this.secondDateList.push(this.CheckDate)
         }
@@ -223,8 +231,8 @@ export class AddAdvertismentComponent implements OnInit {
 
     // this.numWeek=
     this.priceService.calcPrice(this.ad.AdHeight * this.ad.AdWidth, this.myForm.controls.AdCity.value,
-      this.myForm.controls.AdAddress.value, this.numWeek).subscribe(res => {
-
+      this.myForm.controls.AdAddress.value, 3).subscribe(res => {
+        this.LastPaymant = res;
       });
   }
   //אישור מודעה והוספתה ללוח המתאים ולבסיס נתונים
@@ -232,8 +240,13 @@ export class AddAdvertismentComponent implements OnInit {
     this.advertismentservice.Approval(this.ad, this.myForm.controls.AdCity.value, this.myForm.controls.AdAddress.value,
       false).subscribe(res => {
         console.log("succsess");
+        alert("מודעתך התוספה בהצלחה")
       }), (error) => {
         console.log("error");
       }
+  }
+  //לא ניתן לשנות תאריך ידנית
+  validateNumber(event) {
+    event.preventDefault();
   }
 }

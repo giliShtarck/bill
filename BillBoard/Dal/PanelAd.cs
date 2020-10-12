@@ -21,8 +21,6 @@ namespace Dal
         public int PanelColumnStart { get; set; }
         public int PanelColumnEnd { get; set; }
         public System.DateTime PanelDate { get; set; }
-    
-        public virtual Advertisement Advertisement { get; set; }
-        public virtual Billboard Billboard { get; set; }
+        public int PanelId { get; set; }
     }
 }

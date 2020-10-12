@@ -56,7 +56,8 @@ export class LoginComponent implements OnInit {
       console.log("success!");
       this.router.navigate(["customer"]);
     },
-      (error) => { console.log("error") }
+      (error) => { console.log("error")
+    alert("לקוח זה קיים כבר במערכת") }     
     );
   }
 }

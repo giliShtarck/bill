@@ -6,7 +6,6 @@
     <EntitySet Name="Categories" EntityType="BoardDBModel.Category" />
     <EntitySet Name="Prices" EntityType="BoardDBModel.Price" />
     <EntitySet Name="Users" EntityType="BoardDBModel.User" />
-    <EntitySet Name="PanelAds" EntityType="BoardDBModel.PanelAd" />
     <AssociationSet Name="FK__Advertise__AdCat__2F10007B" Association="BoardDBModel.FK__Advertise__AdCat__2F10007B">
       <End Role="Category" EntitySet="Categories" />
       <End Role="Advertisement" EntitySet="Advertisements" />
@@ -15,14 +14,7 @@
       <End Role="User" EntitySet="Users" />
       <End Role="Advertisement" EntitySet="Advertisements" />
     </AssociationSet>
-    <AssociationSet Name="FK__PanelAds__AdId__31EC6D26" Association="BoardDBModel.FK__PanelAds__AdId__31EC6D26">
-      <End Role="Advertisement" EntitySet="Advertisements" />
-      <End Role="PanelAd" EntitySet="PanelAds" />
-    </AssociationSet>
-    <AssociationSet Name="FK__PanelAds__BoardI__30F848ED" Association="BoardDBModel.FK__PanelAds__BoardI__30F848ED">
-      <End Role="Billboard" EntitySet="Billboards" />
-      <End Role="PanelAd" EntitySet="PanelAds" />
-    </AssociationSet>
+    <EntitySet Name="PanelAds" EntityType="BoardDBModel.PanelAd" />
   </EntityContainer>
   <EntityType Name="Advertisement">
     <Key>
@@ -41,7 +33,6 @@
     <Property Name="AdStatus" Type="Boolean" Nullable="false" />
     <NavigationProperty Name="Category" Relationship="BoardDBModel.FK__Advertise__AdCat__2F10007B" FromRole="Advertisement" ToRole="Category" />
     <NavigationProperty Name="User" Relationship="BoardDBModel.FK__Advertise__AdUse__2E1BDC42" FromRole="Advertisement" ToRole="User" />
-    <NavigationProperty Name="PanelAds" Relationship="BoardDBModel.FK__PanelAds__AdId__31EC6D26" FromRole="Advertisement" ToRole="PanelAd" />
   </EntityType>
   <EntityType Name="Billboard">
     <Key>
@@ -51,7 +42,6 @@
     <Property Name="BoardStreet" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="true" />
     <Property Name="BoardCity" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="PrecentPrice" Type="Int32" Nullable="false" />
-    <NavigationProperty Name="PanelAds" Relationship="BoardDBModel.FK__PanelAds__BoardI__30F848ED" FromRole="Billboard" ToRole="PanelAd" />
   </EntityType>
   <EntityType Name="Category">
     <Key>
@@ -82,26 +72,6 @@
     <Property Name="UserPassword" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
     <NavigationProperty Name="Advertisements" Relationship="BoardDBModel.FK__Advertise__AdUse__2E1BDC42" FromRole="User" ToRole="Advertisement" />
   </EntityType>
-  <EntityType Name="PanelAd">
-    <Key>
-      <PropertyRef Name="BoardId" />
-      <PropertyRef Name="AdId" />
-      <PropertyRef Name="PanelLineStart" />
-      <PropertyRef Name="PanelLineEnd" />
-      <PropertyRef Name="PanelColumnStart" />
-      <PropertyRef Name="PanelColumnEnd" />
-      <PropertyRef Name="PanelDate" />
-    </Key>
-    <Property Name="BoardId" Type="Int32" Nullable="false" />
-    <Property Name="AdId" Type="Int32" Nullable="false" />
-    <Property Name="PanelLineStart" Type="Int32" Nullable="false" />
-    <Property Name="PanelLineEnd" Type="Int32" Nullable="false" />
-    <Property Name="PanelColumnStart" Type="Int32" Nullable="false" />
-    <Property Name="PanelColumnEnd" Type="Int32" Nullable="false" />
-    <Property Name="PanelDate" Type="DateTime" Nullable="false" Precision="0" />
-    <NavigationProperty Name="Advertisement" Relationship="BoardDBModel.FK__PanelAds__AdId__31EC6D26" FromRole="PanelAd" ToRole="Advertisement" />
-    <NavigationProperty Name="Billboard" Relationship="BoardDBModel.FK__PanelAds__BoardI__30F848ED" FromRole="PanelAd" ToRole="Billboard" />
-  </EntityType>
   <Association Name="FK__Advertise__AdCat__2F10007B">
     <End Type="BoardDBModel.Category" Role="Category" Multiplicity="0..1" />
     <End Type="BoardDBModel.Advertisement" Role="Advertisement" Multiplicity="*" />
@@ -126,28 +96,17 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__PanelAds__AdId__31EC6D26">
-    <End Type="BoardDBModel.Advertisement" Role="Advertisement" Multiplicity="1" />
-    <End Type="BoardDBModel.PanelAd" Role="PanelAd" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Advertisement">
-        <PropertyRef Name="AdId" />
-      </Principal>
-      <Dependent Role="PanelAd">
-        <PropertyRef Name="AdId" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__PanelAds__BoardI__30F848ED">
-    <End Type="BoardDBModel.Billboard" Role="Billboard" Multiplicity="1" />
-    <End Type="BoardDBModel.PanelAd" Role="PanelAd" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Billboard">
-        <PropertyRef Name="BoardId" />
-      </Principal>
-      <Dependent Role="PanelAd">
-        <PropertyRef Name="BoardId" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
+  <EntityType Name="PanelAd">
+    <Key>
+      <PropertyRef Name="PanelId" />
+    </Key>
+    <Property Name="BoardId" Type="Int32" Nullable="false" />
+    <Property Name="AdId" Type="Int32" Nullable="false" />
+    <Property Name="PanelLineStart" Type="Int32" Nullable="false" />
+    <Property Name="PanelLineEnd" Type="Int32" Nullable="false" />
+    <Property Name="PanelColumnStart" Type="Int32" Nullable="false" />
+    <Property Name="PanelColumnEnd" Type="Int32" Nullable="false" />
+    <Property Name="PanelDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="PanelId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
 </Schema>

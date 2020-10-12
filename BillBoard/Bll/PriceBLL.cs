@@ -17,7 +17,7 @@ namespace Bll
             //שליפה של אוביקט מחיר לפי מספר היחידות
             Price p = db.Prices.FirstOrDefault(x => x.NumsUnit == num);
             // חישוב סופי של המחיר
-            return (p.Price1 * precentPrice * (1 - p.PrecentDiscount)*(numWeek-1))+p.Price1 * precentPrice;
+            return (p.Price1 * precentPrice/100 * (1 - p.PrecentDiscount)*(numWeek-1))+p.Price1 * precentPrice/100;
         }
         //שליפת המחירים עם כל הפרטים
         public static List<PricesDTO> GetAllPrices()

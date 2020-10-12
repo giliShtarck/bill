@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
-import { parse } from 'path';
+import { parse, basename } from 'path';
 import { AdvertismentService } from 'src/app/services/advertisments/advertisment.service';
 import { Advertisements } from 'src/app/models/advertisment/advertisements';
 
@@ -10,6 +10,8 @@ import { Advertisements } from 'src/app/models/advertisment/advertisements';
   styleUrls: ['./load-img.component.scss']
 })
 export class LoadImgComponent implements OnInit {
+  Falert:boolean=false;
+  F2alert:boolean=false;
   myForm: FormGroup;
   fileToUpload: File = null;
   addpic: Advertisements = new Advertisements();
@@ -25,14 +27,26 @@ export class LoadImgComponent implements OnInit {
   }
   //הטענת תמונה מהמחשב
   AddImg(): void {
+    this.Falert=false;
+    this.F2alert=false;
     this.addpic.AdUserId = Number(localStorage.getItem("currentUserId"));
     this.addpic.AdStatus = false;
     this.addpic.AdDateRequest = new Date();
     this.addpic.AdViews = 0;
     this.advertismentService.addadvertisment(this.addpic).subscribe(res => {
       console.log("success ")
+      this.Falert=true;
+      //alert("התמונה התוספה בהצלחה")
+      this.myForm.controls.Base64Pic.setValue("");
     },
-      (error) => { console.log("error") }
+      (error) => {
+        console.log("error");
+        // alert("תמונה זו קיימת כבר במערכת")
+        this.F2alert=true;
+        this.myForm.controls.Base64Pic.setValue("");
+      },
+      
+
     );
   }
   //   getFiles(event) {
@@ -54,19 +68,5 @@ export class LoadImgComponent implements OnInit {
       console.log(this.addpic.AdFiles);
     };
   }
-  // _handleReaderLoaded(readerEvt) {
-  //   var binaryString = readerEvt.target.result;
-  //   var filestring = btoa(binaryString);  // C   onverting binary string data.
-  // }
-  // this.ad.AdFiles=this.myForm.controls.AdFiles.value;
-  // console.log( this.ad.AdFiles)
-
-
-
-
-
-
-
-
 
 }

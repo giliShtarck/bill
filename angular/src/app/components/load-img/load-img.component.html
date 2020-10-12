@@ -1,7 +1,21 @@
 <form [formGroup]="myForm">
     <div class="custom-file">
         <input type="file" class="custom-file-input" accept="image/*" id="customFile"  formControlName="Base64Pic" (change)="getFiles($event)">
-        <label class="custom-file-label" for="customFile">Choose file</label>
+        <label class="custom-file-label" for="customFile" >Choose file</label>
       </div> 
+
+
+      <div *ngIf="Falert" class="alert alert-warning alert-dismissible fade show a" role="alert">
+        <strong>התמונה התווספה בהצלחה!!!</strong>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div *ngIf="F2alert" class="alert alert-warning alert-dismissible fade show a" role="alert">
+        <strong> תמונה זו קיימת כבר במערכת!!!</strong>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
 </form>
 <button (click)="AddImg()" [disabled]="myForm.invalid">הוספת תמונה</button>

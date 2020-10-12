@@ -61,6 +61,7 @@
     <EntitySetMapping Name="PanelAds">
       <EntityTypeMapping TypeName="BoardDBModel.PanelAd">
         <MappingFragment StoreEntitySet="PanelAds">
+          <ScalarProperty Name="PanelId" ColumnName="PanelId" />
           <ScalarProperty Name="PanelDate" ColumnName="PanelDate" />
           <ScalarProperty Name="PanelColumnEnd" ColumnName="PanelColumnEnd" />
           <ScalarProperty Name="PanelColumnStart" ColumnName="PanelColumnStart" />

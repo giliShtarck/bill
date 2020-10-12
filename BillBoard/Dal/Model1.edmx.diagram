@@ -10,12 +10,10 @@
         <EntityTypeShape EntityType="BoardDBModel.Category" Width="1.5" PointX="0.75" PointY="6.125" />
         <EntityTypeShape EntityType="BoardDBModel.Price" Width="1.5" PointX="5.75" PointY="5.75" />
         <EntityTypeShape EntityType="BoardDBModel.User" Width="1.5" PointX="0.75" PointY="1.625" />
-        <EntityTypeShape EntityType="BoardDBModel.PanelAd" Width="1.5" PointX="5.25" PointY="1.5" />
         <AssociationConnector Association="BoardDBModel.FK__Advertise__AdCat__2F10007B" />
         <AssociationConnector Association="BoardDBModel.FK__Advertise__AdUse__2E1BDC42" />
-        <AssociationConnector Association="BoardDBModel.FK__PanelAds__AdId__31EC6D26" />
-        <AssociationConnector Association="BoardDBModel.FK__PanelAds__BoardI__30F848ED" />
-      </Diagram>
+        <EntityTypeShape EntityType="BoardDBModel.PanelAd" Width="1.5" PointX="5.375" PointY="0.75" />
+        </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
 </edmx:Edmx>

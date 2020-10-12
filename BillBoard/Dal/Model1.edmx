@@ -37,17 +37,9 @@
           <Property Name="CategoryId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="CategoryName" Type="nvarchar" MaxLength="50" Nullable="false" />
         </EntityType>
-        <!--Errors Found During Generation:
-warning 6002: The table/view 'BoardDB.dbo.PanelAds' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="PanelAds">
           <Key>
-            <PropertyRef Name="BoardId" />
-            <PropertyRef Name="AdId" />
-            <PropertyRef Name="PanelLineStart" />
-            <PropertyRef Name="PanelLineEnd" />
-            <PropertyRef Name="PanelColumnStart" />
-            <PropertyRef Name="PanelColumnEnd" />
-            <PropertyRef Name="PanelDate" />
+            <PropertyRef Name="PanelId" />
           </Key>
           <Property Name="BoardId" Type="int" Nullable="false" />
           <Property Name="AdId" Type="int" Nullable="false" />
@@ -56,6 +48,7 @@ warning 6002: The table/view 'BoardDB.dbo.PanelAds' does not have a primary key 
           <Property Name="PanelColumnStart" Type="int" Nullable="false" />
           <Property Name="PanelColumnEnd" Type="int" Nullable="false" />
           <Property Name="PanelDate" Type="date" Nullable="false" />
+          <Property Name="PanelId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
         </EntityType>
         <EntityType Name="Prices">
           <Key>
@@ -101,47 +94,13 @@ warning 6002: The table/view 'BoardDB.dbo.PanelAds' does not have a primary key 
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__PanelAds__AdId__31EC6D26">
-          <End Role="Advertisements" Type="Self.Advertisements" Multiplicity="1" />
-          <End Role="PanelAds" Type="Self.PanelAds" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Advertisements">
-              <PropertyRef Name="AdId" />
-            </Principal>
-            <Dependent Role="PanelAds">
-              <PropertyRef Name="AdId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK__PanelAds__BoardI__30F848ED">
-          <End Role="Billboard" Type="Self.Billboard" Multiplicity="1" />
-          <End Role="PanelAds" Type="Self.PanelAds" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Billboard">
-              <PropertyRef Name="BoardId" />
-            </Principal>
-            <Dependent Role="PanelAds">
-              <PropertyRef Name="BoardId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <EntityContainer Name="BoardDBModelStoreContainer">
           <EntitySet Name="Advertisements" EntityType="Self.Advertisements" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Billboard" EntityType="Self.Billboard" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Category" EntityType="Self.Category" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PanelAds" EntityType="Self.PanelAds" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Prices" EntityType="Self.Prices" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="PanelAds" EntityType="Self.PanelAds" store:Type="Tables" store:Schema="dbo">
-            <DefiningQuery>SELECT 
-    [PanelAds].[BoardId] AS [BoardId], 
-    [PanelAds].[AdId] AS [AdId], 
-    [PanelAds].[PanelLineStart] AS [PanelLineStart], 
-    [PanelAds].[PanelLineEnd] AS [PanelLineEnd], 
-    [PanelAds].[PanelColumnStart] AS [PanelColumnStart], 
-    [PanelAds].[PanelColumnEnd] AS [PanelColumnEnd], 
-    [PanelAds].[PanelDate] AS [PanelDate]
-    FROM [dbo].[PanelAds] AS [PanelAds]</DefiningQuery>
-          </EntitySet>
           <AssociationSet Name="FK__Advertise__AdCat__2F10007B" Association="Self.FK__Advertise__AdCat__2F10007B">
             <End Role="Category" EntitySet="Category" />
             <End Role="Advertisements" EntitySet="Advertisements" />
@@ -149,14 +108,6 @@ warning 6002: The table/view 'BoardDB.dbo.PanelAds' does not have a primary key 
           <AssociationSet Name="FK__Advertise__AdUse__2E1BDC42" Association="Self.FK__Advertise__AdUse__2E1BDC42">
             <End Role="Users" EntitySet="Users" />
             <End Role="Advertisements" EntitySet="Advertisements" />
-          </AssociationSet>
-          <AssociationSet Name="FK__PanelAds__AdId__31EC6D26" Association="Self.FK__PanelAds__AdId__31EC6D26">
-            <End Role="Advertisements" EntitySet="Advertisements" />
-            <End Role="PanelAds" EntitySet="PanelAds" />
-          </AssociationSet>
-          <AssociationSet Name="FK__PanelAds__BoardI__30F848ED" Association="Self.FK__PanelAds__BoardI__30F848ED">
-            <End Role="Billboard" EntitySet="Billboard" />
-            <End Role="PanelAds" EntitySet="PanelAds" />
           </AssociationSet>
         </EntityContainer>
       </Schema></edmx:StorageModels>
@@ -169,7 +120,6 @@ warning 6002: The table/view 'BoardDB.dbo.PanelAds' does not have a primary key 
           <EntitySet Name="Categories" EntityType="BoardDBModel.Category" />
           <EntitySet Name="Prices" EntityType="BoardDBModel.Price" />
           <EntitySet Name="Users" EntityType="BoardDBModel.User" />
-          <EntitySet Name="PanelAds" EntityType="BoardDBModel.PanelAd" />
           <AssociationSet Name="FK__Advertise__AdCat__2F10007B" Association="BoardDBModel.FK__Advertise__AdCat__2F10007B">
             <End Role="Category" EntitySet="Categories" />
             <End Role="Advertisement" EntitySet="Advertisements" />
@@ -178,15 +128,8 @@ warning 6002: The table/view 'BoardDB.dbo.PanelAds' does not have a primary key 
             <End Role="User" EntitySet="Users" />
             <End Role="Advertisement" EntitySet="Advertisements" />
           </AssociationSet>
-          <AssociationSet Name="FK__PanelAds__AdId__31EC6D26" Association="BoardDBModel.FK__PanelAds__AdId__31EC6D26">
-            <End Role="Advertisement" EntitySet="Advertisements" />
-            <End Role="PanelAd" EntitySet="PanelAds" />
-          </AssociationSet>
-          <AssociationSet Name="FK__PanelAds__BoardI__30F848ED" Association="BoardDBModel.FK__PanelAds__BoardI__30F848ED">
-            <End Role="Billboard" EntitySet="Billboards" />
-            <End Role="PanelAd" EntitySet="PanelAds" />
-          </AssociationSet>
-        </EntityContainer>
+          <EntitySet Name="PanelAds" EntityType="BoardDBModel.PanelAd" />
+          </EntityContainer>
         <EntityType Name="Advertisement">
           <Key>
             <PropertyRef Name="AdId" />
@@ -204,7 +147,6 @@ warning 6002: The table/view 'BoardDB.dbo.PanelAds' does not have a primary key 
           <Property Name="AdStatus" Type="Boolean" Nullable="false" />
           <NavigationProperty Name="Category" Relationship="BoardDBModel.FK__Advertise__AdCat__2F10007B" FromRole="Advertisement" ToRole="Category" />
           <NavigationProperty Name="User" Relationship="BoardDBModel.FK__Advertise__AdUse__2E1BDC42" FromRole="Advertisement" ToRole="User" />
-          <NavigationProperty Name="PanelAds" Relationship="BoardDBModel.FK__PanelAds__AdId__31EC6D26" FromRole="Advertisement" ToRole="PanelAd" />
         </EntityType>
         <EntityType Name="Billboard">
           <Key>
@@ -214,7 +156,6 @@ warning 6002: The table/view 'BoardDB.dbo.PanelAds' does not have a primary key 
           <Property Name="BoardStreet" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="true" />
           <Property Name="BoardCity" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="PrecentPrice" Type="Int32" Nullable="false" />
-          <NavigationProperty Name="PanelAds" Relationship="BoardDBModel.FK__PanelAds__BoardI__30F848ED" FromRole="Billboard" ToRole="PanelAd" />
         </EntityType>
         <EntityType Name="Category">
           <Key>
@@ -245,26 +186,6 @@ warning 6002: The table/view 'BoardDB.dbo.PanelAds' does not have a primary key 
           <Property Name="UserPassword" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="Advertisements" Relationship="BoardDBModel.FK__Advertise__AdUse__2E1BDC42" FromRole="User" ToRole="Advertisement" />
         </EntityType>
-        <EntityType Name="PanelAd">
-          <Key>
-            <PropertyRef Name="BoardId" />
-            <PropertyRef Name="AdId" />
-            <PropertyRef Name="PanelLineStart" />
-            <PropertyRef Name="PanelLineEnd" />
-            <PropertyRef Name="PanelColumnStart" />
-            <PropertyRef Name="PanelColumnEnd" />
-            <PropertyRef Name="PanelDate" />
-          </Key>
-          <Property Name="BoardId" Type="Int32" Nullable="false" />
-          <Property Name="AdId" Type="Int32" Nullable="false" />
-          <Property Name="PanelLineStart" Type="Int32" Nullable="false" />
-          <Property Name="PanelLineEnd" Type="Int32" Nullable="false" />
-          <Property Name="PanelColumnStart" Type="Int32" Nullable="false" />
-          <Property Name="PanelColumnEnd" Type="Int32" Nullable="false" />
-          <Property Name="PanelDate" Type="DateTime" Nullable="false" Precision="0" />
-          <NavigationProperty Name="Advertisement" Relationship="BoardDBModel.FK__PanelAds__AdId__31EC6D26" FromRole="PanelAd" ToRole="Advertisement" />
-          <NavigationProperty Name="Billboard" Relationship="BoardDBModel.FK__PanelAds__BoardI__30F848ED" FromRole="PanelAd" ToRole="Billboard" />
-        </EntityType>
         <Association Name="FK__Advertise__AdCat__2F10007B">
           <End Type="BoardDBModel.Category" Role="Category" Multiplicity="0..1" />
           <End Type="BoardDBModel.Advertisement" Role="Advertisement" Multiplicity="*" />
@@ -289,30 +210,19 @@ warning 6002: The table/view 'BoardDB.dbo.PanelAds' does not have a primary key 
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__PanelAds__AdId__31EC6D26">
-          <End Type="BoardDBModel.Advertisement" Role="Advertisement" Multiplicity="1" />
-          <End Type="BoardDBModel.PanelAd" Role="PanelAd" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Advertisement">
-              <PropertyRef Name="AdId" />
-            </Principal>
-            <Dependent Role="PanelAd">
-              <PropertyRef Name="AdId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK__PanelAds__BoardI__30F848ED">
-          <End Type="BoardDBModel.Billboard" Role="Billboard" Multiplicity="1" />
-          <End Type="BoardDBModel.PanelAd" Role="PanelAd" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Billboard">
-              <PropertyRef Name="BoardId" />
-            </Principal>
-            <Dependent Role="PanelAd">
-              <PropertyRef Name="BoardId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
+        <EntityType Name="PanelAd">
+          <Key>
+            <PropertyRef Name="PanelId" />
+          </Key>
+          <Property Name="BoardId" Type="Int32" Nullable="false" />
+          <Property Name="AdId" Type="Int32" Nullable="false" />
+          <Property Name="PanelLineStart" Type="Int32" Nullable="false" />
+          <Property Name="PanelLineEnd" Type="Int32" Nullable="false" />
+          <Property Name="PanelColumnStart" Type="Int32" Nullable="false" />
+          <Property Name="PanelColumnEnd" Type="Int32" Nullable="false" />
+          <Property Name="PanelDate" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="PanelId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+        </EntityType>
         </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -379,6 +289,7 @@ warning 6002: The table/view 'BoardDB.dbo.PanelAds' does not have a primary key 
           <EntitySetMapping Name="PanelAds">
             <EntityTypeMapping TypeName="BoardDBModel.PanelAd">
               <MappingFragment StoreEntitySet="PanelAds">
+                <ScalarProperty Name="PanelId" ColumnName="PanelId" />
                 <ScalarProperty Name="PanelDate" ColumnName="PanelDate" />
                 <ScalarProperty Name="PanelColumnEnd" ColumnName="PanelColumnEnd" />
                 <ScalarProperty Name="PanelColumnStart" ColumnName="PanelColumnStart" />

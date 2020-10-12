@@ -1,44 +1,52 @@
 <form class="example-form" [formGroup]="myForm">
-  <div>
-    <mat-form-field>
-      <mat-select name="subject" required autocomplete="off" placeholder="בחר עיר" formControlName="city">
-        <mat-option *ngFor="let option of  billboardsCities" [value]="option" (click)="ChangeCity()">
-          {{option}}
-        </mat-option>
-      </mat-select>
-      <mat-error *ngIf="myForm.controls.city.invalid">חובה להכניס עיר</mat-error>
-    </mat-form-field>
-  </div>
+  <div class="container">
+    <div class="row">
 
-  <div>
-    <mat-form-field>
-      <mat-select name="subject" required autocomplete="off" placeholder="בחר רחוב" formControlName="street">
-        <mat-option *ngFor="let option of streetarr" [value]="option">
-          <input type="checkbox" (change)="onChange($event.target.checked, option)">   
-          {{option}}
-        </mat-option>
-      </mat-select>
-      <mat-error *ngIf="myForm.controls.street.invalid">חובה להכניס רחוב</mat-error>
-    </mat-form-field>
+      <div cols=3>
+        <mat-form-field>
+          <mat-select name="subject" required autocomplete="off" placeholder="בחר עיר" formControlName="city">
+            <mat-option *ngFor="let option of  billboardsCities" [value]="option" (click)="ChangeCity()">
+              {{option}}
+            </mat-option>
+          </mat-select>
+          <mat-error *ngIf="myForm.controls.city.invalid">חובה להכניס עיר</mat-error>
+        </mat-form-field>
+      </div>
+
+      <div cols="3">
+        <mat-form-field>
+          <mat-select name="subject" required autocomplete="off" placeholder="בחר רחוב" formControlName="street">
+            <mat-option *ngFor="let option of streetarr" [value]="option">
+              <input type="checkbox" (change)="onChange($event.target.checked, option)">
+              {{option}}
+            </mat-option>
+          </mat-select>
+          <mat-error *ngIf="myForm.controls.street.invalid">חובה להכניס רחוב</mat-error>
+        </mat-form-field>
+      </div>
+      <mat-form-field cols="3">
+        <mat-label>בחר תאריך</mat-label>
+        <input matInput [matDatepicker]="picker" required formControlName="date" (keydown)="validateNumber($event)">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+        <mat-error *ngIf="myForm.controls.date.invalid">חובה להכניס תאריך</mat-error>
+      </mat-form-field>
+      <!-- *ngIf="!myForm.controls.date.invalid&&checkDate()"  -->
+      <!-- <p [style.color]="'red'">חובה לבחור תאריך קטן מהיום</p> -->
+    </div>
   </div>
-  <mat-form-field>
-    <mat-label>בחר תאריך</mat-label>
-    <input matInput [matDatepicker]="picker" required formControlName="date">
-    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-    <mat-datepicker #picker></mat-datepicker>
-    <mat-error *ngIf="myForm.controls.date.invalid">חובה להכניס תאריך</mat-error>
-  </mat-form-field>
-  <p *ngIf="!myForm.controls.date.invalid&&checkDate()" [style.color]="'red'">חובה לבחור תאריך קטן מהיום</p>
-  <div class="example-button-container">
-    <button mat-fab color="accent" [disabled]="checkFormValid()" (click)="search()">
+  <div class="example-button-container" >
+    <button mat-fab color="accent" (click)="search()">
+      <!-- [disabled]="checkFormValid()" -->
       <mat-icon>search</mat-icon>
     </button>
   </div>
   <p *ngIf="!Exists">לא קיים לוח לפי הקריטריונים שהזנת</p>
 </form>
-<mat-grid-list cols="4" rowHeight="100px" *ngIf="Exists">
+<mat-grid-list cols="4" rowHeight="80px" *ngIf="divList.length!=0"
+  style="border:3px solid black;width: 70vw;margin: auto;">
   <mat-grid-tile style="border:3px solid black" *ngFor="let tile of divList" [colspan]="tile.cols" [rowspan]="tile.rows"
     [style.background]="tile.color">
-    <img src={{tile.text}} (click)="openDialog(tile)">
+    <img src={{tile.text}} (click)="updateviews(tile)">
   </mat-grid-tile>
 </mat-grid-list>

@@ -26,13 +26,13 @@ namespace Bll
         public static List<AdvertisementsDTO> GetAllAdvertisements()
         {
 
-            return AdvertisementsDTO.ListToDTO(db.Advertisements.Where(a => a.AdStatus == true /*&& a.AdDateBegin != null && a.AdDateBegin <= DateTime.Today*/).ToList());
+            return AdvertisementsDTO.ListToDTO(db.Advertisements.Where(a => a.AdStatus == true&& a.AdDateBegin != null ).ToList());
         }
         //חיפוש מודעה לפי קטגוריה 
         public static List<AdvertisementsDTO> GetAdvertismentByCategory(string category)
-        {
+        { 
             return AdvertisementsDTO.ListToDTO(db.Advertisements.Where(x => x.Category.CategoryName == category && x.AdStatus == true
-            && x.AdDateBegin != null && x.AdDateBegin <= DateTime.Today).ToList());
+            && x.AdDateBegin != null ).ToList());
         }
         //עדכון מספר צפיות למודעה
         public static void UpdateAdViews(AdvertisementsDTO a)
@@ -59,7 +59,7 @@ namespace Bll
         //     a.AdDateBegin.y >= date.Year && a.AdDateEnd.Year <= date.Year && a.AdStatus == true).ToList());
 
         //הוספת מודעה
-        public static AdvertisementsDTO AddAdvertisement(AdvertisementsDTO ad)
+        public static bool AddAdvertisement(AdvertisementsDTO ad)
         {
             Advertisement advertisement = db.Advertisements.FirstOrDefault(x => x.AdFiles == ad.AdFiles);
             if (advertisement == null)
@@ -67,9 +67,9 @@ namespace Bll
                 Advertisement a = AdvertisementsDTO.ToDAL(ad);
                 db.Advertisements.Add(a);
                 db.SaveChanges();
-                return AdvertisementsDTO.convertDalToDTO(a);
+                return true;
             }
-            return AdvertisementsDTO.convertDalToDTO(advertisement);
+            return false;
         }
         // מחזיר את  רשימת המודעות הממתינות לאישור
         public static List<AdvertisementsDTO> GetAllFalseAdvertisments()
@@ -141,7 +141,7 @@ namespace Bll
                     var bill = l2.FirstOrDefault(x => x.BoardId == item.BoardId);
                     if (bill != null)
                     {
-                        if (add.AdDateBegin < DateTime.Today)
+                        if (item.PanelDate < DateTime.Today)
                             l3.Add(add);
                     }
                 }

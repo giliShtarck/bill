@@ -20,16 +20,37 @@ export class NewPasswordComponent implements OnInit {
       UserMail: new FormControl('', [Validators.required, Validators.email])
     });
   }
+  mail: string
   //שליחת מייל ללקוח -איפוס סיסמא
   SendMail() {
-    this.dialogRef.close();
+    debugger
     console.log(typeof this.myForm.controls.UserMail.value)
-    this.userService.sendemail(this.myForm.controls.UserMail.value).subscribe(res => {
+    this.mail = this.myForm.controls.UserMail.value
+    this.userService.sendemail(this.mail).subscribe(res => {
+      debugger
       console.log("succsess")
+     //  this.dialogRef.close();
     },
       (error) => {
         console.log(error);
-      }
+      }  
     );
+ 
   }
+  //   this.userService.usermail(a.AdUserId).subscribe(res => {
+  //     //this.userService.username(a.AdUserId).subscribe(x=>{
+  //     //  this.userName=x;
+  //     //  console.log(this.userName)
+  //   // }, (error) => { console.log(error) })
+  //     this.userMail = res;
+  //     console.log("res:  " + res);
+  //     this.body = " שלום לך "+localStorage.getItem("currentUserName")+"  אושר לך פרסום המודעה שמספרה " + a.AdId + " יש להכנס לאזורך האישי שבאתר להמשך תהליך הפרסום   ";
+  //     this.advertismentService.sendemailmesg(this.userMail, this.subject, this.body).subscribe(res => {
+  //       console.log("success")
+  //     }, (error) => { console.log(error) })
+  //   }, (error) => { console.log(error) })
+  // }, (error) => { console.log(error) });
+  // console.log(this.Arradvertisment);
+
+  // }
 }

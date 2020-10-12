@@ -7,7 +7,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from './components/login/login.component';
 import { SingUpComponent } from './components/sing-up/sing-up.component';
 import { HomepageComponent } from './components/homepage/homepage.component';
-import { MyMaterialModule } from './components/my-material/my-material.module';
+
 import { HttpClientModule } from '@angular/common/http';
 import { ResultSearchComponent } from './components/result-search/result-search.component';
 import { AddAdvertismentComponent } from './components/add-advertisment/add-advertisment.component';;
@@ -29,10 +29,14 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { PendingPipeModule } from '@fivethree/async-pipes';
 import {MatAutocompleteModule} from '@angular/material/autocomplete';
 import { PaymentDetailsComponent } from './components/payment-details/payment-details.component';
+import {MatDatepickerModule} from '@angular/material/datepicker';
 // import { NgxPayPalModule } from 'ngx-paypal';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { PopupComponent } from './components/popup/popup.component';
 import { PopupadComponent } from './components/popupad/popupad.component';
+import { MyMaterialModule } from './components/my-material/my-material.module';
+import { DatePipe } from '@angular/common';
+
 
 @NgModule({
   declarations: [
@@ -59,6 +63,7 @@ import { PopupadComponent } from './components/popupad/popupad.component';
     PaymentDetailsComponent,
     PopupComponent,
     PopupadComponent,
+    
   ],
   imports: [
     FormsModule,
@@ -74,7 +79,7 @@ import { PopupadComponent } from './components/popupad/popupad.component';
     MatCheckboxModule
     // NgxPayPalModule,
   ],
-  providers: [],
+  providers: [ DatePipe,],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

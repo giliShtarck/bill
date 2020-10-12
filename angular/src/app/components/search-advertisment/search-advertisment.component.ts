@@ -5,7 +5,6 @@ import { Category } from 'src/app/models/category/category';
 import { AdvertismentService } from 'src/app/services/advertisments/advertisment.service';
 import { Advertisements } from 'src/app/models/advertisment/advertisements';
 import { BillBoardService } from 'src/app/services/billboard/bill-board.service';
-import { Tile } from '../search-panel-ad/search-panel-ad.component';
 import { PopupadComponent } from '../popupad/popupad.component';
 import { MatDialog } from '@angular/material/dialog';
 
@@ -91,8 +90,8 @@ export class SearchAdvertismentComponent implements OnInit {
   //עדכון מספר הצפיות בעת לחיצה על מודעה
   updateviews(a: Advertisements) {
     const dialogRef = this.dialog.open(PopupadComponent, {
-      width: '750px',
-      height:'750px',    
+      width: '600px',
+      height:'600px',    
       data: {AdId:a.AdId,AdCategory:a.AdCategory,AdDateRequest:a.AdDateRequest,AdDateBegin:a.AdDateBegin,
         AdDateEnd:a.AdDateEnd,AdHeight:a.AdHeight,AdWidth:a.AdWidth,AdUserId:a.AdUserId,AdFiles:a.AdFiles,
         AdViews:a.AdViews,AdStatus:a.AdStatus}

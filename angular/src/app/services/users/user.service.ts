@@ -19,7 +19,8 @@ export class UserService {
   }
   //שליחת מייל לאיפוס סיסמא ללקוח
   sendemail(useremail: string) {
-    return this.http.get(environment.url + "users/sendemail/" + useremail);
+    
+    return this.http.put(environment.url +this.basicURL+ "/sendemail" ,useremail);
   }
   //קבלת מייל לקוח ע"פ הקוד
   usermail(userId: number): Observable<string> {

@@ -22,8 +22,9 @@ namespace API.Controllers
         {
             try
             {
-                AdvertisementsDTO ad = Bll.AdvertismentsBLL.AddAdvertisement(a);
-                return Ok(ad);  // להוסיף תאריך וקוד לוח
+                if (Bll.AdvertismentsBLL.AddAdvertisement(a))
+                    return Ok();  // להוסיף תאריך וקוד לוח
+                else return BadRequest();
             }
             catch (Exception e)
             {
@@ -147,12 +148,12 @@ namespace API.Controllers
         }
         [HttpPut]
         [Route("approval")]
-        public List<DateTime>  Approval([FromBody] object []arr)
+        public List<DateTime> Approval([FromBody] object[] arr)
         {
-           
+
             var advertisment = Newtonsoft.Json.JsonConvert.DeserializeObject<AdvertisementsDTO>(JsonConvert.SerializeObject(arr[0]));
             //AdvertisementsDTO a = (AdvertisementsDTO)arr[0];
-            return adbll.Approval(advertisment,arr[1].ToString(),arr[2].ToString(),(bool)arr[3]);
+            return adbll.Approval(advertisment, arr[1].ToString(), arr[2].ToString(), (bool)arr[3]);
             //return Ok();
         }
     }

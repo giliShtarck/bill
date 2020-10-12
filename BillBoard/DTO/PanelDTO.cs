@@ -15,7 +15,7 @@ namespace DTO
         public int PanelLineEnd { get; set; }
         public int PanelColumnStart { get; set; }
         public int PanelColumnEnd { get; set; }
-
+        public int PanelId { get; set; }
         //from dal to dto
 
         public static PanelDTO convertDalToDTO(PanelAd p)

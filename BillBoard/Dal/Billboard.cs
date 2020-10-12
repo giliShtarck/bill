@@ -14,18 +14,9 @@ namespace Dal
     
     public partial class Billboard
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Billboard()
-        {
-            this.PanelAds = new HashSet<PanelAd>();
-        }
-    
         public int BoardId { get; set; }
         public string BoardStreet { get; set; }
         public string BoardCity { get; set; }
         public int PrecentPrice { get; set; }
-    
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<PanelAd> PanelAds { get; set; }
     }
 }

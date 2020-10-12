@@ -22,28 +22,10 @@
   <div>
     <button (click)="Reset()">איפוס אורך ורוחב</button>
   </div>
-  <!-- <div>
-    <mat-form-field appearance="fill">
-      <mat-label>הכנס אורך</mat-label>
-      <input matInput required placeholder="AdHeight" min="1" max="8" formControlName="AdHeight" type="number"
-        autocomplete="off">
-      <mat-error *ngIf="myForm.controls.AdHeight.invalid">חובה להכניס אורך</mat-error>
-    </mat-form-field>
-    <p *ngIf="myForm.controls.AdHeight.value>8" [style.color]="'red'">חובה להכניס אורך קטן מתשע יחידות</p>
-  </div>
-  <div>
-    <mat-form-field appearance="fill">
-      <mat-label>הכנס רוחב</mat-label>
-      <input matInput required placeholder="AdWidth" min="1" max="8" formControlName="AdWidth" type="number"
-        autocomplete="off">
-      <mat-error *ngIf="myForm.controls.AdHeight.invalid">חובה להכניס רוחב</mat-error>
-    </mat-form-field>
-    <p *ngIf="myForm.controls.AdWidth.value>4" [style.color]="'red'">חובה להכניס רוחב קטן מחמש יחידות</p>
-  </div>-->
   <div>
     <mat-form-field>
       <mat-label> בחר תאריך התחלה</mat-label>
-      <input matInput [matDatepicker]="picker" required formControlName="AdDateBegin">
+      <input matInput [matDatepicker]="picker" [matDatepickerFilter]="dateFilter" required formControlName="AdDateBegin" (keydown)="validateNumber($event)">
       <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
       <mat-datepicker #picker></mat-datepicker>
       <mat-error *ngIf="myForm.controls.AdDateBegin.invalid">חובה להכניס תאריך התחלה</mat-error>
@@ -54,7 +36,8 @@
   <div>
     <mat-form-field>
       <mat-label> בחר תאריך סיום</mat-label>
-      <input matInput [matDatepicker]="picker1" required formControlName="AdDateEnd">
+      <input matInput [matDatepicker]="picker1"
+      [matDatepickerFilter]="dateFilter" required formControlName="AdDateEnd" (keydown)="validateNumber($event)">
       <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
       <mat-datepicker #picker1></mat-datepicker>
       <mat-error *ngIf="myForm.controls.AdDateEnd.invalid">חובה להכניס תאריך סיום</mat-error>
@@ -94,14 +77,12 @@
       [disabled]="checkFormValid()">שלח לבדיקה</button></div>
   <div class="img" dir="ltr"><img src={{ad.AdFiles}}></div>
 </form>
-<!-- <ul *ngFor="let option of DateList">
-  <li><button>{{option|date}}</button></li>
-</ul> -->
 <div *ngIf="DateList!=[]">
   <fieldset *ngIf="DateList!=[]">
     <legend> בחר טווח תאריכים לפרסום </legend>
-    <legend><button mat-button color="accent" (click)="paymant()">לחישוב התשלום</button>
-      <button mat-button color="accent" (click)="ok()">לאישור סופי</button></legend>
+    <legend><button mat-button color="accent" (click)="paymant()" [disabled]="checkFormValid()">לחישוב התשלום</button>
+      <div><p>תשלום סופי</p>{{LastPaymant}}</div>
+        <button mat-button color="accent" (click)="ok()">לאישור סופי</button></legend>
     <mat-grid-list cols="10" rowHeight="1:1">   
       <mat-grid-tile *ngFor="let option of secondDateList">   
            <div>
@@ -109,9 +90,5 @@
              </div>      
          </mat-grid-tile>
     </mat-grid-list>
-    <!-- <div>
-   <button mat-button color="accent" (click)="paymant()">לחישוב התשלום</button>
-   <button mat-button color="accent" (click)="ok()">לאישור סופי</button>
-  </div> -->
   </fieldset>
 </div>

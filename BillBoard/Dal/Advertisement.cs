@@ -14,12 +14,6 @@ namespace Dal
     
     public partial class Advertisement
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Advertisement()
-        {
-            this.PanelAds = new HashSet<PanelAd>();
-        }
-    
         public int AdId { get; set; }
         public Nullable<int> AdCategory { get; set; }
         public Nullable<System.DateTime> AdDateRequest { get; set; }
@@ -34,7 +28,5 @@ namespace Dal
     
         public virtual Category Category { get; set; }
         public virtual User User { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<PanelAd> PanelAds { get; set; }
     }
 }

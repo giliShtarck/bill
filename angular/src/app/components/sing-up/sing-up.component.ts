@@ -54,6 +54,7 @@ export class SingUpComponent implements OnInit {
     },
       (error) => {
         console.log(error, "user not found");
+        alert("לקוח זה לא קיים במערכת")
       }
     );
   }

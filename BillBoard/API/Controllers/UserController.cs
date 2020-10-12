@@ -32,9 +32,9 @@ namespace API.Controllers
                   return Ok(u);
             return BadRequest();
         }
-        [HttpGet]
-        [Route("sendemail/{usermail}")]
-        public IHttpActionResult SendEmail([FromUri] string usermail)
+        [HttpPut]
+        [Route("sendemail")]
+        public IHttpActionResult SendEmail([FromBody] string usermail)
         {
             
             if (Bll.UsersBLL.SendEmailMesg(usermail) == true)
