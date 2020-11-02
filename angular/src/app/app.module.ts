@@ -36,6 +36,11 @@ import { PopupComponent } from './components/popup/popup.component';
 import { PopupadComponent } from './components/popupad/popupad.component';
 import { MyMaterialModule } from './components/my-material/my-material.module';
 import { DatePipe } from '@angular/common';
+import { InstructionsComponent } from './components/instructions/instructions.component';
+import { AboutComponent } from './components/about/about.component';
+import { MAT_DATE_LOCALE } from '@angular/material/core';
+import { PaymentComponent } from './components/payment/payment.component';
+
 
 
 @NgModule({
@@ -63,6 +68,9 @@ import { DatePipe } from '@angular/common';
     PaymentDetailsComponent,
     PopupComponent,
     PopupadComponent,
+    InstructionsComponent,
+    AboutComponent,
+    PaymentComponent,
     
   ],
   imports: [
@@ -79,7 +87,7 @@ import { DatePipe } from '@angular/common';
     MatCheckboxModule
     // NgxPayPalModule,
   ],
-  providers: [ DatePipe,],
+  providers: [ DatePipe,{provide: MAT_DATE_LOCALE, useValue: 'en-GB'}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

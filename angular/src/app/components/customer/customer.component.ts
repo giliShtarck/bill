@@ -10,6 +10,7 @@ import { Router } from '@angular/router';
 export class CustomerComponent implements OnInit {
   constructor(private router: Router) { }
   ngOnInit(): void {
+    this.router.navigate(["customer/instructions"])
   }
   //חזרה לדף הבית
   backtohome(): void {

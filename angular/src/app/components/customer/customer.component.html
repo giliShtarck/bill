@@ -1,4 +1,4 @@
-<p>
+<!-- <p>
     <mat-toolbar color="primary" class="toolbarClass">
       <button mat-icon-button class="example-icon" (click)="backtohome()" aria-label="Example icon-button with menu icon">
         <mat-icon>home</mat-icon>
@@ -10,9 +10,27 @@
       <span class="example-spacer"></span>
       <a  routerLink="loadimg">הוספת מודעה</a><mat-icon id="board">add</mat-icon>
       <a  routerLink="userad">צפיה במודעות </a><mat-icon id="board">add</mat-icon>
+      <a routerLink="instructions">הוראות</a><mat-icon id="board"></mat-icon>
     </mat-toolbar>
-  </p>
-  <div>
-    
-  </div>
+  </p> -->
+
+  <nav class="navbar navba n">
+    <br>
+    <form class="form-inline f">
+      <div class="container logo" (click)="backtohome()"></div>
+      <!-- <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+        <mat-icon>assignment_ind</mat-icon>
+      </button> -->
+      <a  routerLink="loadimg" class="btn bar btn-sm btn-outline-secondary" >הוספת מודעה <mat-icon id="board">add_to_queue</mat-icon></a>
+      <a  routerLink="userad" class="btn bar btn-sm btn-outline-secondary">צפיה במודעות  <mat-icon id="board">dvr</mat-icon></a>
+      <a routerLink="instructions" class="btn bar btn-sm btn-outline-secondary">הוראות <mat-icon id="board">comment</mat-icon></a>
+    </form>
+  </nav>
+  <!-- <nav class="navbar navbar-light bg-light bar">
+    <br>
+  </nav> -->
+  <div class="container home"></div>
+
+  
+ 
 <router-outlet></router-outlet>

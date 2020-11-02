@@ -62,9 +62,10 @@ namespace API.Controllers
         }
         [HttpGet]
         [Route("getbillboardbycityandarrstreet/{city}/{street}")]
-        public List<BillboardDTO> GetBillBoardByCityAndArrStreet([FromUri] string city, [FromUri]List<string> street)
+        public List<BillboardDTO> GetBillBoardByCityAndArrStreet([FromUri] string city, [FromUri]string street)
         {
-            return Bll.BillboardBLL.GetBillBoardByCityAndArrStreet(city, street);
+            string[] streetArr = street.Split(',');
+            return Bll.BillboardBLL.GetBillBoardByCityAndArrStreet(city, streetArr);
         }
         [HttpGet]
         [Route("getallbillboardcities")]

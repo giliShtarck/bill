@@ -90,4 +90,6 @@ export class AdvertismentService {
     // return this.http.put<Date[]>(environment.url + this.basicURL + "/approval?a="+ad+"&city=",city+"&street="+street)
     return this.http.put<Date[]>(environment.url + this.basicURL + "/approval", this.arr);
   }
+ 
+
 }

@@ -156,5 +156,11 @@ namespace API.Controllers
             return adbll.Approval(advertisment, arr[1].ToString(), arr[2].ToString(), (bool)arr[3]);
             //return Ok();
         }
+        [HttpGet]
+        [Route("checksduplicates/{a}/{date}/{boardid}")]
+        public string ChecksDuplicates([FromUri] AdvertisementsDTO a, [FromUri] DateTime date, [FromUri] int boardid)
+        {
+            return adbll.ChecksDuplicates(a, date, boardid);
+        }
     }
 }

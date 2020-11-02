@@ -55,7 +55,7 @@ namespace Bll
             return BillboardDTO.ListToDTO(db.Billboards.Where(x => x.BoardCity == city && x.BoardStreet.Contains(street)).ToList());
         }
         //שליפת לוחות לפי עיר ורשימת רחובות
-        public static List<BillboardDTO> GetBillBoardByCityAndArrStreet(string city, List<string> street)
+        public static List<BillboardDTO> GetBillBoardByCityAndArrStreet(string city, string[] street)
         {
             List<BillboardDTO> billboard = new List<BillboardDTO>();
             BillboardDTO billDTO;

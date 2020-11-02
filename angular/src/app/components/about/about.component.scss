@@ -1,0 +1,20 @@
+body{
+    background-color: rgb(184, 187, 189);
+    
+}
+fieldset {
+  background-color: white;
+  direction: rtl;
+  width: 70vw;
+  border: rgb(70, 70, 70) dashed 2px;
+  text-align: right;
+  font-size: 15pt;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  position: absolute;
+  top: 40vh;
+  left: 14%;
+}
+legend {
+  width: 6%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}

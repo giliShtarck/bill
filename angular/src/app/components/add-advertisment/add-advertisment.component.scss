@@ -2,16 +2,21 @@
   margin-left: 8px;
 }
 .img {
-  direction: rtl;
-  left: 45vw;
-  vertical-align: middle;
+  text-align: center;
   border-style: none;
   position: absolute;
-  bottom: 25vh;
+  top: 10vh;
+  right:2vw;
+  font-size: x-large;
+  color: white;
 }
 .basicButton {
   display: inline-block;
   grid-gap: 5vw;
+}
+.r{
+  right: 5vw;
+  position: relative;
 }
 fieldset {
   height: 22vh;
@@ -42,3 +47,45 @@ legend {
 //   height: 3.2rem; }
 //   .file-field.big .file-path-wrapper .file-path {
 //   height: 3rem; }
+.b {
+  position: absolute;
+  right: 17vw;
+  top: 14vh;
+  border: #464646 dashed 2px;
+  width: 64vw;
+  height: 82vh;
+  margin: auto;
+  background-color: white;
+}
+.inb {
+  text-align: center;
+  position: absolute;
+  top: 3vh;
+  left: 6vw;
+}
+.wrapper{
+  background-color: #ddd;
+  width: 20vw;
+  height: 25vh;
+  position: absolute;
+  top: 24vh;
+  left: 32vw;
+  border: #fc03fc dashed 2px;
+  text-align: center;
+}
+.bu {
+  background-color: #fc03fc;
+}
+.d{
+  display: inline-flex;
+}
+.a {
+  color: rgb(240, 14, 240);
+  background-color: rgb(224, 213, 213);
+  text-align: center;
+  width: 50vh;
+  margin: auto;
+}
+body{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}

@@ -11,6 +11,7 @@ export class ManagerComponent implements OnInit {
   constructor(private router:Router) { }
 
   ngOnInit(): void {
+    this.router.navigate(["manager/DetailsOfadvertisment"])
   }
   //חזרה לדף הבית
   backtohome(): void {

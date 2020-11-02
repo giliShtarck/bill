@@ -22,14 +22,14 @@ namespace API.Controllers
         }
         [HttpPost]
         [Route("addNewAdvertisment/{boardid}/{date}")]
-        public bool AddNewAdvertisment(AdvertisementsDTO a, DateTime date, int boardid)
+        public bool AddNewAdvertisment(AdvertisementsDTO a, DateTime date, int boardid ,bool istocheck)
         {
             Add_Advertisment_BLL ab = new Add_Advertisment_BLL();
-            return ab.ArrangePlace(a, date, boardid);
+            return ab.ArrangePlace(a, date, boardid,istocheck);
         }
         [HttpGet]
         [Route("getpaneladbyaddressanddate/{street}/{city}/{date}")]
-        public List<PanelDTO> GetPanelAdByAddressAndDate([FromUri]List<string> street, [FromUri]string city, [FromUri]DateTime date)
+        public List<PanelDTO> GetPanelAdByAddressAndDate([FromUri]string street, [FromUri]string city, [FromUri]DateTime date)
         {
             
             return PanelAdBll.GetPanelAdByAddressAndDate(street, city, date);

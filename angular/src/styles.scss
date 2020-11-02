@@ -1,5 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
- @import "~bootstrap/dist/css/bootstrap.css";
- @import "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css";‏
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;direction: rtl }
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css";
+‏ html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  direction: rtl;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color:#ddd; 
+  // rgba(245, 238, 238, 0.938);
+}
+th{
+  color: white;
+}

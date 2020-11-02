@@ -1,29 +1,49 @@
 <form class="example-form" [formGroup]="myForm">
-  <mat-form-field>
-    <mat-select name="subject" required autocomplete="off" placeholder="בחר קטגוריה" formControlName="category">
-      <mat-option *ngFor="let option of Categorylist" [value]="option.CategoryName" (click)="selectedCategory(option)">
-        {{option.CategoryName}}
-      </mat-option>
-    </mat-select>
-    <mat-error *ngIf="myForm.controls.category.invalid">חובה להכניס קטגוריה</mat-error>
-  </mat-form-field>
-  <div>
-    <mat-form-field>
-      <mat-select name="subject" required autocomplete="off" placeholder="בחר עיר" formControlName="AdCity">
-        <mat-option *ngFor="let option of  billboardsCities" [value]="option" (click)="ChangeCity()">
-          {{option}}
-        </mat-option>
-      </mat-select>
-      <mat-error *ngIf="myForm.controls.AdCity.invalid">חובה להכניס עיר</mat-error>
-    </mat-form-field>
+  <div class="container">
+    <div class="row">
+      <div class="col-auto mr-auto">
+        <mat-form-field>
+        <mat-select name="subject" required autocomplete="off" placeholder="בחר קטגוריה" formControlName="category">
+          <mat-option *ngFor="let option of Categorylist" [value]="option.CategoryName"
+            (click)="selectedCategory(option)">
+            {{option.CategoryName}}
+          </mat-option>
+        </mat-select>
+        <mat-error *ngIf="myForm.controls.category.invalid">חובה להכניס קטגוריה</mat-error>
+      </mat-form-field></div>
+      <div class="col-9">
+        <div>
+          <mat-form-field>
+            <mat-select name="subject" required autocomplete="off" placeholder="בחר עיר" formControlName="AdCity">
+              <mat-option *ngFor="let option of  billboardsCities" [value]="option" (click)="ChangeCity()">
+                {{option}}
+              </mat-option>
+            </mat-select>
+            <mat-error *ngIf="myForm.controls.AdCity.invalid">חובה להכניס עיר</mat-error>
+          </mat-form-field>
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="example-button-container">
-    <button mat-fab color="accent" [disabled]="myForm.invalid" (click)="search()">
-      <mat-icon>search</mat-icon>
-    </button>
+  <br>
+  <br>
+  
+  <div class="container">
+    <div class="row justify-content-md-center">
+      <div class="example-button-container">
+        <button mat-fab color="accent" [disabled]="myForm.invalid" (click)="search()">
+          <mat-icon>search</mat-icon>
+        </button>
+      </div>
+    </div>
   </div>
 </form>
-<p *ngIf="!Exists">לא קימת מודעה לפי הקריטריונים שהזנת</p>
+<div *ngIf="!Exists" class="alert alert-warning alert-dismissible fade show a" role="alert">
+  <strong>לא קימת מודעה לפי הקריטריונים שהזנת!!</strong>
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
 <mat-grid-list cols="2" rowHeight="1:1" *ngIf="Exists">   
   <mat-grid-tile *ngFor="let option of advertismentArr">   
        <div class="ad">

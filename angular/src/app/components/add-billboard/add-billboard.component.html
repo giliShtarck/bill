@@ -1,21 +1,27 @@
 <form [formGroup]="myForm">
-    <div>
-        <app-cities (outputName)="ChangeCity($event)"></app-cities>
+    <div class="b">
+        <div class="inb">
+            <div>
+                <app-cities (outputName)="ChangeCity($event)"></app-cities>
+            </div>
+            <div>
+                <mat-form-field>
+                    <mat-label>הכנס רחוב</mat-label>
+                    <input matInput required formControlName="BoardStreet" (input)="inputValidator($event)"
+                        autocomplete="off">
+                    <mat-error *ngIf="myForm.controls.BoardStreet.invalid">חובה להכניס רחוב</mat-error>
+                </mat-form-field>
+            </div>
+            <div>
+                <mat-form-field >
+                    <mat-label>הכנס אחוזי מחיר</mat-label>
+                    <input matInput required placeholder="הכנס אחוזי מחיר" min="0" max="100"
+                        formControlName="PrecentPrice" type="number" autocomplete="off">
+                    <mat-error *ngIf="myForm.controls.PrecentPrice.invalid">חובה להכניס אחוזי מחיר</mat-error>
+                </mat-form-field>
+            </div>
+            <button mat-raised-button color="accent" class="example-button-row bu"  (click)="AddBillBoard()" >הוסף
+                לוח</button>
+        </div>
     </div>
-    <div>
-        <mat-form-field appearance="fill">
-            <mat-label>הכנס רחוב</mat-label>
-            <input matInput required formControlName="BoardStreet" (input)="inputValidator($event)" autocomplete="off">
-            <mat-error *ngIf="myForm.controls.BoardStreet.invalid">חובה להכניס רחוב</mat-error>
-        </mat-form-field>
-    </div>
-    <div>
-        <mat-form-field appearance="fill">
-            <mat-label>הכנס אחוזי מחיר</mat-label>
-            <input matInput required placeholder="הכנס אחוזי מחיר" min="0" max="100" formControlName="PrecentPrice"
-                type="number" autocomplete="off">
-            <mat-error *ngIf="myForm.controls.PrecentPrice.invalid">חובה להכניס אחוזי מחיר</mat-error>
-        </mat-form-field>
-    </div>
-    <button mat-raised-button color="accent" class="example-button-row" (click)="AddBillBoard()">הוסף לוח</button>
 </form>

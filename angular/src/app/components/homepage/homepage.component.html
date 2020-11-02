@@ -1,5 +1,5 @@
-<form class="example-form" >
-   <p>
+<form class="example-form">
+  <!-- <p>
     <mat-toolbar color="primary">
       <button mat-icon-button class="example-icon" (click)="backtohome()" aria-label="Example icon-button with menu icon">
         <mat-icon>home</mat-icon>
@@ -8,18 +8,36 @@
       <span class="example-spacer"></span>
       <a routerLink="login">התחברות</a><mat-icon id="board">group_add</mat-icon>
       <a routerLink="sign-up">כניסה</a><mat-icon id="board">transit_enterexit</mat-icon>
+      <a routerLink="about">אודות</a><mat-icon id="board"></mat-icon>
     </mat-toolbar>
-  </p>  
-  <nav class="navbar navbar-dark bg-dark">
+  </p>   -->
+  <!-- <nav class="navbar navbar-dark bg-dark">
     <button class="btn bar btn-sm btn-outline-secondary" type="button">Smaller button</button>
-  </nav>
-  <nav class="navbar navbar-light bg-light">
+  </nav> -->
+  <!-- <nav class="navbar navbar-light bg-light bar">
     <form class="form-inline">
+      <button mat-icon-button class="example-icon" (click)="backtohome()" aria-label="Example icon-button with menu icon"></button>
+      <a routerLink="login" class="btn bar btn-sm btn-outline-secondary">התחברות</a><mat-icon id="board">group_add</mat-icon>
+      <a routerLink="sign-up" class="btn bar btn-sm btn-outline-secondary">כניסה</a><mat-icon id="board">transit_enterexit</mat-icon>
+      <a routerLink="about" class="btn bar btn-sm btn-outline-secondary">אודות</a><mat-icon id="board"></mat-icon> -->
+  <!-- <button class="btn bar btn-sm btn-outline-secondary" type="button">Smaller button</button>
       <button class="btn bar btn-sm btn-outline-secondary" type="button">Smaller button</button>
-      <button class="btn bar btn-sm btn-outline-secondary" type="button">Smaller button</button>
-      <button class="btn bar btn-sm btn-outline-secondary" type="button">Smaller button</button>
+      <button class="btn bar btn-sm btn-outline-secondary" type="button">Smaller button</button> -->
+  <!-- </form>
+  </nav> -->
+
+   <nav class="navbar navba n">
+    <br>
+    <form class="form-inline f">
+      <button class="btn bar btn-sm btn-outline-secondary a" (click)="backtohome()">דף הבית<mat-icon id="board">home</mat-icon></button>
+      <a routerLink="login" class="btn bar btn-sm btn-outline-secondary">התחברות <mat-icon id="board">group_add</mat-icon></a>
+      <a routerLink="sign-up" class="btn bar btn-sm btn-outline-secondary">כניסה <mat-icon id="board">people_alt</mat-icon></a>
+      <a routerLink="about" class="btn bar btn-sm btn-outline-secondary">אודות <mat-icon id="board">comment</mat-icon></a> 
     </form>
-  </nav>
-  <div class="container home" ></div>
+  </nav>  
+  <!-- <nav class="navbar navbar-light bg-light bar b">
+    <br>
+  </nav> -->
+  <div class="container home"></div>
 </form>
 <router-outlet></router-outlet>

@@ -1,4 +1,6 @@
-<div class="container rounded home" *ngIf="!CheckSearch()"></div>
-<mat-slide-toggle (change)="changeslidetoggle()">{{name}}</mat-slide-toggle>
+<div class="container rounded home " *ngIf="!CheckSearch()"></div>
+<div  class="search2">
+    <mat-slide-toggle (change)="changeslidetoggle()">{{name}}</mat-slide-toggle>
+</div>
 <app-search-advertisment *ngIf="checked"></app-search-advertisment>
 <app-search-panel-ad *ngIf="!checked"></app-search-panel-ad>

@@ -19,17 +19,24 @@ import { SearchPanelAdComponent } from './components/search-panel-ad/search-pane
  import { CitiesComponent } from './components/cities/cities.component';
 import { UseradComponent } from './components/userad/userad.component';
 import { MasonryComponent } from './components/masonry/masonry.component';
+import { InstructionsComponent } from './components/instructions/instructions.component';
+import { AboutComponent } from './components/about/about.component';
+import { PaymentComponent } from './components/payment/payment.component';
+
 // import { NgxPayPalModule } from 'ngx-paypal';
 
 
 const routes: Routes = [
   {
+    
     path: 'customer', component: CustomerComponent,
     children: [{ path: "loadimg", component: LoadImgComponent },
     {path:"userad",component:UseradComponent},
-    {path:"add-advertisment",component:AddAdvertismentComponent}
+    {path:"add-advertisment",component:AddAdvertismentComponent},
+    {path:"instructions",component:InstructionsComponent}
     ]
   },
+  {path:"payment",component:PaymentComponent},
   {
     path: 'manager', component: ManagerComponent,
     children: [
@@ -48,6 +55,7 @@ const routes: Routes = [
         }]
       },
       { path: 'login', component: LoginComponent },
+      { path: 'about', component: AboutComponent },
       {
         path: 'search', component: SearchComponent, children: [
           { path: 'searchPanelAd', component: SearchPanelAdComponent},
@@ -56,6 +64,8 @@ const routes: Routes = [
     ] },
   { path: "", component: HomepageComponent }
 ];
+
+
 
 
 @NgModule({

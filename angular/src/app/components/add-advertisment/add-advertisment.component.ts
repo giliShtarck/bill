@@ -12,7 +12,10 @@ import { invalid } from '@angular/compiler/src/render3/view/util';
 import { Prices } from 'src/app/models/prices/prices';
 import { PricesService } from 'src/app/services/prices/prices.service';
 import { HebrewCalendar } from '@hebcal/core';
-
+import { Router } from '@angular/router';
+import { PopupadComponent } from '../popupad/popupad.component';
+import { MatDialog } from '@angular/material/dialog';
+import { PaymentComponent } from '../payment/payment.component';
 @Component({
   selector: 'app-add-advertisment',
   templateUrl: './add-advertisment.component.html',
@@ -38,9 +41,13 @@ export class AddAdvertismentComponent implements OnInit {
   width: number;
   numWeek: number;
   LastPaymant: number;
-
+  fPay: boolean = false;
+  flagDate: boolean = false;
+  FDuplicates: boolean = false;
   dateFilter = (date: Date) =>
     date.getDay() == 0 && HebrewCalendar.getHolidaysOnDate(date) == undefined;
+  //dialog: any;
+
   public inputValidator(event: any) {
     const pattern = /^[a-zA-Zא-ת]*$/;
     if (!pattern.test(event.target.value)) {
@@ -48,7 +55,7 @@ export class AddAdvertismentComponent implements OnInit {
     }
   }
   constructor(private priceService: PricesService, private categoryService: CategoryService,
-    private advertismentservice: AdvertismentService, private billboardService: BillBoardService) {
+    private advertismentservice: AdvertismentService, private billboardService: BillBoardService, private router: Router, public dialog: MatDialog) {
   }
   ngOnInit(): void {
     console.log("datelist", this.DateList)
@@ -107,6 +114,9 @@ export class AddAdvertismentComponent implements OnInit {
     });
   }
   sendForm() {
+    this.FDuplicates = false;
+    this.flagDate = false;
+    this.secondDateList = [];
     this.ad.AdCategory = this.myForm.controls.AdCategory.value;
     this.ad.AdDateBegin = this.myForm.controls.AdDateBegin.value;
     this.ad.AdDateBegin = new Date(this.ad.AdDateBegin.getTime() + Math.abs(this.ad.AdDateBegin.getTimezoneOffset() * 60000));
@@ -116,15 +126,23 @@ export class AddAdvertismentComponent implements OnInit {
     this.ad.AdWidth = this.myForm.controls.AdWidth.value;
     console.log(this.myForm.value)
     this.advertismentservice.Approval(this.ad, this.myForm.controls.AdCity.value, this.myForm.controls.AdAddress.value, true).subscribe(res => {
-      console.log("success!");
-      this.DateList = [];
-      this.secondDateList = [];
-      res.forEach(element => {
-        this.DateList.push(element);
-        this.secondDateList.push(element);
-      });
-      console.log(this.DateList);
-
+      debugger;
+      if (res == null)
+        this.FDuplicates = true;
+      else {
+        if (res.length == 0)
+          this.flagDate = true;
+        console.log("success!");
+        this.DateList = [];
+        // this.fPay = false;
+        debugger
+        this.secondDateList = [];
+        res.forEach(element => {
+          this.DateList.push(element);
+          this.secondDateList.push(element);
+        });
+        console.log(this.DateList);
+      }
     },
       (error) => { console.log("error") }
     );
@@ -188,65 +206,73 @@ export class AddAdvertismentComponent implements OnInit {
     this.HeightArr = [1, 2, 3, 4, 5, 6, 7, 8];
   }
   cnt2: number = 0;
-  //בדיקת התאריכים שהלקוח בחר, האם הם ברצף
-  dates(date: Date) {
 
-    // this.cnt = 0;
-    // if (this.DateBegin == null) {
-    //   this.DateBegin = date
-    // }
-    // else {
-    //   this.DateList.forEach(element => {
-    //     if (this.flag == true) {
-    //       this.cnt++;
-    //     }
-    //     if (element == this.DateBegin) {
-    //       this.flag = false
-    //     }
-    //   });    
-    //   this.DateList.forEach(element => {
-    //     this.cnt2++;
-    //   });
-    // }
-    debugger
-    this.secondDateList = [];
-    if (this.DateBegin == null) {
-      this.DateBegin = this.CheckDate = date;
-      this.DateList.forEach(element => {
-        this.CheckDate.setDate(this.CheckDate.getDay() + 7)
-        if (this.CheckDate == element) {
-          debugger
-          this.secondDateList.push(this.CheckDate)
-        }
-      });
-    }
-    else {
-      if (this.DateEnd == null) {
-        this.DateEnd = date;
-      }
-    }
-  }
   //חישוב תשלום
-  paymant() {
-
-    // this.numWeek=
+  payment() {
+    this.numWeek=0;
+    this.numWeek=this.secondDateList.length;
+   
+    // this.secondDateList.forEach(element => {
+    //   if (element >= this.myForm.controls.AdDateBegin.value && element < this.myForm.controls.AdDateEnd.value)
+    //     this.numWeek=this.numWeek+1;
+    // });
+    console.log("numweek: ",this.numWeek)
+    this.numWeek = this.secondDateList.length
     this.priceService.calcPrice(this.ad.AdHeight * this.ad.AdWidth, this.myForm.controls.AdCity.value,
-      this.myForm.controls.AdAddress.value, 3).subscribe(res => {
+      this.myForm.controls.AdAddress.value, this.numWeek).subscribe(res => {
         this.LastPaymant = res;
       });
   }
+  toPay(): void {
+    // backtohome(): void {
+    debugger
+    this.fPay = true;
+    //this.router.navigate(["/payment"])
+    const dialogRef = this.dialog.open(PaymentComponent, {
+      width: '600px',
+      height: '600px',
+      data: {
+      }
+    });
+    // }
+  }
   //אישור מודעה והוספתה ללוח המתאים ולבסיס נתונים
   ok() {
+
     this.advertismentservice.Approval(this.ad, this.myForm.controls.AdCity.value, this.myForm.controls.AdAddress.value,
       false).subscribe(res => {
         console.log("succsess");
-        alert("מודעתך התוספה בהצלחה")
+        this.advertismentservice.updatead(this.ad).subscribe(res => {
+          console.log("success update")
+        })
+        this.toPay();
       }), (error) => {
         console.log("error");
       }
+
+
   }
   //לא ניתן לשנות תאריך ידנית
   validateNumber(event) {
     event.preventDefault();
+  }
+  checkPay() {
+    if (this.fPay == true)
+      return false;
+    return true;
+  }
+  popup() {
+    const dialogRef = this.dialog.open(PopupadComponent, {
+      data: {
+        AdId: this.ad.AdId, AdCategory: this.ad.AdCategory, AdDateRequest: this.ad.AdDateRequest, AdDateBegin: this.ad.AdDateBegin,
+        AdDateEnd: this.ad.AdDateEnd, AdHeight: this.ad.AdHeight, AdWidth: this.ad.AdWidth, AdUserId: this.ad.AdUserId, AdFiles: this.ad.AdFiles,
+        AdViews: this.ad.AdViews, AdStatus: this.ad.AdStatus
+      }
+    });
+  }
+  CheckDuplicate() {
+    if (this.FDuplicates ||this.secondDateList.length==0)
+      return true;
+    return false;
   }
 }

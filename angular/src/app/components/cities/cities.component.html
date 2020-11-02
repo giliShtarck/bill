@@ -1,5 +1,5 @@
 <form [formGroup]="myForm">
-  <mat-form-field appearance="fill">
+  <mat-form-field >
     <mat-select autocomplete="off" placeholder="בחר עיר" formControlName="city">
       <mat-option *ngFor="let option of xmlItems" [value]="option.city" (click)="changeCity()"> {{option.city}}
       </mat-option>
@@ -7,3 +7,4 @@
     <mat-error *ngIf="myForm.controls.city.invalid">חובה להכניס עיר</mat-error>
   </mat-form-field>
 </form>
+<!-- appearance="fill" -->

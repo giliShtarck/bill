@@ -12,6 +12,24 @@
     display: table-cell;
     margin-right: 8px;
   }
-
+  .b {
+    position: absolute;
+    right: 40vw;
+    top: 26vh;
+    border: rgb(70, 70, 70) dashed 2px;
+    width: 23vw;
+    height: 50vh;
+    margin: auto;
+    background-color: white;
+    }
+    .inb {
+    text-align: center;
+    position: absolute;
+    top: 10vh;
+    left: 5vw;
+    }
+    .bu {
+    background-color: #fc03fc;
+    }
 
   

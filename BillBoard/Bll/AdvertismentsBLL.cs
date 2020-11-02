@@ -142,7 +142,12 @@ namespace Bll
                     if (bill != null)
                     {
                         if (item.PanelDate < DateTime.Today)
-                            l3.Add(add);
+                        {
+                            var ll = l3.FirstOrDefault(x => x.AdId == add.AdId);
+                            if (ll==null)
+                                 l3.Add(add);
+                        }
+                           
                     }
                 }
             }

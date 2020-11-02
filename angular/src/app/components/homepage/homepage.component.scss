@@ -29,6 +29,44 @@ a:hover {
   flex: 1 1 auto;
 }
 .bar {
-  color: rgb(240, 14, 240);
+  background-color: rgb(240, 14, 240); 
+   color:white;
+   border: none;
+  //  width: 100vw;
+ }
+.f{
+  z-index: 1;
+  position: absolute;
+  // top:3vh
+}
+.n{
+  background-color:  white;
+  width: 100vw;
+  height: 7vh;
   border: none;
 }
+.mat-form-field {
+  background-color:#ddd;
+}
+.logo{
+  height: 53px;
+  width: 101px;
+  position: absolute;
+  right: 87vw;
+}
+.container {
+  background-image: url(../../images/logo.png);
+  // background-image: url('../../../images/homepage.png');
+  //background-size: cover;
+}
+.b{
+  width: 100vw;
+}
+a{
+  margin:3px;
+}
+.a{
+  margin:3px;
+}
+
+

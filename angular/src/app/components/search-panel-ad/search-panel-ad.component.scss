@@ -27,3 +27,22 @@ body {
       }
     }
   }
+  .a {
+    color: rgb(240, 14, 240);
+    background-color: rgb(224, 213, 213);
+    text-align: center;
+    width: 50vh;
+    margin: auto;
+  }
+  .search{
+    position: absolute;
+    top: 42vh;
+    left: 14vw;
+  }
+  .search2{
+    position: fixed;
+    top:66vh;
+    left:20vw;
+    height: 30vh;
+    
+  }

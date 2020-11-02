@@ -89,9 +89,7 @@ export class SearchAdvertismentComponent implements OnInit {
   }
   //עדכון מספר הצפיות בעת לחיצה על מודעה
   updateviews(a: Advertisements) {
-    const dialogRef = this.dialog.open(PopupadComponent, {
-      width: '600px',
-      height:'600px',    
+    const dialogRef = this.dialog.open(PopupadComponent, {    
       data: {AdId:a.AdId,AdCategory:a.AdCategory,AdDateRequest:a.AdDateRequest,AdDateBegin:a.AdDateBegin,
         AdDateEnd:a.AdDateEnd,AdHeight:a.AdHeight,AdWidth:a.AdWidth,AdUserId:a.AdUserId,AdFiles:a.AdFiles,
         AdViews:a.AdViews,AdStatus:a.AdStatus}

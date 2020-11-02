@@ -1,4 +1,4 @@
-<p>
+<!-- <p>
     <mat-toolbar color="primary" class="toolbarClass">
         <button mat-icon-button class="example-icon" (click)="backtohome()" aria-label="Example icon-button with menu icon">
             <mat-icon>home</mat-icon>
@@ -14,5 +14,17 @@
         <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">       
         </button>
     </mat-toolbar>
-</p>
+</p> -->
+  <nav class="navbar n">
+      <br>
+    <form class="form-inline f">
+      <div class="container logo" (click)="backtohome()"></div>
+    <a  routerLink="addBillboard" routerLinkActive="Activelink" class="btn bar btn-sm btn-outline-secondary">הוספת לוח <mat-icon id="board">grid_on</mat-icon></a> 
+      <a routerLink="deleteBillBoard" routerLinkActive="Activelink" class="btn bar btn-sm btn-outline-secondary"> מחיקת לוח <mat-icon id="board">grid_off</mat-icon></a>
+      <a routerLink="DetailsOfadvertisment" routerLinkActive="Activelink"  class="btn bar btn-sm btn-outline-secondary" > פרטים על מודעות <mat-icon id="board">add_to_photos</mat-icon>    </a>
+  </form>
+    </nav>
+<!-- <nav class="navbar navbar-light bg-light bar">
+    <br>
+  </nav> -->
 <router-outlet></router-outlet>

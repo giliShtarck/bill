@@ -65,8 +65,10 @@ export class LoadImgComponent implements OnInit {
     reader.onload = () => {
       //this.myForm.controls.Base64Pic.setValue(reader.result);
       this.addpic.AdFiles = String(reader.result);
+      debugger
       console.log(this.addpic.AdFiles);
     };
   }
+ 
 
 }

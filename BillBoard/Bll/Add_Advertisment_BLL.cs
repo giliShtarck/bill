@@ -66,7 +66,7 @@ namespace Bll
             return cnt;
         }
         //the first method to organize the matrix
-        public bool ArrangePlace(AdvertisementsDTO a, DateTime date, int boardid)
+        public bool ArrangePlace(AdvertisementsDTO a, DateTime date, int boardid,bool istocheck)
         {
             this.date = date;
             this.boardId = boardid;
@@ -92,9 +92,13 @@ namespace Bll
                     }
                 }
             }
-            if (flag == 1)
+            if (flag == 1&&!istocheck)
             {
                 AddAdvertismentToMat(a, begin);
+                
+            }
+            if(flag==1)
+            {
                 return true;
             }
             return false;
@@ -160,9 +164,9 @@ namespace Bll
             List<DTO.PanelDTO> panel = PanelAdBll.GetPanelAdByBoardAndDate(boardid, date);
             foreach (var item in panel)
             {
-                for (int i = item.PanelLineStart; i < item.PanelLineEnd; i++)
+                for (int i = item.PanelLineStart; i <= item.PanelLineEnd; i++)
                 {
-                    for (int j = item.PanelColumnStart; j < item.PanelColumnEnd; j++)
+                    for (int j = item.PanelColumnStart; j <= item.PanelColumnEnd; j++)
                     {
                         mat[i, j] = item.AdId;
                     }
@@ -170,9 +174,25 @@ namespace Bll
             }
             return mat;
         }
+        //בודק האם המודעה כבר קיימת בלוח -מונע כפלויות
+        public string ChecksDuplicates(AdvertisementsDTO a,DateTime date,int boardid )
+        {
+            //int boardid = db.Billboards.FirstOrDefault(x => x.BoardCity == city && x.BoardStreet == street).BoardId;
+            mat = BuildMat(date, boardid);
+            for(int i=0;i<8;i++)
+            {
+                for(int j=0;j<4;j++)
+                {
+                    if (mat[i, j] == a.AdId)
+                        return "yes";
+                }
+            }
+            return "no";
+        }
         //בודק האם יש מקום למודעה בתאריכים הרצויים
         public List<DateTime> Approval(AdvertisementsDTO a, string city, string street, bool IsToCheck)
         {
+            string Duplicates;
             int boardid;
             Billboard bill = db.Billboards.FirstOrDefault(x => x.BoardCity == city && x.BoardStreet == street);
             List<DateTime> listDates = new List<DateTime>();
@@ -184,14 +204,23 @@ namespace Bll
                 while (date < a.AdDateEnd)
                 {
                     if (IsToCheck == true)
-                      begin=CheckPlace(a, date, boardid);
+                    {
+                        Duplicates = ChecksDuplicates(a, date, boardid);
+                        if (Duplicates == "yes")
+                            return null;
+                        begin = ArrangePlace(a, date, boardid,IsToCheck);
+                        //אולי האופציה הזאת יותר טובה אבל קודם צריך לשלוח לBUILDMA
+                        //begin=CheckPlace(a, date, boardid);
+                    }
+
                     else
-                        begin = ArrangePlace(a, date, boardid);
+                        begin = ArrangePlace(a, date, boardid,IsToCheck);
                     if (begin == true)
                     {
                         listDates.Add(date);
-                        date = date.AddDays(7);
+                        
                     }
+                    date = date.AddDays(7);
                 }
             }
             return listDates;
@@ -199,6 +228,7 @@ namespace Bll
         //כאשר  הלקוח בוחר טווח תאריכים, בודק האם יש מקום למודעה, בלי להתחשב במיקום המדויק
         public bool CheckPlace(AdvertisementsDTO a, DateTime date, int boardid)
         {
+        
             for (int i = 0; i < x; i++)
             {
                 for (int j = 0; j < y; j++)

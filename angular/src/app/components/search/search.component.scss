@@ -1,13 +1,25 @@
 .container {
-  background-image: url(../../images/home.jpg);
+  background-image: url(../../images/h_p_w_without_link-01.png);
   // background-image: url('../../../images/homepage.png');
-  //background-size: cover;
+  background-size: cover;
 }
 .home {
-  height: 54vh;
-  width: 50vw;
-  position: relative;
   top: 0vh;
-  right: 3vw;
- margin: auto;
+  height: 70vh;
+  width: 100%;
+ // position: fixed;
+  left: 12vw;
+  //top: 0vh;
+  // right: 3vw;
+//  margin: auto;
 }
+.search2{
+  position: fixed;
+  top:39vh;
+  left:20vw;
+  height: 30vh;
+  
+}
+
+
+

@@ -18,8 +18,7 @@ export class UserService {
     return this.http.post(environment.url + this.basicURL + "/register", user);
   }
   //שליחת מייל לאיפוס סיסמא ללקוח
-  sendemail(useremail: string) {
-    
+  sendemail(useremail: string) {  
     return this.http.put(environment.url +this.basicURL+ "/sendemail" ,useremail);
   }
   //קבלת מייל לקוח ע"פ הקוד

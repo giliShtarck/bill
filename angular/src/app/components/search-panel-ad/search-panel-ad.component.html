@@ -2,46 +2,70 @@
   <div class="container">
     <div class="row">
 
-      <div cols=3>
-        <mat-form-field>
-          <mat-select name="subject" required autocomplete="off" placeholder="בחר עיר" formControlName="city">
-            <mat-option *ngFor="let option of  billboardsCities" [value]="option" (click)="ChangeCity()">
-              {{option}}
-            </mat-option>
-          </mat-select>
-          <mat-error *ngIf="myForm.controls.city.invalid">חובה להכניס עיר</mat-error>
-        </mat-form-field>
-      </div>
+      <div class="container">
+        <div class="row">
+          <!-- <div class="search"> -->
+          <div class="col-sm">
+            <div>
+              <mat-form-field>
+                <mat-select name="subject" required autocomplete="off" placeholder="בחר עיר" formControlName="city">
+                  <mat-option *ngFor="let option of  billboardsCities" [value]="option" (click)="ChangeCity()">
+                    {{option}}
+                  </mat-option>
+                </mat-select>
+                <mat-error *ngIf="myForm.controls.city.invalid">חובה להכניס עיר</mat-error>
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div>
+              <mat-form-field>
+                <mat-select name="subject" required autocomplete="off" placeholder="בחר רחוב" formControlName="street">
+                  <mat-option *ngFor="let option of streetarr" [value]="option">
+                    <!-- <input type="checkbox" (change)="onChange($event.target.checked, option)" > -->
+                    <mat-checkbox class="example-margin" (change)="onChange( option)"> {{option}}</mat-checkbox>
 
-      <div cols="3">
-        <mat-form-field>
-          <mat-select name="subject" required autocomplete="off" placeholder="בחר רחוב" formControlName="street">
-            <mat-option *ngFor="let option of streetarr" [value]="option">
-              <input type="checkbox" (change)="onChange($event.target.checked, option)">
-              {{option}}
-            </mat-option>
-          </mat-select>
-          <mat-error *ngIf="myForm.controls.street.invalid">חובה להכניס רחוב</mat-error>
-        </mat-form-field>
+                  </mat-option>
+                </mat-select>
+                <mat-error *ngIf="myForm.controls.street.invalid">חובה להכניס רחוב</mat-error>
+              </mat-form-field>
+            </div>
+            <!-- </div> -->
+            <div class="col-sm">
+              <div>
+                <mat-form-field>
+                  <mat-label>בחר תאריך</mat-label>
+                  <input matInput [matDatepicker]="picker" required formControlName="date"
+                    (keydown)="validateNumber($event)" [matDatepickerFilter]="dateFilter">
+                  <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                  <mat-datepicker #picker></mat-datepicker>
+                  <mat-error *ngIf="myForm.controls.date.invalid">חובה להכניס תאריך</mat-error>
+                </mat-form-field>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p [style.color]="'red'" *ngIf="!myForm.controls.date.invalid&&checkDate()">חובה לבחור תאריך קטן מהיום</p>
       </div>
-      <mat-form-field cols="3">
-        <mat-label>בחר תאריך</mat-label>
-        <input matInput [matDatepicker]="picker" required formControlName="date" (keydown)="validateNumber($event)">
-        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-        <mat-datepicker #picker></mat-datepicker>
-        <mat-error *ngIf="myForm.controls.date.invalid">חובה להכניס תאריך</mat-error>
-      </mat-form-field>
-      <!-- *ngIf="!myForm.controls.date.invalid&&checkDate()"  -->
-      <!-- <p [style.color]="'red'">חובה לבחור תאריך קטן מהיום</p> -->
     </div>
+    <br>
   </div>
-  <div class="example-button-container" >
-    <button mat-fab color="accent" (click)="search()">
-      <!-- [disabled]="checkFormValid()" -->
+  <div class="container">
+    <div class="row justify-content-md-center"> 
+  <div class="example-button-container">
+    <button mat-fab color="accent" (click)="search()" [disabled]="checkFormValid()">
       <mat-icon>search</mat-icon>
     </button>
   </div>
-  <p *ngIf="!Exists">לא קיים לוח לפי הקריטריונים שהזנת</p>
+   </div>
+  </div> 
+
+  <div *ngIf="!Exists" class="alert alert-warning alert-dismissible fade show a" role="alert">
+    <strong>לא קיים לוח לפי הקריטריונים שהזנת!!</strong>
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
 </form>
 <mat-grid-list cols="4" rowHeight="80px" *ngIf="divList.length!=0"
   style="border:3px solid black;width: 70vw;margin: auto;">

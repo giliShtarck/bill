@@ -8,12 +8,13 @@ import { Advertisements } from 'src/app/models/advertisment/advertisements';
 import { AdvertismentService } from 'src/app/services/advertisments/advertisment.service';
 import { MatDialog } from '@angular/material/dialog';
 import { PopupComponent } from '../popup/popup.component';
+import { HebrewCalendar } from '@hebcal/core';
 export interface Tile {
   color: string;
   cols: number;
   rows: number;
   text: string;
-  a:Advertisements
+  a: Advertisements
 }
 @Component({
   selector: 'app-search-panel-ad',
@@ -29,9 +30,16 @@ export class SearchPanelAdComponent implements OnInit {
   divList: Tile[] = [];
   billboardsCities: string[] = [];
   Exists: boolean = true;
-  
   tile: Tile;
 
+  dateFilter = (date: Date) =>
+    date.getDay() == 0 && HebrewCalendar.getHolidaysOnDate(date) == undefined;
+  public inputValidator(event: any) {
+    const pattern = /^[a-zA-Zא-ת]*$/;
+    if (!pattern.test(event.target.value)) {
+      event.target.value = event.target.value.replace(/[^a-zA-Zא-ת]/g, "");
+    }
+  }
   constructor(private paneladservice: PaneladService, private billboardService: BillBoardService, private renderer: Renderer2,
     private advertismentService: AdvertismentService, public dialog: MatDialog) {
   }
@@ -58,9 +66,8 @@ export class SearchPanelAdComponent implements OnInit {
   }
   //חיפוש לוחות
   search(): void {
-    debugger
     this.divList = []
-    this.panelad=[]
+    this.panelad = []
     this.paneladservice.getpaneladbyaddressanddate
       (this.checkedStreets, this.myForm.controls.city.value, this.myForm.controls.date.value).subscribe(res => {
         if (res != null) {
@@ -78,21 +85,22 @@ export class SearchPanelAdComponent implements OnInit {
   }
   //יוצר את לוח המודעות
   drawBoard() {
-  
+
     for (var i = 0; i < this.panelad.length; i++) {
       var cols = this.panelad[i].PanelColumnEnd - this.panelad[i].PanelColumnStart + 1;
       var rows = this.panelad[i].PanelLineEnd - this.panelad[i].PanelLineStart + 1;
       for (var j = 0; j < this.advertismentsArr.length; j++) {
         if (this.advertismentsArr[j].AdId == this.panelad[i].AdId) {
           var text = this.advertismentsArr[j].AdFiles;
-          var a =this.advertismentsArr[j];
+          var a = this.advertismentsArr[j];
         }
       }
       if (this.panelad[i].AdId == -1) {
         var text = "";
+        
       }
       var color = "";
-      this.divList.push({ color: color, cols: cols, rows: rows, text: text,a:a });
+      this.divList.push({ color: color, cols: cols, rows: rows, text: text, a: a });
     }
   }
   //שליפת הרחובות לעיר
@@ -109,8 +117,8 @@ export class SearchPanelAdComponent implements OnInit {
     });
   }
   //בחירה מרובה של  רחובות
-  onChange(check: any, option: string): void {
-    if (check == true) {
+  onChange(option: string): void {
+    if (this.checkedStreets.find(x => x == option) == undefined) {
       this.checkedStreets.push(option);
       this.myForm.controls.street.valid;
     }
@@ -140,28 +148,31 @@ export class SearchPanelAdComponent implements OnInit {
   }
   //pop-up
   //שנפתח עם המודעה מוגדלת
-   //עדכון מספר הצפיות בעת לחיצה על מודעה
-   updateviews(pic: Tile) {
+  //עדכון מספר הצפיות בעת לחיצה על מודעה
+  updateviews(pic: Tile) {
     this.tile = pic;
     console.log(typeof pic)
     const dialogRef = this.dialog.open(PopupComponent, {
-      width: '600px',
-      height: '600px',
-      data: { color: this.tile.color, cols: this.tile.cols, rows: this.tile.rows, text: this.tile.text,a:this.tile.a }
+      data: { color: this.tile.color, cols: this.tile.cols, rows: this.tile.rows, text: this.tile.text, a: this.tile.a }
     });
     this.advertismentService.updateadviews(this.tile.a).subscribe(res => {
       console.log("success")
     }, (error) => { console.log(error) });
   }
-   //הגבלה לשם-רק אותיות
-   public inputValidator(event: any) {
-    const pattern = /^[a-zA-Zא-ת" "0-9]*$/;
-    if (!pattern.test(event.target.value)) {
-      event.target.value = event.target.value.replace(/[^a-zA-Zא-ת" "0-9]/g, "");
-    }
-  }
-   //לא ניתן לשנות תאריך ידנית
+  //לא ניתן לשנות תאריך ידנית
   validateNumber(event) {
-      event.preventDefault();     
+    event.preventDefault();
   }
+  // parse(value: any): Date | null {
+  //   debugger
+  //   if ((typeof value === 'string') && (value.indexOf('/') > -1)) {
+  //     const str = value.split('/');
+  //     const year = Number(str[2]);
+  //     const month = Number(str[1]) - 1;
+  //     const date = Number(str[0]);
+  //     return new Date(year, month, date);
+  //   }
+  //   const timestamp = typeof value === 'number' ? value : Date.parse(value);
+  //   return isNaN(timestamp) ? null : new Date(timestamp);
+  // }
 }
